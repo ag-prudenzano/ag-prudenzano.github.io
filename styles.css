@@ -89,6 +89,25 @@ a { color: inherit; }
   padding: 4rem 2rem 7rem;
 }
 
+.portfolio-intro {
+  max-width: 1040px;
+  margin-bottom: 4rem;
+}
+
+.portfolio-intro .eyebrow {
+  margin-bottom: 1.2rem;
+}
+
+.intro-copy {
+  margin: 0;
+  max-width: 980px;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(1.55rem, 3vw, 2.65rem);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -.035em;
+}
+
 .choice-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -315,6 +334,7 @@ footer {
   .brand-photo { width: 36px; height: 36px; }
   .contact-button { min-height: 38px; padding: .5rem .85rem; font-size: .78rem; }
   .choice-page, .case-study-page { padding: 3rem 1.2rem 5rem; }
+  .portfolio-intro { margin-bottom: 3rem; }
   .choice-grid { grid-template-columns: 1fr; }
   .research-choice { min-height: 320px; }
   .study-item { grid-template-columns: 38px 1fr; }
