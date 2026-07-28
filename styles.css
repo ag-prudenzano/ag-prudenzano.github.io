@@ -258,6 +258,15 @@ a { color: inherit; }
   margin-bottom: 4rem;
 }
 
+.projects-intro {
+  max-width: none;
+}
+
+.projects-heading {
+  font-size: clamp(2.1rem, 7vw, 6.5rem);
+  white-space: nowrap;
+}
+
 .eyebrow {
   margin: 0 0 1rem;
   color: var(--coral);
