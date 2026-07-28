@@ -122,13 +122,13 @@ a { color: inherit; }
 
 .choice-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
 }
 
 .research-choice {
   position: relative;
-  min-height: 470px;
+  min-height: 400px;
   padding: 2rem;
   overflow: hidden;
   display: flex;
@@ -159,6 +159,31 @@ a { color: inherit; }
   color: var(--ink);
   border: 1px solid var(--line);
   background: var(--white);
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.qualitative-choice:hover,
+.qualitative-choice:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(23, 25, 24, .3);
+}
+
+.mixed-methods-choice {
+  color: var(--ink);
+  border: 1px solid rgba(36, 79, 70, .16);
+  background: var(--mint);
+  transition: transform .2s ease, background-color .2s ease;
+}
+
+.mixed-methods-choice:hover,
+.mixed-methods-choice:focus-visible {
+  transform: translateY(-3px);
+  background: #cbded8;
+}
+
+.qualitative-choice .choice-arrow,
+.mixed-methods-choice .choice-arrow {
+  border-color: var(--line);
 }
 
 .choice-index {
@@ -230,10 +255,6 @@ a { color: inherit; }
 .page-intro {
   max-width: 850px;
   margin-bottom: 4rem;
-}
-
-.portfolio-section + .portfolio-section {
-  margin-top: 7rem;
 }
 
 .eyebrow {
