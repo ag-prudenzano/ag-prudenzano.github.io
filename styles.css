@@ -6,6 +6,9 @@
   --green: #244f46;
   --mint: #d6e5e0;
   --coral: #52756c;
+  --quantitative: #00c0e8;
+  --qualitative: #0088ff;
+  --mixed-methods: #6155f5;
   --line: rgba(23, 25, 24, 0.12);
 }
 
@@ -139,8 +142,8 @@ a { color: inherit; }
 }
 
 .quantitative-choice {
-  color: var(--white);
-  background: var(--green);
+  color: var(--ink);
+  background: var(--quantitative);
   box-shadow: none;
   transition: transform .2s ease, background-color .2s ease;
 }
@@ -152,38 +155,40 @@ a { color: inherit; }
 .quantitative-choice:hover,
 .quantitative-choice:focus-visible {
   transform: translateY(-3px);
-  background: #1d433b;
+  background: #00acd1;
 }
 
 .qualitative-choice {
   color: var(--ink);
-  border: 1px solid var(--line);
-  background: var(--white);
-  transition: transform .2s ease, border-color .2s ease;
+  border: 1px solid rgba(0, 0, 0, .08);
+  background: var(--qualitative);
+  transition: transform .2s ease, background-color .2s ease;
 }
 
 .qualitative-choice:hover,
 .qualitative-choice:focus-visible {
   transform: translateY(-3px);
-  border-color: rgba(23, 25, 24, .3);
+  background: #007ae6;
 }
 
 .mixed-methods-choice {
-  color: var(--ink);
-  border: 1px solid rgba(36, 79, 70, .16);
-  background: var(--mint);
+  color: var(--white);
+  border: 1px solid rgba(0, 0, 0, .08);
+  background: var(--mixed-methods);
   transition: transform .2s ease, background-color .2s ease;
 }
 
 .mixed-methods-choice:hover,
 .mixed-methods-choice:focus-visible {
   transform: translateY(-3px);
-  background: #cbded8;
+  background: #574cdd;
 }
 
+.quantitative-choice .choice-arrow,
 .qualitative-choice .choice-arrow,
 .mixed-methods-choice .choice-arrow {
-  border-color: var(--line);
+  border-color: currentColor;
+  opacity: .65;
 }
 
 .choice-index {
@@ -275,6 +280,10 @@ a { color: inherit; }
   letter-spacing: .16em;
   text-transform: uppercase;
 }
+
+.quantitative-page .eyebrow { color: var(--quantitative); }
+.qualitative-page .eyebrow { color: var(--qualitative); }
+.mixed-methods-page .eyebrow { color: var(--mixed-methods); }
 
 h1 {
   margin: 0;
