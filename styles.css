@@ -1,12 +1,12 @@
 :root {
-  --ink: #17211e;
-  --muted: #61706a;
-  --paper: #f6f3ec;
-  --white: #fffefa;
-  --green: #164e43;
-  --mint: #b9e6d3;
-  --coral: #ee7a5d;
-  --line: rgba(23, 33, 30, 0.14);
+  --ink: #171918;
+  --muted: #666b68;
+  --paper: #f7f7f5;
+  --white: #ffffff;
+  --green: #244f46;
+  --mint: #d6e5e0;
+  --coral: #52756c;
+  --line: rgba(23, 25, 24, 0.12);
 }
 
 * { box-sizing: border-box; }
@@ -22,6 +22,7 @@ body {
   background: var(--paper);
   font-family: "DM Sans", sans-serif;
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 a { color: inherit; }
@@ -47,13 +48,14 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid var(--line);
 }
 
 .brand {
   display: flex;
   align-items: center;
   gap: .75rem;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -61,23 +63,23 @@ a { color: inherit; }
   display: block;
   width: 42px;
   height: 42px;
-  border: 2px solid var(--white);
+  border: 1px solid var(--line);
   border-radius: 50%;
   object-fit: cover;
   object-position: 72% 35%;
-  box-shadow: 0 0 0 1px var(--line);
+  box-shadow: none;
 }
 
 .contact-button {
   min-height: 42px;
   padding: .6rem 1.15rem;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--ink);
   background: transparent;
   font: inherit;
   font-size: .86rem;
-  font-weight: 700;
+  font-weight: 600;
   cursor: default;
   opacity: 1;
 }
@@ -103,6 +105,10 @@ a { color: inherit; }
   max-width: none;
   margin: 0 auto 1.25rem;
   font-size: clamp(2rem, 3.7vw, 3rem);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -.045em;
   white-space: nowrap;
 }
 
@@ -128,40 +134,31 @@ a { color: inherit; }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 28px;
+  border-radius: 18px;
   text-decoration: none;
 }
 
 .quantitative-choice {
   color: var(--white);
   background: var(--green);
-  box-shadow: 0 28px 65px rgba(22, 78, 67, .18);
-  transition: transform .25s ease, box-shadow .25s ease;
+  box-shadow: none;
+  transition: transform .2s ease, background-color .2s ease;
 }
 
 .quantitative-choice::after {
-  content: "";
-  position: absolute;
-  right: -90px;
-  bottom: -120px;
-  width: 330px;
-  height: 330px;
-  border: 70px solid rgba(185, 230, 211, .16);
-  border-radius: 50%;
+  display: none;
 }
 
 .quantitative-choice:hover,
 .quantitative-choice:focus-visible {
-  transform: translateY(-6px);
-  box-shadow: 0 35px 80px rgba(22, 78, 67, .25);
+  transform: translateY(-3px);
+  background: #1d433b;
 }
 
 .qualitative-choice {
   color: var(--ink);
   border: 1px solid var(--line);
-  background:
-    radial-gradient(circle at 82% 22%, rgba(238, 122, 93, .22) 0 11%, transparent 11.5%),
-    var(--white);
+  background: var(--white);
 }
 
 .choice-index {
@@ -175,9 +172,9 @@ a { color: inherit; }
 .choice-name {
   position: relative;
   z-index: 1;
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", sans-serif;
   font-size: clamp(2.6rem, 5vw, 5.1rem);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
   letter-spacing: -.04em;
 }
@@ -191,7 +188,7 @@ a { color: inherit; }
   place-items: center;
   width: 48px;
   height: 48px;
-  border: 1px solid rgba(255,255,255,.25);
+  border: 1px solid rgba(255,255,255,.35);
   border-radius: 50%;
   font-size: 1.25rem;
 }
@@ -205,7 +202,7 @@ a { color: inherit; }
   border-radius: 999px;
   color: var(--muted);
   font-size: .7rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: .08em;
   text-transform: uppercase;
 }
@@ -239,16 +236,16 @@ a { color: inherit; }
   margin: 0 0 1rem;
   color: var(--coral);
   font-size: .78rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: .16em;
   text-transform: uppercase;
 }
 
 h1 {
   margin: 0;
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", sans-serif;
   font-size: clamp(3.4rem, 8vw, 7.5rem);
-  font-weight: 600;
+  font-weight: 500;
   line-height: .94;
   letter-spacing: -.055em;
 }
@@ -294,8 +291,8 @@ h1 {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   color: white;
-  border-color: var(--green);
-  background: var(--green);
+  border-color: var(--ink);
+  background: var(--ink);
 }
 
 .study-item.active .study-number { color: var(--mint); }
