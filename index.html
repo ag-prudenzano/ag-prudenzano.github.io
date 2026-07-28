@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AG Prudenzano — data analysis portfolio.">
+  <title>AG Prudenzano | Data Analysis Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="AG Prudenzano, home">
+      <span class="brand-mark">AP</span>
+      <span>AG Prudenzano</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Open navigation</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Data analysis · Clear communication</p>
+        <h1>Turning data into <em>useful stories.</em></h1>
+        <p class="hero-text">
+          I explore data, uncover patterns, and communicate findings through
+          thoughtful analysis and clear visualisations.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View my work</a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Decorative data visualisation">
+        <div class="visual-card">
+          <div class="visual-heading">
+            <span>Insight snapshot</span>
+            <span class="status-dot">Live</span>
+          </div>
+          <div class="bars" aria-hidden="true">
+            <span style="--height: 42%"></span>
+            <span style="--height: 68%"></span>
+            <span style="--height: 54%"></span>
+            <span style="--height: 86%"></span>
+            <span style="--height: 72%"></span>
+            <span style="--height: 96%"></span>
+          </div>
+          <div class="visual-footer">
+            <div><strong>2</strong><span>variables</span></div>
+            <div><strong>4</strong><span>visuals</span></div>
+            <div><strong>1</strong><span>clear story</span></div>
+          </div>
+        </div>
+        <span class="orbit orbit-one"></span>
+        <span class="orbit orbit-two"></span>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <h2>Curious by nature.<br>Careful with evidence.</h2>
+        <div>
+          <p class="lead">
+            I am building practical experience in descriptive statistics,
+            exploratory analysis, and data visualisation.
+          </p>
+          <p>
+            My work focuses on making numerical findings understandable:
+            checking data quality, selecting meaningful summaries, identifying
+            unusual observations, and presenting results in a form people can use.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="section-label">02 — Skills</div>
+      <div class="section-heading">
+        <h2>How I work with data</h2>
+        <p>A growing toolkit for moving from raw observations to clear conclusions.</p>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card">
+          <span class="skill-number">01</span>
+          <h3>Descriptive analysis</h3>
+          <p>Summarising centre, spread, distribution shape, and data quality.</p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">02</span>
+          <h3>Data visualisation</h3>
+          <p>Creating readable histograms, boxplots, and visual explanations.</p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">03</span>
+          <h3>Reproducible workflows</h3>
+          <p>Using Python and GitHub to make analysis repeatable and transparent.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-label">03 — Selected work</div>
+      <article class="project-card">
+        <div class="project-copy">
+          <p class="project-type">Featured project</p>
+          <h2>Descriptive Statistics</h2>
+          <p>
+            A reproducible Python analysis that evaluates data quality,
+            calculates descriptive statistics, detects IQR outliers, and
+            generates publication-ready distribution graphs.
+          </p>
+          <ul class="tag-list" aria-label="Project technologies">
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+          </ul>
+          <a class="text-link" href="https://github.com/ag-prudenzano/descriptive-statistics">
+            View project on GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="project-graphic" aria-hidden="true">
+          <div class="mini-window">
+            <div class="window-bar"><span></span><span></span><span></span></div>
+            <div class="histogram">
+              <i style="--h: 22%"></i><i style="--h: 38%"></i>
+              <i style="--h: 66%"></i><i style="--h: 92%"></i>
+              <i style="--h: 76%"></i><i style="--h: 48%"></i>
+              <i style="--h: 26%"></i>
+            </div>
+            <div class="chart-line"></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="eyebrow">Let’s connect</p>
+      <h2>Interested in my work?</h2>
+      <p>Visit my GitHub profile to see what I am currently building.</p>
+      <a class="button button-light" href="https://github.com/ag-prudenzano">
+        View GitHub profile <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> AG Prudenzano</span>
+    <span>Built with care and hosted on GitHub Pages.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
