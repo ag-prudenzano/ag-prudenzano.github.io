@@ -185,7 +185,7 @@ a { color: inherit; }
   max-width: 100%;
   font-family: "Mona Sans", sans-serif;
   font-size: clamp(2rem, 3.25vw, 4.2rem);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.04;
   letter-spacing: -.04em;
 }
