@@ -142,7 +142,7 @@ a { color: inherit; }
 }
 
 .quantitative-choice {
-  color: var(--ink);
+  color: var(--white);
   background: var(--quantitative);
   box-shadow: none;
   transition: transform .2s ease, background-color .2s ease;
@@ -159,7 +159,7 @@ a { color: inherit; }
 }
 
 .qualitative-choice {
-  color: var(--ink);
+  color: var(--white);
   border: 1px solid rgba(0, 0, 0, .08);
   background: var(--qualitative);
   transition: transform .2s ease, background-color .2s ease;
@@ -188,7 +188,7 @@ a { color: inherit; }
 .qualitative-choice .choice-arrow,
 .mixed-methods-choice .choice-arrow {
   border-color: currentColor;
-  opacity: .65;
+  opacity: 1;
 }
 
 .choice-index {
