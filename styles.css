@@ -115,7 +115,7 @@ a { color: inherit; }
 .intro-heading {
   max-width: none;
   margin: 0 auto 1.25rem;
-  font-size: clamp(2rem, 3.7vw, 3rem);
+  font-size: clamp(2rem, 3.25vw, 4.2rem);
   font-family: "Mona Sans", sans-serif;
   font-weight: 600;
   line-height: 1.12;
@@ -184,7 +184,7 @@ a { color: inherit; }
   z-index: 1;
   max-width: 100%;
   font-family: "Mona Sans", sans-serif;
-  font-size: clamp(2rem, 3.25vw, 4.2rem);
+  font-size: clamp(2rem, 3.7vw, 3rem);
   font-weight: 600;
   line-height: 1.04;
   letter-spacing: -.04em;
