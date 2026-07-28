@@ -317,9 +317,6 @@ h1 {
 }
 
 .study-item.active {
-  margin: 0 -1.25rem;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
   color: var(--ink);
   border-color: var(--line);
   background: transparent;
@@ -396,7 +393,6 @@ footer {
   .study-item { grid-template-columns: 38px 1fr; }
   .study-status, .study-arrow { grid-column: 2; }
   .study-status { margin-top: -.75rem; }
-  .study-item.active { margin: 0 -.6rem; padding-right: .6rem; padding-left: .6rem; }
   footer { padding: 2rem 1.2rem; flex-direction: column; }
 }
 
