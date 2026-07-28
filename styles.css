@@ -335,6 +335,8 @@ h1 {
 }
 
 .study-item.active {
+  overflow: hidden;
+  border-radius: 10px;
   color: var(--ink);
   border-color: var(--line);
   background: transparent;
