@@ -320,7 +320,7 @@ h1 {
   color: var(--ink);
   border-color: var(--line);
   background: transparent;
-  transition: color .2s ease, border-color .2s ease, background-color .2s ease;
+  transition: color .2s ease, border-color .2s ease, background-color .2s ease, padding .2s ease;
 }
 
 .study-item.active .study-number {
@@ -330,6 +330,8 @@ h1 {
 
 .study-item.active:hover,
 .study-item.active:focus-within {
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
   color: white;
   border-color: var(--ink);
   background: var(--ink);
