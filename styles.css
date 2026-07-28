@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Mona Sans";
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/mona-sans@5.3.0/files/mona-sans-latin-wght-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+}
+
 :root {
   --ink: #171918;
   --muted: #666b68;
@@ -23,7 +31,7 @@ body {
   flex-direction: column;
   color: var(--ink);
   background: var(--paper);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Mona Sans", sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -108,7 +116,7 @@ a { color: inherit; }
   max-width: none;
   margin: 0 auto 1.25rem;
   font-size: clamp(2rem, 3.7vw, 3rem);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Mona Sans", sans-serif;
   font-weight: 600;
   line-height: 1.12;
   letter-spacing: -.045em;
@@ -203,7 +211,7 @@ a { color: inherit; }
   position: relative;
   z-index: 1;
   max-width: 100%;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Mona Sans", sans-serif;
   font-size: clamp(2rem, 3.25vw, 4.2rem);
   font-weight: 500;
   line-height: 1.04;
@@ -289,7 +297,7 @@ a { color: inherit; }
 
 h1 {
   margin: 0;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Mona Sans", sans-serif;
   font-size: clamp(3.4rem, 8vw, 7.5rem);
   font-weight: 500;
   line-height: .94;
