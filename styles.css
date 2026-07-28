@@ -376,11 +376,11 @@ h1 {
 .study-item.active { position: relative; }
 
 .study-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.2rem;
-  transition: transform .2s ease;
 }
-
-.study-item.active:hover .study-arrow { transform: translate(3px, -3px); }
 
 .empty-report {
   flex: 1;
