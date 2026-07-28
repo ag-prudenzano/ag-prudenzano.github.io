@@ -232,6 +232,10 @@ a { color: inherit; }
   margin-bottom: 4rem;
 }
 
+.portfolio-section + .portfolio-section {
+  margin-top: 7rem;
+}
+
 .eyebrow {
   margin: 0 0 1rem;
   color: var(--coral);
