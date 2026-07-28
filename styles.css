@@ -99,9 +99,10 @@ a { color: inherit; }
 }
 
 .intro-heading {
-  max-width: 820px;
+  max-width: none;
   margin: 0 0 1.25rem;
-  font-size: clamp(2.2rem, 4.5vw, 4rem);
+  font-size: clamp(2rem, 3.7vw, 3rem);
+  white-space: nowrap;
 }
 
 .intro-copy {
@@ -339,6 +340,7 @@ footer {
   .contact-button { min-height: 38px; padding: .5rem .85rem; font-size: .78rem; }
   .choice-page, .case-study-page { padding: 3rem 1.2rem 5rem; }
   .portfolio-intro { margin-bottom: 3rem; }
+  .intro-heading { white-space: normal; }
   .choice-grid { grid-template-columns: 1fr; }
   .research-choice { min-height: 320px; }
   .study-item { grid-template-columns: 38px 1fr; }
