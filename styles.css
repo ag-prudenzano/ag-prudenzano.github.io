@@ -197,10 +197,11 @@ a { color: inherit; }
 .choice-name {
   position: relative;
   z-index: 1;
+  max-width: 100%;
   font-family: "DM Sans", sans-serif;
-  font-size: clamp(2.6rem, 5vw, 5.1rem);
+  font-size: clamp(2rem, 3.25vw, 4.2rem);
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.04;
   letter-spacing: -.04em;
 }
 
@@ -356,6 +357,11 @@ footer {
   font-size: .8rem;
 }
 
+@media (max-width: 1100px) {
+  .choice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mixed-methods-choice { grid-column: 1 / -1; }
+}
+
 @media (max-width: 800px) {
   .site-header { min-height: 72px; padding: 0 1.2rem; }
   .brand { gap: .55rem; font-size: .9rem; }
@@ -365,6 +371,7 @@ footer {
   .portfolio-intro { margin-bottom: 3rem; }
   .intro-heading { white-space: normal; }
   .choice-grid { grid-template-columns: 1fr; }
+  .mixed-methods-choice { grid-column: auto; }
   .research-choice { min-height: 320px; }
   .study-item { grid-template-columns: 38px 1fr; }
   .study-status, .study-arrow { grid-column: 2; }
