@@ -335,8 +335,6 @@ h1 {
 }
 
 .study-item.active {
-  overflow: hidden;
-  border-radius: 10px;
   color: var(--ink);
   border-color: var(--line);
   background: transparent;
@@ -350,6 +348,8 @@ h1 {
 
 .study-item.active:hover,
 .study-item.active:focus-within {
+  overflow: hidden;
+  border-radius: 10px;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   color: white;
