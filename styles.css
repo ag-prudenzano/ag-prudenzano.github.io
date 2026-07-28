@@ -312,16 +312,36 @@ h1 {
   text-transform: uppercase;
 }
 
+.study-item:not(.active) {
+  opacity: .58;
+}
+
 .study-item.active {
   margin: 0 -1.25rem;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
+  color: var(--ink);
+  border-color: var(--line);
+  background: transparent;
+  transition: color .2s ease, border-color .2s ease, background-color .2s ease;
+}
+
+.study-item.active .study-number {
+  color: var(--muted);
+  transition: color .2s ease;
+}
+
+.study-item.active:hover,
+.study-item.active:focus-within {
   color: white;
   border-color: var(--ink);
   background: var(--ink);
 }
 
-.study-item.active .study-number { color: var(--mint); }
+.study-item.active:hover .study-number,
+.study-item.active:focus-within .study-number {
+  color: var(--mint);
+}
 
 .study-link {
   color: inherit;
