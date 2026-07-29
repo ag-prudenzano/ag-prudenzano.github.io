@@ -18,6 +18,16 @@
   --qualitative: #0088ff;
   --mixed-methods: #6155f5;
   --line: rgba(23, 25, 24, 0.12);
+
+  --type-display: clamp(3rem, 6vw, 5.5rem);
+  --type-home-heading: clamp(2.25rem, 4vw, 4rem);
+  --type-card-title: clamp(1.4rem, 2vw, 1.8rem);
+  --type-list-title: clamp(1rem, 2vw, 1.2rem);
+  --type-body: 1.0625rem;
+  --type-supporting: .9375rem;
+  --type-interface: .9375rem;
+  --type-label: .8125rem;
+  --type-caption: .8125rem;
 }
 
 * { box-sizing: border-box; }
@@ -66,6 +76,7 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   gap: .75rem;
+  font-size: var(--type-interface);
   font-weight: 600;
   text-decoration: none;
 }
@@ -89,7 +100,7 @@ a { color: inherit; }
   color: var(--ink);
   background: transparent;
   font: inherit;
-  font-size: .86rem;
+  font-size: var(--type-interface);
   font-weight: 600;
   cursor: pointer;
   display: inline-flex;
@@ -128,11 +139,11 @@ a { color: inherit; }
 .intro-heading {
   max-width: none;
   margin: 0 auto 1.25rem;
-  font-size: clamp(2rem, 3.25vw, 4.2rem);
+  font-size: var(--type-home-heading);
   font-family: "Mona Sans", sans-serif;
   font-weight: 600;
-  line-height: 1.12;
-  letter-spacing: -.045em;
+  line-height: 1.1;
+  letter-spacing: -.035em;
   white-space: nowrap;
 }
 
@@ -140,8 +151,9 @@ a { color: inherit; }
   max-width: 720px;
   margin: 0 auto;
   color: var(--muted);
-  font-size: 1.08rem;
-  line-height: 1.7;
+  font-size: var(--type-body);
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .choice-grid {
@@ -203,16 +215,16 @@ a { color: inherit; }
 .choice-name {
   max-width: 100%;
   margin-bottom: .7rem;
-  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  font-size: var(--type-card-title);
   font-weight: 600;
-  line-height: 1.22;
+  line-height: 1.2;
   letter-spacing: -.025em;
 }
 
 .choice-summary {
   max-width: 26ch;
   margin-bottom: .8rem;
-  font-size: 1rem;
+  font-size: var(--type-body);
   font-weight: 600;
   line-height: 1.4;
 }
@@ -220,7 +232,8 @@ a { color: inherit; }
 .choice-description {
   max-width: 31ch;
   color: var(--muted);
-  font-size: .95rem;
+  font-size: var(--type-supporting);
+  font-weight: 400;
   line-height: 1.55;
 }
 
@@ -253,7 +266,7 @@ a { color: inherit; }
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--muted);
-  font-size: .7rem;
+  font-size: var(--type-label);
   font-weight: 600;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -296,14 +309,14 @@ a { color: inherit; }
 }
 
 .projects-heading {
-  font-size: clamp(2.1rem, 7vw, 6.5rem);
+  font-size: var(--type-display);
   white-space: nowrap;
 }
 
 .eyebrow {
   margin: 0 0 1rem;
   color: var(--coral);
-  font-size: .78rem;
+  font-size: var(--type-label);
   font-weight: 600;
   letter-spacing: .16em;
   text-transform: uppercase;
@@ -318,10 +331,10 @@ a { color: inherit; }
 h1 {
   margin: 0;
   font-family: "Mona Sans", sans-serif;
-  font-size: clamp(3.4rem, 8vw, 7.5rem);
+  font-size: var(--type-display);
   font-weight: 500;
-  line-height: .94;
-  letter-spacing: -.055em;
+  line-height: 1.05;
+  letter-spacing: -.04em;
 }
 
 .study-list {
@@ -343,18 +356,18 @@ h1 {
 
 .study-number {
   color: var(--muted);
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: var(--type-list-title);
   font-weight: 600;
 }
 
 .study-title {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: var(--type-list-title);
   font-weight: 500;
 }
 
 .study-status {
   color: var(--muted);
-  font-size: .7rem;
+  font-size: var(--type-label);
   font-weight: 600;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -427,14 +440,15 @@ footer {
   justify-content: space-between;
   gap: 1rem;
   color: var(--muted);
-  font-size: .8rem;
+  font-size: var(--type-caption);
+  font-weight: 400;
 }
 
 @media (max-width: 800px) {
   .site-header { min-height: 72px; padding: 0 1.2rem; }
-  .brand { gap: .55rem; font-size: .9rem; }
+  .brand { gap: .55rem; font-size: var(--type-interface); }
   .brand-photo { width: 36px; height: 36px; }
-  .contact-button { min-height: 38px; padding: .5rem .85rem; font-size: .78rem; }
+  .contact-button { min-height: 38px; padding: .5rem .85rem; font-size: var(--type-interface); }
   .choice-page, .case-study-page { padding: 3rem 1.2rem 5rem; }
   .portfolio-intro { margin-bottom: 3rem; }
   .intro-heading { white-space: normal; }
