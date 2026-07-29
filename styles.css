@@ -175,7 +175,7 @@ a { color: inherit; }
   padding: 1rem .35rem;
   display: flex;
   align-items: center;
-  gap: 1.4rem;
+  gap: .85rem;
   border-bottom: 1px solid var(--line);
   color: var(--ink);
   font-size: 1rem;
@@ -518,7 +518,7 @@ footer {
   .contact-dialog { padding: 4rem 1.25rem 1.5rem; border-radius: 16px; }
   .contact-close { top: 1rem; right: 1rem; }
   .contact-dialog h2 { margin-bottom: 1.5rem; padding-right: 2.75rem; }
-  .contact-row { min-height: 82px; padding: .9rem .15rem; gap: 1rem; font-size: .92rem; }
+  .contact-row { min-height: 82px; padding: .9rem .15rem; gap: .75rem; font-size: .92rem; }
   .choice-page, .case-study-page { padding: 3rem 1.2rem 5rem; }
   .portfolio-intro { margin-bottom: 3rem; }
   .intro-heading { white-space: normal; }
