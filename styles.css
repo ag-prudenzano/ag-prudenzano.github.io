@@ -145,7 +145,7 @@ a { color: inherit; }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid var(--muted);
+  border: 1px solid var(--ink);
   border-radius: 18px;
   color: var(--ink);
   background: transparent;
@@ -167,7 +167,7 @@ a { color: inherit; }
 .quantitative-choice .choice-arrow,
 .qualitative-choice .choice-arrow,
 .mixed-methods-choice .choice-arrow {
-  border-color: var(--muted);
+  border-color: var(--ink);
   opacity: 1;
 }
 
