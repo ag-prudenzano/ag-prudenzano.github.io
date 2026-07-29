@@ -13,8 +13,8 @@ if (contactButton) {
             <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
           </svg>
         </button>
-        <p class="contact-eyebrow">Get in touch</p>
-        <h2 id="contact-dialog-title">Let's Connect</h2>
+        <p class="contact-eyebrow">Let's Connect</p>
+        <h2 id="contact-dialog-title">Contact Me</h2>
         <div class="contact-details">
           <a class="contact-row" href="mailto:eroswysen@icloud.com">
             <img class="contact-row-icon" src="assets/contact-email.svg?v=20260729-1" alt="">
