@@ -355,7 +355,7 @@ h1 {
 .study-status {
   color: var(--muted);
   font-size: .7rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: .08em;
   text-transform: uppercase;
 }
