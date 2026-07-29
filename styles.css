@@ -184,29 +184,12 @@ a { color: inherit; }
   display: block;
   width: 40px;
   height: 40px;
-  margin-bottom: 1.5rem;
-}
-
-.choice-tag {
-  margin-bottom: 1.35rem;
-  padding: .32rem .62rem;
-  border-radius: 4px;
-  color: var(--ink);
-  background: #e9ebe8;
-  font-size: .75rem;
-  font-weight: 500;
-  line-height: 1.3;
-}
-
-.research-choice:hover .choice-tag,
-.research-choice:focus-visible .choice-tag {
-  color: var(--white);
-  background: #2b2e2d;
+  margin-bottom: 2.35rem;
 }
 
 .choice-name {
   max-width: 100%;
-  margin-bottom: .85rem;
+  margin-bottom: 1rem;
   font-size: clamp(1.35rem, 2vw, 1.8rem);
   font-weight: 600;
   line-height: 1.22;
