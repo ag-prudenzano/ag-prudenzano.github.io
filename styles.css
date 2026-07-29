@@ -132,10 +132,29 @@ a { color: inherit; }
 }
 
 .choice-grid {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+}
+
+.choice-grid::before,
+.choice-grid::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 100vw;
+  height: 1px;
+  transform: translateX(-50%);
+  background: var(--line);
+  pointer-events: none;
+}
+
+.choice-grid::before {
+  top: 0;
+}
+
+.choice-grid::after {
+  bottom: 0;
 }
 
 .research-choice {
