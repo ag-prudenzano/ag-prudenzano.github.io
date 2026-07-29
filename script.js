@@ -17,15 +17,15 @@ if (contactButton) {
         <h2 id="contact-dialog-title">Contact Me</h2>
         <div class="contact-details">
           <a class="contact-row" href="mailto:eroswysen@icloud.com">
-            <img class="contact-row-icon" src="assets/contact-email.svg?v=20260729-1" alt="">
+            <img class="contact-row-icon" src="assets/contact-email.svg?v=20260729-2" alt="">
             <span class="contact-row-text">eroswysen@icloud.com</span>
           </a>
           <a class="contact-row" href="tel:+447749777539">
-            <img class="contact-row-icon" src="assets/contact-mobile.svg?v=20260729-1" alt="">
+            <img class="contact-row-icon" src="assets/contact-mobile.svg?v=20260729-2" alt="">
             <span class="contact-row-text">+44 7749 777 539</span>
           </a>
           <div class="contact-row">
-            <img class="contact-row-icon" src="assets/contact-location.svg?v=20260729-1" alt="">
+            <img class="contact-row-icon" src="assets/contact-location.svg?v=20260729-2" alt="">
             <span class="contact-row-text">Birmingham, England, United Kingdom</span>
           </div>
         </div>
