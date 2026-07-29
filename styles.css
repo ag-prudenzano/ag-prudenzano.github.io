@@ -145,7 +145,7 @@ a { color: inherit; }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid var(--line);
+  border: 1px solid var(--muted);
   border-radius: 18px;
   color: var(--ink);
   background: transparent;
@@ -160,15 +160,20 @@ a { color: inherit; }
 .research-choice:hover,
 .research-choice:focus-visible {
   color: var(--white);
-  border-color: var(--ink);
+  border-color: var(--white);
   background: var(--ink);
 }
 
 .quantitative-choice .choice-arrow,
 .qualitative-choice .choice-arrow,
 .mixed-methods-choice .choice-arrow {
-  border-color: currentColor;
+  border-color: var(--muted);
   opacity: 1;
+}
+
+.research-choice:hover .choice-arrow,
+.research-choice:focus-visible .choice-arrow {
+  border-color: var(--white);
 }
 
 .choice-index {
