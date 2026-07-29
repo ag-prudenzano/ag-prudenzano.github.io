@@ -72,8 +72,8 @@ a { color: inherit; }
 
 .brand-photo {
   display: block;
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   border: 1px solid var(--line);
   border-radius: 50%;
   object-fit: cover;
@@ -121,6 +121,7 @@ a { color: inherit; }
 }
 
 .contact-close {
+  appearance: none;
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
@@ -132,7 +133,7 @@ a { color: inherit; }
   border: 1px solid var(--line);
   border-radius: 50%;
   color: var(--ink);
-  background: transparent;
+  background-color: transparent;
   cursor: pointer;
   transition: color .2s ease, background-color .2s ease, border-color .2s ease;
 }
@@ -141,7 +142,7 @@ a { color: inherit; }
 .contact-close:focus-visible {
   color: var(--white);
   border-color: var(--ink);
-  background: var(--ink);
+  background-color: var(--ink);
 }
 
 .contact-eyebrow {
