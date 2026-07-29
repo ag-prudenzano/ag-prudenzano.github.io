@@ -92,6 +92,10 @@ a { color: inherit; }
   font-size: .86rem;
   font-weight: 600;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   opacity: 1;
   transition: color .2s ease, background-color .2s ease, border-color .2s ease;
 }
@@ -102,101 +106,6 @@ a { color: inherit; }
   color: var(--white);
   border-color: var(--ink);
   background: var(--ink);
-}
-
-.contact-dialog {
-  width: min(680px, calc(100% - 2rem));
-  padding: 2.75rem 2.75rem 1rem;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  color: var(--ink);
-  background: var(--white);
-  box-shadow: 0 24px 80px rgba(23, 25, 24, .18);
-}
-
-.contact-dialog::backdrop {
-  background: rgba(247, 247, 245, .38);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-.contact-close {
-  appearance: none;
-  position: absolute;
-  top: 1.4rem;
-  right: 1.4rem;
-  width: 38px;
-  height: 38px;
-  padding: 0;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  color: var(--ink);
-  background-color: transparent;
-  cursor: pointer;
-  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
-}
-
-.contact-close:hover {
-  color: var(--white);
-  border-color: var(--ink);
-  background-color: var(--ink);
-}
-
-.contact-close:focus-visible {
-  outline: none;
-}
-
-.contact-eyebrow {
-  margin: 0 0 .55rem;
-  color: var(--muted);
-  font-size: .72rem;
-  font-weight: 650;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-}
-
-.contact-dialog h2 {
-  margin: 0 0 2rem;
-  padding-right: 3.5rem;
-  font-size: clamp(2.4rem, 5vw, 3.5rem);
-  font-weight: 600;
-  line-height: 1.05;
-  letter-spacing: -.045em;
-}
-
-.contact-details {
-  border-top: 1px solid var(--line);
-}
-
-.contact-row {
-  min-height: 96px;
-  padding: 1rem .35rem;
-  display: flex;
-  align-items: center;
-  gap: .85rem;
-  border-bottom: 1px solid var(--line);
-  color: var(--ink);
-  font-size: 1rem;
-  font-weight: 550;
-  line-height: 1.45;
-  text-decoration: none;
-}
-
-.contact-row-icon {
-  flex: 0 0 auto;
-  width: 22px;
-  height: 22px;
-}
-
-.contact-row:last-child {
-  border-bottom: 0;
-}
-
-.contact-details a:hover .contact-row-text {
-  text-decoration: underline;
-  text-underline-offset: .2em;
 }
 
 .choice-page {
@@ -515,10 +424,6 @@ footer {
   .brand { gap: .55rem; font-size: .9rem; }
   .brand-photo { width: 36px; height: 36px; }
   .contact-button { min-height: 38px; padding: .5rem .85rem; font-size: .78rem; }
-  .contact-dialog { padding: 4rem 1.25rem 1.5rem; border-radius: 16px; }
-  .contact-close { top: 1rem; right: 1rem; }
-  .contact-dialog h2 { margin-bottom: 1.5rem; padding-right: 2.75rem; }
-  .contact-row { min-height: 82px; padding: .9rem .15rem; gap: .75rem; font-size: .92rem; }
   .choice-page, .case-study-page { padding: 3rem 1.2rem 5rem; }
   .portfolio-intro { margin-bottom: 3rem; }
   .intro-heading { white-space: normal; }
