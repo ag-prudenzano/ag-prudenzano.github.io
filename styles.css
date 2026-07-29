@@ -138,11 +138,15 @@ a { color: inherit; }
   transition: color .2s ease, background-color .2s ease, border-color .2s ease;
 }
 
-.contact-close:hover,
-.contact-close:focus-visible {
+.contact-close:hover {
   color: var(--white);
   border-color: var(--ink);
   background-color: var(--ink);
+}
+
+.contact-close:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
 }
 
 .contact-eyebrow {
