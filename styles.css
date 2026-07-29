@@ -373,7 +373,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.study-item:not(.active) {
+.study-item:not(.active) > * {
   opacity: .58;
 }
 
