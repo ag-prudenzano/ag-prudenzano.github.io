@@ -105,10 +105,10 @@ a { color: inherit; }
 }
 
 .contact-dialog {
-  width: min(940px, calc(100% - 2rem));
-  padding: 3.5rem 3rem 3rem;
-  border: 0;
-  border-radius: 18px;
+  width: min(680px, calc(100% - 2rem));
+  padding: 2.75rem 2.75rem 2.5rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
   color: var(--ink);
   background: var(--white);
   box-shadow: 0 24px 80px rgba(23, 25, 24, .18);
@@ -123,8 +123,8 @@ a { color: inherit; }
 .contact-close {
   appearance: none;
   position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
+  top: 1.4rem;
+  right: 1.4rem;
   width: 38px;
   height: 38px;
   padding: 0;
@@ -149,46 +149,48 @@ a { color: inherit; }
 }
 
 .contact-eyebrow {
-  margin: 0 0 .65rem;
+  margin: 0 0 .55rem;
   color: var(--muted);
   font-size: .72rem;
-  font-weight: 600;
+  font-weight: 650;
   letter-spacing: .14em;
   text-transform: uppercase;
 }
 
 .contact-dialog h2 {
-  margin: 0 0 2.5rem;
-  font-size: clamp(2rem, 4vw, 3.25rem);
+  margin: 0 0 2rem;
+  padding-right: 3.5rem;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
   font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -.04em;
+  line-height: 1.05;
+  letter-spacing: -.045em;
 }
 
 .contact-details {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
 }
 
-.contact-details > * {
-  min-width: 0;
-  padding: 1.5rem 1.25rem;
+.contact-row {
+  min-height: 96px;
+  padding: 1rem .35rem;
   display: flex;
   align-items: center;
+  gap: 1.4rem;
+  border-bottom: 1px solid var(--line);
   color: var(--ink);
-  font-size: .95rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 550;
   line-height: 1.45;
   text-decoration: none;
 }
 
-.contact-details > * + * {
-  border-left: 1px solid var(--line);
+.contact-row-icon {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
 }
 
-.contact-details a:hover {
+.contact-details a:hover .contact-row-text {
   text-decoration: underline;
   text-underline-offset: .2em;
 }
@@ -509,11 +511,10 @@ footer {
   .brand { gap: .55rem; font-size: .9rem; }
   .brand-photo { width: 36px; height: 36px; }
   .contact-button { min-height: 38px; padding: .5rem .85rem; font-size: .78rem; }
-  .contact-dialog { padding: 4.5rem 1.25rem 1.5rem; }
-  .contact-dialog h2 { margin-bottom: 1.75rem; }
-  .contact-details { grid-template-columns: 1fr; }
-  .contact-details > * { padding: 1.1rem .25rem; }
-  .contact-details > * + * { border-top: 1px solid var(--line); border-left: 0; }
+  .contact-dialog { padding: 4rem 1.25rem 1.5rem; border-radius: 16px; }
+  .contact-close { top: 1rem; right: 1rem; }
+  .contact-dialog h2 { margin-bottom: 1.5rem; padding-right: 2.75rem; }
+  .contact-row { min-height: 82px; padding: .9rem .15rem; gap: 1rem; font-size: .92rem; }
   .choice-page, .case-study-page { padding: 3rem 1.2rem 5rem; }
   .portfolio-intro { margin-bottom: 3rem; }
   .intro-heading { white-space: normal; }
