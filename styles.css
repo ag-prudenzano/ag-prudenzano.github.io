@@ -186,8 +186,12 @@ a { color: inherit; }
 
 .contact-row-icon {
   flex: 0 0 auto;
-  width: 40px;
-  height: 40px;
+  width: 22px;
+  height: 22px;
+}
+
+.contact-row:last-child {
+  border-bottom: 0;
 }
 
 .contact-details a:hover .contact-row-text {
