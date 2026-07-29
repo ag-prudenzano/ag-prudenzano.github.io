@@ -357,6 +357,10 @@ h1 {
   opacity: .58;
 }
 
+.study-item:not(.active) .study-title {
+  color: var(--muted);
+}
+
 .study-item.active {
   color: var(--ink);
   border-color: var(--line);
