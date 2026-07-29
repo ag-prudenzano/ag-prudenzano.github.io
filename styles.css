@@ -145,8 +145,7 @@ a { color: inherit; }
 }
 
 .contact-close:focus-visible {
-  outline: 2px solid var(--ink);
-  outline-offset: 3px;
+  outline: none;
 }
 
 .contact-eyebrow {
