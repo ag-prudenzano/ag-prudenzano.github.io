@@ -189,11 +189,19 @@ a { color: inherit; }
 
 .choice-name {
   max-width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: .7rem;
   font-size: clamp(1.35rem, 2vw, 1.8rem);
   font-weight: 600;
   line-height: 1.22;
   letter-spacing: -.025em;
+}
+
+.choice-summary {
+  max-width: 26ch;
+  margin-bottom: .8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .choice-description {
