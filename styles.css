@@ -106,7 +106,7 @@ a { color: inherit; }
 
 .contact-dialog {
   width: min(680px, calc(100% - 2rem));
-  padding: 2.75rem 2.75rem 2.5rem;
+  padding: 2.75rem;
   border: 1px solid var(--line);
   border-radius: 20px;
   color: var(--ink);
