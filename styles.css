@@ -360,6 +360,17 @@ h1 {
   padding: 0;
   border-top: 1px solid var(--line);
   list-style: none;
+  transition: border-color .2s ease;
+}
+
+.study-list:has(> .study-item:first-child.active:hover),
+.study-list:has(> .study-item:first-child.active:focus-within) {
+  border-top-color: transparent;
+}
+
+.study-item:has(+ .study-item.active:hover),
+.study-item:has(+ .study-item.active:focus-within) {
+  border-bottom-color: transparent;
 }
 
 .study-item {
@@ -414,7 +425,7 @@ h1 {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   color: var(--text-primary);
-  border-color: var(--separator);
+  border-color: transparent;
   background: var(--surface);
 }
 
