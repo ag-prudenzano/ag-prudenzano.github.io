@@ -16,7 +16,7 @@
   --inverse-background: #f5f5f7;
   --inverse-text: #0b0b0d;
   --inverse-text-secondary: #515154;
-  --separator: rgba(255, 255, 255, .16);
+  --separator: #38383a;
   --focus: #0a84ff;
 
   --ink: var(--text-primary);
@@ -186,6 +186,7 @@ a { color: inherit; }
   left: 50%;
   width: 100vw;
   height: 1px;
+  z-index: 2;
   transform: translateX(-50%);
   background: var(--line);
   pointer-events: none;
