@@ -218,8 +218,8 @@ a { color: inherit; }
 
 .research-choice:hover,
 .research-choice:focus-visible {
-  color: var(--white);
-  background: var(--ink);
+  color: var(--text-primary);
+  background: var(--surface);
 }
 
 .choice-icon {
@@ -256,7 +256,7 @@ a { color: inherit; }
 
 .research-choice:hover .choice-description,
 .research-choice:focus-visible .choice-description {
-  color: var(--inverse-text-secondary);
+  color: var(--text-secondary);
 }
 
 .choice-arrow {
@@ -272,7 +272,7 @@ a { color: inherit; }
 
 .research-choice:hover .choice-arrow,
 .research-choice:focus-visible .choice-arrow {
-  border-color: rgba(11, 11, 13, .35);
+  border-color: var(--separator);
 }
 
 .coming-soon {
@@ -412,14 +412,14 @@ h1 {
   border-radius: 10px;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
-  color: var(--inverse-text);
-  border-color: var(--inverse-background);
-  background: var(--inverse-background);
+  color: var(--text-primary);
+  border-color: var(--separator);
+  background: var(--surface);
 }
 
 .study-item.active:hover .study-number,
 .study-item.active:focus-within .study-number {
-  color: var(--mint);
+  color: var(--text-secondary);
 }
 
 .study-link {
