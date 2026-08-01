@@ -24,18 +24,9 @@
     box-shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
   }
 
-  .research-choice::before {
-    inset: 2px;
-    width: auto;
-    height: auto;
-    border-radius: 17px;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 22%);
-    opacity: 1;
-    transform: none;
-  }
-
+  .research-choice::before,
   .research-choice::after {
+    content: none;
     display: none;
   }
 
