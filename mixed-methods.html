@@ -7,7 +7,8 @@
   <title>Mixed-Methods Research | Andrea Prudenzano</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="styles.css?v=20260801-inactive-list-contrast-v2">
-  <link rel="stylesheet" href="header-menu.css?v=20260801-header-menu-v1">
+  <link rel="stylesheet" href="header-menu.css?v=20260801-header-medium-v2">
+  <link rel="stylesheet" href="research-navigation.css?v=20260801-research-navigation-v1">
 </head>
 <body class="mixed-methods-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -36,18 +37,23 @@
         <path d="m15 6-6 6 6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </a>
-    <header class="page-intro projects-intro">
-      <p class="eyebrow">Mixed-methods portfolio</p>
-      <h1 class="projects-heading">Research Projects</h1>
+    <header class="page-intro research-page-intro">
+      <h1 class="research-heading">Mixed-Methods Research</h1>
+      <nav class="research-filter" aria-label="Filter mixed-methods research">
+        <button class="research-filter-button is-active" type="button" data-research-filter="all" aria-pressed="true" aria-controls="research-items">All</button>
+        <button class="research-filter-button" type="button" data-research-filter="case-studies" aria-pressed="false" aria-controls="research-items">Case Studies</button>
+        <button class="research-filter-button" type="button" data-research-filter="research-projects" aria-pressed="false" aria-controls="research-items">Research Projects</button>
+      </nav>
     </header>
 
-    <ol class="study-list">
+    <ol id="research-items" class="study-list" data-research-list data-research-category="research-projects">
       <li class="study-item">
         <span class="study-number">01</span>
         <span class="study-title">Discord Voice and Offline Social Functioning in Socially Anxious Adults: A Longitudinal Mixed-Methods Study (PhD Thesis)</span>
         <span class="study-status">Forthcoming</span>
       </li>
     </ol>
+    <p class="research-empty" data-research-empty hidden>No items in this category yet.</p>
   </main>
 
   <footer>
@@ -55,6 +61,6 @@
     <span>Built with care and hosted on GitHub Pages.</span>
   </footer>
 
-  <script src="script.js?v=20260801-mobile-menu-v1"></script>
+  <script src="script.js?v=20260801-research-filter-v2"></script>
 </body>
 </html>
