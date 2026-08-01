@@ -2,8 +2,11 @@
   --card-hover-stroke: 82, 104, 138;
   border: 1px solid rgb(56, 72, 96);
   background-clip: padding-box;
-  box-shadow:
-    0 16px 42px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
+}
+
+.research-choice:last-child {
+  border-right: 1px solid rgb(56, 72, 96);
 }
 
 .quantitative-choice { --card-hover-stroke: 55, 116, 93; }
@@ -24,8 +27,7 @@
 .research-choice:hover,
 .research-choice:focus-visible {
   border-color: rgb(var(--card-hover-stroke));
-  box-shadow:
-    0 22px 52px rgba(0, 0, 0, 0.42);
+  box-shadow: 0 22px 52px rgba(0, 0, 0, 0.42);
 }
 
 @media (max-width: 800px) {
