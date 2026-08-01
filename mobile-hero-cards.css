@@ -80,11 +80,11 @@
     grid-row: 3;
     align-self: end;
     justify-self: end;
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
     margin: 0;
     color: var(--text-primary);
-    border-color: rgba(var(--card-accent), 0.72);
-    background: rgba(4, 7, 12, 0.32);
+    border-color: rgba(148, 169, 202, 0.2);
+    background: transparent;
   }
 }
