@@ -8,13 +8,7 @@
   border: 0;
 }
 
-.research-choice::before {
-  inset: 2px;
-  border-radius: 21px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 22%);
-}
-
+.research-choice::before,
 .research-choice::after {
   display: none;
 }
@@ -39,9 +33,5 @@
   .research-choice:hover,
   .research-choice:focus-visible {
     border: 0;
-  }
-
-  .research-choice::before {
-    border-radius: 17px;
   }
 }
