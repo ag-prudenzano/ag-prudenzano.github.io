@@ -27,6 +27,7 @@
 .choice-arrow,
 .research-choice:hover .choice-arrow,
 .research-choice:focus-visible .choice-arrow {
+  border-color: rgba(148, 169, 202, 0.2);
   background: transparent;
 }
 
