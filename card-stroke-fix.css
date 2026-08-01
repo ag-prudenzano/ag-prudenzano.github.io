@@ -1,13 +1,15 @@
 .research-choice {
   border: 1px solid rgba(137, 161, 197, 0.18);
+  background-clip: padding-box;
   box-shadow:
-    0 16px 42px rgba(0, 0, 0, 0.32),
-    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+    0 16px 42px rgba(0, 0, 0, 0.32);
 }
 
 .research-choice::before {
+  inset: 1px;
+  border-radius: 23px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 24%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 22%);
 }
 
 .research-choice::after {
@@ -18,6 +20,5 @@
 .research-choice:focus-visible {
   border-color: rgba(156, 184, 228, 0.3);
   box-shadow:
-    0 22px 52px rgba(0, 0, 0, 0.42),
-    inset 0 1px 0 rgba(255, 255, 255, 0.045);
+    0 22px 52px rgba(0, 0, 0, 0.42);
 }
