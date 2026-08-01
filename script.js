@@ -52,19 +52,21 @@ if (menuToggle && mobileMenu) {
 const researchFilterButtons = Array.from(
   document.querySelectorAll("[data-research-filter]")
 );
-const researchItems = Array.from(
-  document.querySelectorAll("[data-research-category]")
-);
 const researchList = document.querySelector("[data-research-list]");
 const researchEmpty = document.querySelector("[data-research-empty]");
+const researchItems = researchList
+  ? Array.from(researchList.querySelectorAll(".study-item"))
+  : [];
+const defaultResearchCategory = researchList?.dataset.researchCategory;
 
 if (researchFilterButtons.length && researchList && researchEmpty) {
   const applyResearchFilter = (filter) => {
     let visibleItems = 0;
 
     researchItems.forEach((item) => {
-      const isVisible =
-        filter === "all" || item.dataset.researchCategory === filter;
+      const itemCategory =
+        item.dataset.researchCategory || defaultResearchCategory;
+      const isVisible = filter === "all" || itemCategory === filter;
       item.hidden = !isVisible;
       if (isVisible) visibleItems += 1;
     });
