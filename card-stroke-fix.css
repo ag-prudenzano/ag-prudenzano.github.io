@@ -1,5 +1,5 @@
 .research-choice {
-  border: 1px solid rgba(137, 161, 197, 0.18);
+  border: 1px solid rgb(56, 72, 96);
   background-clip: padding-box;
   box-shadow:
     0 16px 42px rgba(0, 0, 0, 0.32);
@@ -18,7 +18,7 @@
 
 .research-choice:hover,
 .research-choice:focus-visible {
-  border-color: rgba(156, 184, 228, 0.3);
+  border-color: rgb(82, 104, 138);
   box-shadow:
     0 22px 52px rgba(0, 0, 0, 0.42);
 }
