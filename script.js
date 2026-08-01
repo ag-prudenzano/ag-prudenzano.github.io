@@ -8,6 +8,12 @@ if (header) {
   header.style.borderBottom = "0";
 }
 
+const cvUrl = "https://andreaprudenzano.craft.me/UqIWkGUKM1rHyt";
+document.querySelectorAll(`a[href="${cvUrl}"]`).forEach((link) => {
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+});
+
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileMenu = document.querySelector("#mobile-menu");
 
