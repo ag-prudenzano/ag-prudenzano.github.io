@@ -9,7 +9,7 @@
 }
 
 .research-filter {
-  margin-top: .875rem;
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -61,7 +61,7 @@
   }
 
   .research-filter {
-    margin-top: .875rem;
+    margin-top: 2rem;
     gap: .9rem 1.2rem;
   }
 }
