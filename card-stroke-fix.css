@@ -1,0 +1,23 @@
+.research-choice {
+  border: 1px solid rgba(137, 161, 197, 0.18);
+  box-shadow:
+    0 16px 42px rgba(0, 0, 0, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+.research-choice::before {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 24%);
+}
+
+.research-choice::after {
+  display: none;
+}
+
+.research-choice:hover,
+.research-choice:focus-visible {
+  border-color: rgba(156, 184, 228, 0.3);
+  box-shadow:
+    0 22px 52px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.045);
+}
