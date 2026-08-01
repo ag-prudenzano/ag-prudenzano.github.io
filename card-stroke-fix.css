@@ -24,6 +24,12 @@
   display: none;
 }
 
+.choice-arrow,
+.research-choice:hover .choice-arrow,
+.research-choice:focus-visible .choice-arrow {
+  background: transparent;
+}
+
 .research-choice:hover,
 .research-choice:focus-visible {
   border-color: rgb(var(--card-hover-stroke));
