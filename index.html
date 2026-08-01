@@ -7,6 +7,7 @@
   <title>Andrea Prudenzano | Research Portfolio</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="styles.css?v=20260801-inactive-list-contrast-v2">
+  <link rel="stylesheet" href="header-menu.css?v=20260801-header-menu-v1">
   <link rel="stylesheet" href="home-cards.css?v=20260801-gradient-cards-v1">
   <link rel="stylesheet" href="icon-refinement.css?v=20260801-icon-refinement-v1">
   <link rel="stylesheet" href="card-stroke-fix.css?v=20260801-arrow-motion-v10">
@@ -19,7 +20,17 @@
       <img class="brand-photo" src="assets/profile-picture.jpeg" alt="">
       <span>Andrea Prudenzano</span>
     </a>
-    <a class="contact-button" href="mailto:eroswysen@icloud.com">eroswysen@icloud.com</a>
+    <nav class="header-actions" aria-label="Contact and CV">
+      <a class="header-button" href="mailto:eroswysen@icloud.com">eroswysen@icloud.com</a>
+      <a class="header-button" href="https://andreaprudenzano.craft.me/UqIWkGUKM1rHyt">cv</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <span class="menu-toggle-lines" aria-hidden="true"></span>
+    </button>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile contact and CV" hidden>
+      <a class="header-button" href="mailto:eroswysen@icloud.com">eroswysen@icloud.com</a>
+      <a class="header-button" href="https://andreaprudenzano.craft.me/UqIWkGUKM1rHyt">cv</a>
+    </nav>
   </header>
 
   <main id="main" class="choice-page">
@@ -36,6 +47,6 @@
   </main>
 
   <footer><span>© <span id="year"></span> AG Prudenzano</span><span>Built with care and hosted on GitHub Pages.</span></footer>
-  <script src="script.js?v=20260729-email-link-v1"></script>
+  <script src="script.js?v=20260801-mobile-menu-v1"></script>
 </body>
 </html>
