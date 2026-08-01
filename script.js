@@ -48,3 +48,42 @@ if (menuToggle && mobileMenu) {
     if (window.innerWidth > 800) closeMenu();
   });
 }
+
+const researchFilterButtons = Array.from(
+  document.querySelectorAll("[data-research-filter]")
+);
+const researchItems = Array.from(
+  document.querySelectorAll("[data-research-category]")
+);
+const researchList = document.querySelector("[data-research-list]");
+const researchEmpty = document.querySelector("[data-research-empty]");
+
+if (researchFilterButtons.length && researchList && researchEmpty) {
+  const applyResearchFilter = (filter) => {
+    let visibleItems = 0;
+
+    researchItems.forEach((item) => {
+      const isVisible =
+        filter === "all" || item.dataset.researchCategory === filter;
+      item.hidden = !isVisible;
+      if (isVisible) visibleItems += 1;
+    });
+
+    researchFilterButtons.forEach((button) => {
+      const isActive = button.dataset.researchFilter === filter;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+
+    researchList.hidden = visibleItems === 0;
+    researchEmpty.hidden = visibleItems !== 0;
+  };
+
+  researchFilterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      applyResearchFilter(button.dataset.researchFilter || "all");
+    });
+  });
+
+  applyResearchFilter("all");
+}
