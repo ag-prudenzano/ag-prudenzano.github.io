@@ -6,7 +6,7 @@
 }
 
 .research-choice:last-child {
-  border-right: 1px solid rgb(56, 72, 96);
+  border: 1px solid rgb(56, 72, 96);
 }
 
 .quantitative-choice { --card-hover-stroke: 55, 116, 93; }
@@ -39,6 +39,13 @@
 }
 
 @media (max-width: 800px) {
+  .research-choice,
+  .research-choice:last-child,
+  .research-choice:hover,
+  .research-choice:focus-visible {
+    border: 1px solid rgb(56, 72, 96);
+  }
+
   .research-choice::before {
     border-radius: 17px;
   }
