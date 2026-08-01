@@ -11,14 +11,18 @@
 .mixed-methods-choice { --card-hover-stroke: 126, 63, 92; }
 
 .research-choice::before {
-  inset: 1px;
-  border-radius: 23px;
+  inset: 2px;
+  border-radius: 21px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 22%);
 }
 
 .research-choice::after {
-  display: none;
+  display: block;
+  inset: 1px;
+  border-radius: 22px;
+  border: 1px solid rgba(var(--card-accent), 0.18);
+  pointer-events: none;
 }
 
 .research-choice:hover,
@@ -26,4 +30,19 @@
   border-color: rgb(var(--card-hover-stroke));
   box-shadow:
     0 22px 52px rgba(0, 0, 0, 0.42);
+}
+
+.research-choice:hover::after,
+.research-choice:focus-visible::after {
+  border-color: rgba(var(--card-accent), 0.24);
+}
+
+@media (max-width: 800px) {
+  .research-choice::before {
+    border-radius: 17px;
+  }
+
+  .research-choice::after {
+    border-radius: 18px;
+  }
 }
