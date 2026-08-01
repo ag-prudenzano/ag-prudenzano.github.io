@@ -7,8 +7,9 @@
   <title>Quantitative Research | Andrea Prudenzano</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="styles.css?v=20260801-inactive-list-contrast-v2">
-  <link rel="stylesheet" href="header-menu.css?v=20260801-header-menu-v1">
+  <link rel="stylesheet" href="header-menu.css?v=20260801-header-medium-v2">
   <link rel="stylesheet" href="study-status-medium.css?v=20260801-medium-status-v1">
+  <link rel="stylesheet" href="research-navigation.css?v=20260801-research-navigation-v1">
 </head>
 <body class="quantitative-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -37,12 +38,16 @@
         <path d="m15 6-6 6 6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </a>
-    <header class="page-intro">
-      <p class="eyebrow">Quantitative portfolio</p>
-      <h1>Case Studies</h1>
+    <header class="page-intro research-page-intro">
+      <h1 class="research-heading">Quantitative Research</h1>
+      <nav class="research-filter" aria-label="Filter quantitative research">
+        <button class="research-filter-button is-active" type="button" data-research-filter="all" aria-pressed="true" aria-controls="research-items">All</button>
+        <button class="research-filter-button" type="button" data-research-filter="case-studies" aria-pressed="false" aria-controls="research-items">Case Studies</button>
+        <button class="research-filter-button" type="button" data-research-filter="research-projects" aria-pressed="false" aria-controls="research-items">Research Projects</button>
+      </nav>
     </header>
 
-    <ol class="study-list">
+    <ol id="research-items" class="study-list" data-research-list data-research-category="case-studies">
       <li class="study-item active">
         <span class="study-number">01</span>
         <a
@@ -94,6 +99,7 @@
       <li class="study-item"><span class="study-number">23</span><span class="study-title">Power Analysis and Sample-Size Determination</span><span class="study-status">Forthcoming</span></li>
       <li class="study-item"><span class="study-number">24</span><span class="study-title">Model Diagnostics and Validation</span><span class="study-status">Forthcoming</span></li>
     </ol>
+    <p class="research-empty" data-research-empty hidden>No items in this category yet.</p>
   </main>
 
   <footer>
@@ -101,6 +107,6 @@
     <span>Built with care and hosted on GitHub Pages.</span>
   </footer>
 
-  <script src="script.js?v=20260801-mobile-menu-v1"></script>
+  <script src="script.js?v=20260801-research-filter-v2"></script>
 </body>
 </html>
