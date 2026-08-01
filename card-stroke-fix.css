@@ -18,11 +18,7 @@
 }
 
 .research-choice::after {
-  display: block;
-  inset: 1px;
-  border-radius: 22px;
-  border: 1px solid rgba(var(--card-accent), 0.18);
-  pointer-events: none;
+  display: none;
 }
 
 .research-choice:hover,
@@ -32,17 +28,8 @@
     0 22px 52px rgba(0, 0, 0, 0.42);
 }
 
-.research-choice:hover::after,
-.research-choice:focus-visible::after {
-  border-color: rgba(var(--card-accent), 0.24);
-}
-
 @media (max-width: 800px) {
   .research-choice::before {
     border-radius: 17px;
-  }
-
-  .research-choice::after {
-    border-radius: 18px;
   }
 }
