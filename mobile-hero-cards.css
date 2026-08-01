@@ -1,0 +1,90 @@
+@media (max-width: 800px) {
+  .choice-grid {
+    gap: 0.9rem;
+  }
+
+  .research-choice,
+  .research-choice:last-child,
+  .research-choice:hover,
+  .research-choice:focus-visible {
+    width: 100%;
+    min-height: 188px;
+    aspect-ratio: auto;
+    padding: 1.25rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto auto 1fr;
+    column-gap: 1rem;
+    border: 1px solid rgba(var(--card-accent), 0.58);
+    border-radius: 20px;
+    transform: none;
+    background:
+      radial-gradient(90% 145% at 100% 0%, rgba(var(--card-accent), 0.28) 0%, rgba(var(--card-accent), 0.08) 44%, transparent 70%),
+      radial-gradient(55% 95% at 82% 112%, rgba(var(--card-accent), 0.13) 0%, transparent 72%),
+      linear-gradient(145deg, rgba(17, 24, 38, 0.99) 0%, rgba(7, 11, 18, 1) 72%);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.055),
+      0 12px 30px rgba(0, 0, 0, 0.28);
+  }
+
+  .research-choice::before {
+    inset: auto -1.6rem -2.4rem auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background:
+      repeating-radial-gradient(circle at center, rgba(var(--card-accent), 0.09) 0 2px, transparent 2px 9px);
+    opacity: 0.72;
+    transform: rotate(-14deg);
+  }
+
+  .research-choice::after {
+    display: none;
+  }
+
+  .choice-icon {
+    grid-column: 1;
+    grid-row: 1;
+    width: 38px;
+    height: 38px;
+    margin: 0 0 1rem;
+  }
+
+  .choice-name {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin: 0 0 0.45rem;
+    font-size: 1.35rem;
+    line-height: 1.15;
+  }
+
+  .choice-summary {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: end;
+    max-width: 25ch;
+    margin: 0;
+    color: rgba(229, 233, 241, 0.88);
+    font-size: 0.98rem;
+    line-height: 1.4;
+  }
+
+  .choice-description {
+    display: none;
+  }
+
+  .choice-arrow,
+  .research-choice:hover .choice-arrow,
+  .research-choice:focus-visible .choice-arrow {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: end;
+    justify-self: end;
+    width: 38px;
+    height: 38px;
+    margin: 0;
+    color: var(--text-primary);
+    border-color: rgba(var(--card-accent), 0.72);
+    background: rgba(4, 7, 12, 0.32);
+  }
+}
