@@ -30,8 +30,9 @@ h1 {
 }
 
 .header-button {
+  height: 42px;
   min-height: 42px;
-  padding: .6rem 1.15rem;
+  padding: 0 1.15rem;
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--ink);
@@ -39,10 +40,11 @@ h1 {
   font: inherit;
   font-size: var(--type-interface);
   font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-grid;
+  place-items: center;
   text-decoration: none;
   transition: color .2s ease, background-color .2s ease, border-color .2s ease;
 }
@@ -139,6 +141,7 @@ h1 {
 
   .mobile-menu .header-button {
     width: 100%;
+    height: 44px;
     min-height: 44px;
   }
 }
