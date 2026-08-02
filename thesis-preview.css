@@ -4,7 +4,9 @@
   border: 0;
   color: inherit;
   background: transparent;
-  font: inherit;
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
   text-align: left;
   cursor: pointer;
 }
@@ -30,11 +32,13 @@ body.thesis-preview-open {
   z-index: 200;
   visibility: hidden;
   pointer-events: none;
+  transition: visibility 0s linear .36s;
 }
 
 .thesis-preview-layer.is-open {
   visibility: visible;
   pointer-events: auto;
+  transition-delay: 0s;
 }
 
 .thesis-preview-backdrop {
@@ -161,6 +165,10 @@ body.thesis-preview-open {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .thesis-preview-layer {
+    transition: none;
+  }
+
   .thesis-preview-backdrop,
   .thesis-preview-panel {
     transition: none;
