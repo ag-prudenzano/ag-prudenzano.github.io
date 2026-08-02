@@ -1,0 +1,17 @@
+.header-button:hover,
+.header-button:focus-visible,
+.contact-button:hover,
+.contact-button:focus-visible,
+.back-link:hover,
+.back-link:focus-visible,
+.menu-toggle:hover,
+.menu-toggle:focus-visible,
+.thesis-preview-close:hover,
+.thesis-preview-close:focus-visible {
+  border-color: transparent;
+}
+
+.research-choice:hover .choice-arrow,
+.research-choice:focus-visible .choice-arrow {
+  border-color: transparent;
+}
