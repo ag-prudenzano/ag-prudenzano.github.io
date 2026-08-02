@@ -7,6 +7,7 @@
   --research-list-hover-background: #151515;
   --research-list-hover-primary: #f2f2f2;
   --research-list-hover-secondary: #a1a1a1;
+  --research-navigation-gap: 2rem;
 }
 
 .quantitative-page .case-study-page,
@@ -23,7 +24,7 @@
 }
 
 .research-page-intro {
-  margin-bottom: 2.5rem;
+  margin-bottom: var(--research-navigation-gap);
 }
 
 .research-heading {
@@ -34,7 +35,7 @@
 }
 
 .research-filter {
-  margin-top: 1.4rem;
+  margin-top: var(--research-navigation-gap);
 }
 
 .research-index-list {
@@ -189,6 +190,10 @@
 }
 
 @media (max-width: 800px) {
+  :root {
+    --research-navigation-gap: 1.5rem;
+  }
+
   .quantitative-page .case-study-page,
   .qualitative-page .case-study-page,
   .mixed-methods-page .case-study-page {
@@ -201,16 +206,8 @@
     margin-bottom: 1.75rem;
   }
 
-  .research-page-intro {
-    margin-bottom: 2rem;
-  }
-
   .research-heading {
     font-size: clamp(2.25rem, 11vw, 2.75rem);
-  }
-
-  .research-filter {
-    margin-top: 1.25rem;
   }
 
   .research-index-list .research-entry {
