@@ -100,26 +100,12 @@ footer {
   color: #f6f6f6;
   border-color: #393939;
   background: transparent;
-  transition: color .2s ease;
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
 }
 
-.quantitative-choice:hover .choice-arrow,
-.quantitative-choice:focus-visible .choice-arrow {
-  color: #34c759;
-  border-color: #393939;
-  background: transparent;
-}
-
-.qualitative-choice:hover .choice-arrow,
-.qualitative-choice:focus-visible .choice-arrow {
-  color: #0088ff;
-  border-color: #393939;
-  background: transparent;
-}
-
-.mixed-methods-choice:hover .choice-arrow,
-.mixed-methods-choice:focus-visible .choice-arrow {
-  color: #ff2d55;
-  border-color: #393939;
-  background: transparent;
+.research-choice:hover .choice-arrow,
+.research-choice:focus-visible .choice-arrow {
+  color: #000000;
+  border-color: transparent;
+  background: #f6f6f6;
 }
