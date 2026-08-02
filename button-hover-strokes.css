@@ -90,15 +90,22 @@ footer {
   background: #f6f6f6;
 }
 
-.research-choice,
-.research-choice:hover,
-.research-choice:focus-visible {
+.research-choice {
   transform: none;
   border-color: #393939;
   color: #f6f6f6;
   background: #000000;
   box-shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
   transition: none;
+}
+
+.research-choice:hover,
+.research-choice:focus-visible {
+  transform: none;
+  border-color: #393939;
+  color: #f6f6f6;
+  background: linear-gradient(180deg, #000000 0%, #141414 100%);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
 }
 
 .choice-arrow {
