@@ -89,3 +89,81 @@ if (researchFilterButtons.length && researchList && researchEmpty) {
 
   applyResearchFilter("all");
 }
+
+const thesisPreviewLayer = document.querySelector("[data-thesis-preview]");
+const thesisPreviewPanel = thesisPreviewLayer?.querySelector("[data-thesis-preview-panel]");
+const thesisPreviewOpeners = Array.from(
+  document.querySelectorAll("[data-thesis-preview-open]")
+);
+const thesisPreviewClosers = thesisPreviewLayer
+  ? Array.from(thesisPreviewLayer.querySelectorAll("[data-thesis-preview-close]"))
+  : [];
+let thesisPreviewReturnFocus = null;
+
+if (thesisPreviewLayer && thesisPreviewPanel && thesisPreviewOpeners.length) {
+  const getFocusableElements = () =>
+    Array.from(
+      thesisPreviewPanel.querySelectorAll(
+        'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      )
+    ).filter((element) => !element.hasAttribute("hidden"));
+
+  const openThesisPreview = (trigger) => {
+    thesisPreviewReturnFocus = trigger;
+    thesisPreviewLayer.classList.add("is-open");
+    thesisPreviewLayer.setAttribute("aria-hidden", "false");
+    document.body.classList.add("thesis-preview-open");
+
+    window.requestAnimationFrame(() => {
+      const firstFocusable = getFocusableElements()[0];
+      (firstFocusable || thesisPreviewPanel).focus();
+    });
+  };
+
+  const closeThesisPreview = () => {
+    if (!thesisPreviewLayer.classList.contains("is-open")) return;
+
+    thesisPreviewLayer.classList.remove("is-open");
+    thesisPreviewLayer.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("thesis-preview-open");
+    thesisPreviewReturnFocus?.focus();
+  };
+
+  thesisPreviewOpeners.forEach((trigger) => {
+    trigger.addEventListener("click", () => openThesisPreview(trigger));
+  });
+
+  thesisPreviewClosers.forEach((button) => {
+    button.addEventListener("click", closeThesisPreview);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (!thesisPreviewLayer.classList.contains("is-open")) return;
+
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeThesisPreview();
+      return;
+    }
+
+    if (event.key !== "Tab") return;
+
+    const focusableElements = getFocusableElements();
+    if (!focusableElements.length) {
+      event.preventDefault();
+      thesisPreviewPanel.focus();
+      return;
+    }
+
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+
+    if (event.shiftKey && document.activeElement === firstElement) {
+      event.preventDefault();
+      lastElement.focus();
+    } else if (!event.shiftKey && document.activeElement === lastElement) {
+      event.preventDefault();
+      firstElement.focus();
+    }
+  });
+}
