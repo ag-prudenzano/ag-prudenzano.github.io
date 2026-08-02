@@ -4,7 +4,9 @@
   --research-list-body: #d2d2d2;
   --research-list-inactive: #686868;
   --research-list-line: #2e2e2e;
-  --research-list-hover: #111111;
+  --research-list-hover-background: #f2f2f2;
+  --research-list-hover-primary: #0a0a0a;
+  --research-list-hover-secondary: #515151;
 }
 
 .quantitative-page .case-study-page,
@@ -54,7 +56,12 @@
   border-radius: 0;
   color: var(--research-list-primary);
   background: transparent;
-  transition: background-color .18s ease, color .18s ease;
+  transition:
+    color .2s ease,
+    background-color .2s ease,
+    border-color .2s ease,
+    padding .2s ease,
+    border-radius .2s ease;
 }
 
 .research-entry-meta {
@@ -79,7 +86,6 @@
   min-width: 0;
   display: grid;
   gap: .7rem;
-  transition: transform .18s ease;
 }
 
 .research-entry-title {
@@ -106,10 +112,10 @@
   margin-top: 0;
   display: grid;
   place-items: center;
-  color: var(--research-list-primary);
+  color: currentColor;
   opacity: 0;
   transform: translate(-5px, 5px);
-  transition: opacity .18s ease, transform .18s ease;
+  transition: opacity .2s ease, transform .2s ease;
 }
 
 .research-index-list .study-link::after {
@@ -128,33 +134,26 @@
 
 .research-index-list .research-entry.active:hover,
 .research-index-list .research-entry.active:focus-within {
-  padding: 1.9rem 0 1.85rem;
-  border-radius: 0;
-  color: var(--research-list-primary);
-  border-bottom-color: var(--research-list-line);
-  background: var(--research-list-hover);
-}
-
-.research-index-list .research-entry.active:hover .research-entry-content,
-.research-index-list .research-entry.active:focus-within .research-entry-content {
-  transform: translateX(.35rem);
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  border-radius: 10px;
+  color: var(--research-list-hover-primary);
+  border-bottom-color: transparent;
+  background: var(--research-list-hover-background);
 }
 
 .research-index-list .research-entry.active:hover .research-entry-type,
 .research-index-list .research-entry.active:focus-within .research-entry-type,
 .research-index-list .research-entry.active:hover .research-entry-title,
 .research-index-list .research-entry.active:focus-within .research-entry-title {
-  color: var(--research-list-primary);
+  color: var(--research-list-hover-primary);
 }
 
 .research-index-list .research-entry.active:hover .research-entry-date,
-.research-index-list .research-entry.active:focus-within .research-entry-date {
-  color: var(--research-list-secondary);
-}
-
+.research-index-list .research-entry.active:focus-within .research-entry-date,
 .research-index-list .research-entry.active:hover .research-entry-description,
 .research-index-list .research-entry.active:focus-within .research-entry-description {
-  color: var(--research-list-body);
+  color: var(--research-list-hover-secondary);
 }
 
 .research-index-list .research-entry.active:hover .study-arrow,
@@ -238,13 +237,18 @@
 
   .research-index-list .research-entry.active:hover,
   .research-index-list .research-entry.active:focus-within {
-    padding: 1.75rem 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .research-index-list .research-entry.active:hover .study-arrow,
+  .research-index-list .research-entry.active:focus-within .study-arrow {
+    right: 1rem;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .research-index-list .research-entry,
-  .research-index-list .research-entry-content,
   .research-index-list .study-arrow {
     transition: none;
   }
