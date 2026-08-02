@@ -85,9 +85,41 @@ footer {
   background: #f6f6f6;
 }
 
-.research-choice:hover .choice-arrow,
-.research-choice:focus-visible .choice-arrow {
+.research-choice,
+.research-choice:hover,
+.research-choice:focus-visible {
+  transform: none;
+  border-color: #393939;
   color: #f6f6f6;
+  background: #141414;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
+  transition: none;
+}
+
+.choice-arrow {
+  color: #f6f6f6;
+  border-color: #393939;
+  background: transparent;
+  transition: color .2s ease;
+}
+
+.quantitative-choice:hover .choice-arrow,
+.quantitative-choice:focus-visible .choice-arrow {
+  color: #34c759;
+  border-color: #393939;
+  background: transparent;
+}
+
+.qualitative-choice:hover .choice-arrow,
+.qualitative-choice:focus-visible .choice-arrow {
+  color: #0088ff;
+  border-color: #393939;
+  background: transparent;
+}
+
+.mixed-methods-choice:hover .choice-arrow,
+.mixed-methods-choice:focus-visible .choice-arrow {
+  color: #ff2d55;
   border-color: #393939;
   background: transparent;
 }
