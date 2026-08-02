@@ -1,6 +1,6 @@
 .research-choice,
 .research-choice:last-child {
-  border: 1px solid #1f1f1f;
+  border: 1px solid #242424;
   background: #141414;
   background-clip: padding-box;
   box-shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
@@ -21,7 +21,7 @@
 
 .research-choice:hover,
 .research-choice:focus-visible {
-  border-color: #1f1f1f;
+  border-color: #242424;
   background: #141414;
   box-shadow: 0 22px 52px rgba(0, 0, 0, 0.42);
 }
@@ -31,7 +31,7 @@
   .research-choice:last-child,
   .research-choice:hover,
   .research-choice:focus-visible {
-    border: 1px solid #1f1f1f;
+    border: 1px solid #242424;
     background: #141414;
   }
 }
