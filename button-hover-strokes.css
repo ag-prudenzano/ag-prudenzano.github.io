@@ -47,7 +47,10 @@ footer {
 }
 
 .research-choice,
-.research-choice:last-child,
+.research-choice:last-child {
+  background-color: #000000;
+}
+
 .thesis-preview-panel,
 .mobile-menu {
   background-color: #141414;
@@ -91,7 +94,7 @@ footer {
   transform: none;
   border-color: #393939;
   color: #f6f6f6;
-  background: #141414;
+  background: #000000;
   box-shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
   transition: none;
 }
