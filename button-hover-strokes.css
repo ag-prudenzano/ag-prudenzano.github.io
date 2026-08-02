@@ -1,3 +1,75 @@
+:root {
+  --background: #000000;
+  --paper: #000000;
+  --text-primary: #f6f6f6;
+  --ink: #f6f6f6;
+  --text-secondary: #a3a3a3;
+  --muted: #a3a3a3;
+  --separator: #393939;
+  --line: #393939;
+  --inverse-background: #f6f6f6;
+  --inverse-text: #000000;
+  --white: #000000;
+  --research-list-primary: #f6f6f6;
+  --research-list-secondary: #a3a3a3;
+  --research-list-body: #a3a3a3;
+  --research-list-line: #393939;
+}
+
+body {
+  color: #f6f6f6;
+  background: #000000;
+}
+
+.intro-copy,
+.choice-description,
+.research-entry-date,
+.research-entry-description,
+.research-filter-button,
+.research-empty,
+.thesis-preview-label,
+.thesis-preview-copy,
+footer {
+  color: #a3a3a3;
+}
+
+.intro-heading,
+.choice-name,
+.choice-summary,
+.research-heading,
+.research-entry-type,
+.research-entry-title,
+.research-filter-button:hover,
+.research-filter-button:focus-visible,
+.research-filter-button.is-active,
+.thesis-preview-title {
+  color: #f6f6f6;
+}
+
+.research-choice,
+.research-choice:last-child,
+.thesis-preview-panel,
+.mobile-menu {
+  background-color: #141414;
+}
+
+.research-choice,
+.research-choice:last-child,
+.header-button,
+.contact-button,
+.back-link,
+.menu-toggle,
+.choice-arrow,
+.thesis-preview-close,
+.brand-photo {
+  border-color: #393939;
+}
+
+.choice-arrow,
+.research-index-list .study-arrow {
+  color: #f6f6f6;
+}
+
 .header-button:hover,
 .header-button:focus-visible,
 .contact-button:hover,
@@ -8,10 +80,14 @@
 .menu-toggle:focus-visible,
 .thesis-preview-close:hover,
 .thesis-preview-close:focus-visible {
+  color: #000000;
   border-color: transparent;
+  background: #f6f6f6;
 }
 
 .research-choice:hover .choice-arrow,
 .research-choice:focus-visible .choice-arrow {
+  color: #f6f6f6;
   border-color: transparent;
+  background: transparent;
 }
