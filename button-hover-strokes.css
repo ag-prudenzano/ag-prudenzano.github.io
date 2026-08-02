@@ -21,19 +21,13 @@ body {
   background: #000000;
 }
 
-.home-page {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-.home-page .header-button {
-  padding-block: 0;
+.header-button {
+  padding: 0 1.15rem 2px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  line-height: 1.2;
-  vertical-align: middle;
+  line-height: 1;
 }
 
 .intro-copy,
@@ -42,8 +36,6 @@ body {
 .research-entry-description,
 .research-filter-button,
 .research-empty,
-.thesis-preview-label,
-.thesis-preview-copy,
 footer {
   color: #a3a3a3;
 }
@@ -56,8 +48,7 @@ footer {
 .research-entry-title,
 .research-filter-button:hover,
 .research-filter-button:focus-visible,
-.research-filter-button.is-active,
-.thesis-preview-title {
+.research-filter-button.is-active {
   color: #f6f6f6;
 }
 
@@ -66,7 +57,6 @@ footer {
   background-color: #000000;
 }
 
-.thesis-preview-panel,
 .mobile-menu {
   background-color: #141414;
 }
@@ -78,7 +68,6 @@ footer {
 .back-link,
 .menu-toggle,
 .choice-arrow,
-.thesis-preview-close,
 .brand-photo {
   border-color: #393939;
 }
@@ -95,9 +84,7 @@ footer {
 .back-link:hover,
 .back-link:focus-visible,
 .menu-toggle:hover,
-.menu-toggle:focus-visible,
-.thesis-preview-close:hover,
-.thesis-preview-close:focus-visible {
+.menu-toggle:focus-visible {
   color: #000000;
   border-color: #393939;
   background: #f6f6f6;
