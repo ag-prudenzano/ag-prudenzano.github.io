@@ -4,9 +4,9 @@
   --research-list-body: #d2d2d2;
   --research-list-inactive: #686868;
   --research-list-line: #2e2e2e;
-  --research-list-hover-background: #f2f2f2;
-  --research-list-hover-primary: #0a0a0a;
-  --research-list-hover-secondary: #515151;
+  --research-list-hover-background: #151515;
+  --research-list-hover-primary: #f2f2f2;
+  --research-list-hover-secondary: #a1a1a1;
 }
 
 .quantitative-page .case-study-page,
@@ -42,6 +42,17 @@
   padding: 0;
   border-top: 1px solid var(--research-list-line);
   list-style: none;
+  transition: border-color .2s ease;
+}
+
+.research-index-list:has(> .research-entry:first-child.active:hover),
+.research-index-list:has(> .research-entry:first-child.active:focus-within) {
+  border-top-color: transparent;
+}
+
+.research-index-list .research-entry:has(+ .research-entry.active:hover),
+.research-index-list .research-entry:has(+ .research-entry.active:focus-within) {
+  border-bottom-color: transparent;
 }
 
 .research-index-list .research-entry {
@@ -248,6 +259,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .research-index-list,
   .research-index-list .research-entry,
   .research-index-list .study-arrow {
     transition: none;
