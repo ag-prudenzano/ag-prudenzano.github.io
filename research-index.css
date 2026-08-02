@@ -1,9 +1,18 @@
 :root {
-  --research-list-primary: #f2f2f2;
-  --research-list-secondary: #929292;
-  --research-list-body: #d2d2d2;
+  --background: #000000;
+  --paper: #000000;
+  --text-primary: #f6f6f6;
+  --ink: #f6f6f6;
+  --text-secondary: #a3a3a3;
+  --muted: #a3a3a3;
+  --separator: #393939;
+  --line: #393939;
+  --inverse-background: #f6f6f6;
+  --research-list-primary: #f6f6f6;
+  --research-list-secondary: #a3a3a3;
+  --research-list-body: #f6f6f6;
   --research-list-inactive: #686868;
-  --research-list-line: #2e2e2e;
+  --research-list-line: #393939;
   --research-navigation-gap: 2rem;
 }
 
