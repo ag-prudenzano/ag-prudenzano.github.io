@@ -5,6 +5,8 @@
 html {
   font-family: var(--font-system);
   font-optical-sizing: auto;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body,
@@ -32,7 +34,7 @@ h1 {
 .header-button {
   height: 42px;
   min-height: 42px;
-  padding: 0 1.15rem;
+  padding: 0 1.15rem 2px;
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--ink);
@@ -43,8 +45,10 @@ h1 {
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
-  display: inline-grid;
-  place-items: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   text-decoration: none;
   transition: color .2s ease, background-color .2s ease, border-color .2s ease;
 }
