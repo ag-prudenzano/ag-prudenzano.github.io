@@ -21,6 +21,21 @@ body {
   background: #000000;
 }
 
+.home-page {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.home-page .header-button {
+  padding-block: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
 .intro-copy,
 .choice-description,
 .research-entry-date,
