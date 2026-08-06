@@ -1,0 +1,61 @@
+name: Diagnose GitHub Pages
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  actions: read
+  pages: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate expected site files
+        run: |
+          set -euxo pipefail
+          test -f index.html
+          test -f quantitative.html
+          test -f research-index.css
+          test -f script.js
+          grep -F '20260806-2206' quantitative.html
+
+      - name: Inspect Pages configuration and latest build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -uo pipefail
+          api="https://api.github.com/repos/${REPOSITORY}"
+          headers=(
+            -H "Accept: application/vnd.github+json"
+            -H "Authorization: Bearer ${GH_TOKEN}"
+            -H "X-GitHub-Api-Version: 2026-03-10"
+          )
+
+          echo '=== Pages configuration ==='
+          curl -sS -w '\nHTTP_STATUS=%{http_code}\n' "${headers[@]}" "${api}/pages"
+
+          echo '=== Latest legacy Pages build ==='
+          curl -sS -w '\nHTTP_STATUS=%{http_code}\n' "${headers[@]}" "${api}/pages/builds/latest"
+
+          echo '=== Recent workflow runs ==='
+          curl -sS -w '\nHTTP_STATUS=%{http_code}\n' "${headers[@]}" \
+            "${api}/actions/runs?per_page=10"
+
+      - name: Inspect live site response
+        run: |
+          set -uo pipefail
+          echo '=== Homepage headers ==='
+          curl -sSIL --max-time 30 https://ag-prudenzano.github.io/ || true
+
+          echo '=== Quantitative deployment marker ==='
+          curl -sSL --max-time 30 https://ag-prudenzano.github.io/quantitative.html \
+            | grep -E 'deployment-version|research-index.css|Quantitative Research' \
+            || true
