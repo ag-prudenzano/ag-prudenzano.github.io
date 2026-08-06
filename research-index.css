@@ -84,6 +84,11 @@
   border-bottom-color: var(--research-list-line);
 }
 
+.research-index-list .research-entry[hidden],
+.research-groups[hidden] {
+  display: none;
+}
+
 .research-index-list .research-entry {
   position: relative;
   min-height: 0;
