@@ -57,6 +57,9 @@ const researchEmpty = document.querySelector("[data-research-empty]");
 const researchItems = researchList
   ? Array.from(researchList.querySelectorAll(".study-item"))
   : [];
+const researchGroups = researchList
+  ? Array.from(researchList.querySelectorAll("[data-research-group]"))
+  : [];
 const defaultResearchCategory = researchList?.dataset.researchCategory;
 
 if (researchFilterButtons.length && researchList && researchEmpty) {
@@ -69,6 +72,13 @@ if (researchFilterButtons.length && researchList && researchEmpty) {
       const isVisible = filter === "all" || itemCategory === filter;
       item.hidden = !isVisible;
       if (isVisible) visibleItems += 1;
+    });
+
+    researchGroups.forEach((group) => {
+      const hasVisibleItems = Array.from(
+        group.querySelectorAll(".study-item")
+      ).some((item) => !item.hidden);
+      group.hidden = !hasVisibleItems;
     });
 
     researchFilterButtons.forEach((button) => {
