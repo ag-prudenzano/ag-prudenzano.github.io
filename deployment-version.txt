@@ -1,0 +1,3 @@
+GitHub Pages deployment fix
+Version: 2026-08-07-pages-workflow-v1
+Expected source: GitHub Actions
