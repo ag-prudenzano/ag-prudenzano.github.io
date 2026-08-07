@@ -108,6 +108,29 @@ const portfolioEmpty = document.querySelector("[data-portfolio-empty]");
 const portfolioItems = portfolioList
   ? Array.from(portfolioList.querySelectorAll(".research-entry"))
   : [];
+const portfolioMethodLabels = {
+  quantitative: "Quantitative",
+  qualitative: "Qualitative",
+  "mixed-methods": "Mixed-Methods",
+};
+
+document.querySelector(".portfolio-filter-note")?.remove();
+
+portfolioItems.forEach((item) => {
+  const methodLabel = item.querySelector(".research-entry-type");
+  const projectTypeLabel = item.querySelector(".portfolio-entry-kind");
+
+  if (methodLabel) {
+    methodLabel.textContent = portfolioMethodLabels[item.dataset.method] || "";
+  }
+
+  if (projectTypeLabel) {
+    projectTypeLabel.textContent =
+      item.dataset.projectType === "real"
+        ? "Real project"
+        : "Simulated case study";
+  }
+});
 
 if (
   portfolioFilterButtons.length &&
