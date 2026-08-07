@@ -114,7 +114,7 @@
 
 .report-section {
   padding: 4.5rem 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 0;
 }
 
 .report-section-heading {
