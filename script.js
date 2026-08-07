@@ -99,3 +99,74 @@ if (researchFilterButtons.length && researchList && researchEmpty) {
 
   applyResearchFilter("all");
 }
+
+const portfolioFilterButtons = Array.from(
+  document.querySelectorAll("[data-portfolio-filter]")
+);
+const portfolioList = document.querySelector("[data-portfolio-list]");
+const portfolioEmpty = document.querySelector("[data-portfolio-empty]");
+const portfolioItems = portfolioList
+  ? Array.from(portfolioList.querySelectorAll(".research-entry"))
+  : [];
+
+if (
+  portfolioFilterButtons.length &&
+  portfolioList &&
+  portfolioEmpty &&
+  portfolioItems.length
+) {
+  const portfolioFilters = {
+    method: "all",
+    projectType: "all",
+  };
+
+  const applyPortfolioFilters = () => {
+    let visibleItems = 0;
+
+    portfolioItems.forEach((item) => {
+      const matchesMethod =
+        portfolioFilters.method === "all" ||
+        item.dataset.method === portfolioFilters.method;
+      const matchesProjectType =
+        portfolioFilters.projectType === "all" ||
+        item.dataset.projectType === portfolioFilters.projectType;
+      const isVisible = matchesMethod && matchesProjectType;
+
+      item.hidden = !isVisible;
+      if (isVisible) visibleItems += 1;
+    });
+
+    portfolioFilterButtons.forEach((button) => {
+      const dimension = button.dataset.portfolioFilter;
+      const value = button.dataset.filterValue || "all";
+      const selectedValue =
+        dimension === "project-type"
+          ? portfolioFilters.projectType
+          : portfolioFilters.method;
+      const isActive = value === selectedValue;
+
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+
+    portfolioList.hidden = visibleItems === 0;
+    portfolioEmpty.hidden = visibleItems !== 0;
+  };
+
+  portfolioFilterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const dimension = button.dataset.portfolioFilter;
+      const value = button.dataset.filterValue || "all";
+
+      if (dimension === "project-type") {
+        portfolioFilters.projectType = value;
+      } else {
+        portfolioFilters.method = value;
+      }
+
+      applyPortfolioFilters();
+    });
+  });
+
+  applyPortfolioFilters();
+}
