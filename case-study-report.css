@@ -306,6 +306,39 @@
   line-height: 1.6;
 }
 
+/* Report UX refinements: readable prose, tighter rhythm, accessible controls. */
+.report-page .report-title {
+  white-space: normal;
+  text-wrap: balance;
+}
+
+.report-page .report-lede,
+.report-page .report-copy,
+.report-page .report-note {
+  width: 100%;
+  max-width: 900px;
+}
+
+.report-page .report-section {
+  padding: 3.75rem 0;
+}
+
+.report-page .report-back {
+  width: 44px;
+  height: 44px;
+}
+
+.report-page .report-action {
+  min-height: 46px;
+}
+
+.report-page .report-back:focus-visible,
+.report-page .report-action:focus-visible,
+.report-page .report-output-links a:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 3px;
+}
+
 @media (max-width: 800px) {
   .report-page .case-study-page {
     padding-top: 2.5rem;
@@ -352,7 +385,7 @@
   }
 
   .report-section {
-    padding: 3.25rem 0;
+    padding: 3rem 0;
   }
 
   .report-check,
