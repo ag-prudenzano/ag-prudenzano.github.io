@@ -1,5 +1,16 @@
+.portfolio-page {
+  --portfolio-layout-width: 1500px;
+}
+
+.portfolio-page .site-header,
 .portfolio-page .case-study-page {
-  max-width: 1304px;
+  width: 100%;
+  max-width: var(--portfolio-layout-width) !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.portfolio-page .case-study-page {
   padding-top: 3.5rem;
 }
 
