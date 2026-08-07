@@ -50,6 +50,7 @@
 }
 
 .portfolio-filter-label {
+  display: none;
   color: var(--research-list-secondary);
   font-size: .6875rem;
   font-weight: 600;
@@ -100,6 +101,7 @@
   font-size: .8125rem;
   font-weight: 400;
   line-height: 1.35;
+  text-transform: capitalize;
 }
 
 .portfolio-research-list .research-entry:not(.active) .portfolio-entry-kind {
