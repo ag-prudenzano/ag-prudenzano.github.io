@@ -257,7 +257,7 @@
   height: auto;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: #ffffff;
+  background: #000000;
 }
 
 .report-figure figcaption {
