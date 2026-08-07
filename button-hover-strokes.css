@@ -148,13 +148,23 @@ footer {
 }
 
 .report-page .report-hero {
-  max-width: 1240px;
+  width: 100%;
+  max-width: none;
 }
 
 .report-page .report-title {
   max-width: none;
   font-size: clamp(3rem, 5.2vw, 5rem);
   white-space: nowrap;
+}
+
+.report-page .report-lede,
+.report-page .report-copy,
+.report-page .report-note,
+.report-page .report-check p,
+.report-page .report-metric-label {
+  width: 100%;
+  max-width: none;
 }
 
 .report-page .report-eyebrow {
