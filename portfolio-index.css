@@ -19,12 +19,18 @@
   margin-bottom: 2.5rem;
 }
 
+.portfolio-page .research-heading {
+  font-size: clamp(2.75rem, 3.6vw, 3.125rem);
+  line-height: 1.04;
+  letter-spacing: -.03em;
+}
+
 .portfolio-introduction {
-  max-width: 760px;
+  max-width: 72ch;
   margin: 1.25rem 0 0;
   color: var(--research-list-secondary);
-  font-size: 1.0625rem;
-  line-height: 1.55;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .portfolio-controls {
@@ -36,7 +42,7 @@
 
 .portfolio-filter-block {
   display: grid;
-  gap: .7rem;
+  gap: .5rem;
 }
 
 .portfolio-type-filter-block {
@@ -45,15 +51,19 @@
 
 .portfolio-filter-label {
   color: var(--research-list-secondary);
-  font-size: .75rem;
+  font-size: .6875rem;
   font-weight: 600;
-  letter-spacing: .1em;
+  letter-spacing: .13em;
   line-height: 1.3;
   text-transform: uppercase;
 }
 
 .portfolio-method-filter {
   margin-top: 0;
+}
+
+.portfolio-method-filter .research-filter-button {
+  font-size: .875rem;
 }
 
 .portfolio-filter-note {
@@ -67,7 +77,22 @@
 }
 
 .portfolio-research-list .research-entry-meta {
-  gap: .45rem;
+  gap: .35rem;
+  font-size: .8125rem;
+  line-height: 1.4;
+}
+
+.portfolio-research-list .research-entry-title {
+  font-size: 1.1875rem;
+  line-height: 1.28;
+  letter-spacing: -.012em;
+}
+
+.portfolio-research-list .research-entry-description {
+  max-width: 68ch;
+  color: var(--research-list-secondary);
+  font-size: .9375rem;
+  line-height: 1.5;
 }
 
 .portfolio-entry-kind {
@@ -95,6 +120,11 @@
     margin-bottom: 2rem;
   }
 
+  .portfolio-page .research-heading {
+    font-size: clamp(2.35rem, 10vw, 2.75rem);
+    line-height: 1.06;
+  }
+
   .portfolio-introduction {
     margin-top: 1rem;
     font-size: .975rem;
@@ -107,7 +137,16 @@
   .portfolio-research-list .research-entry-meta {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: start;
-    gap: .45rem 1rem;
+    gap: .4rem 1rem;
+  }
+
+  .portfolio-research-list .research-entry-title {
+    font-size: 1.0625rem;
+    line-height: 1.3;
+  }
+
+  .portfolio-research-list .research-entry-description {
+    font-size: .9rem;
   }
 
   .portfolio-entry-kind {
