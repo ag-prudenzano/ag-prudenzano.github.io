@@ -113,8 +113,20 @@ const portfolioMethodLabels = {
   qualitative: "Qualitative",
   "mixed-methods": "Mixed-Methods",
 };
+const portfolioProjectTypeFilterLabels = {
+  all: "All",
+  real: "Real projects",
+  hypothetical: "Simulated case studies",
+};
 
 document.querySelector(".portfolio-filter-note")?.remove();
+
+portfolioFilterButtons.forEach((button) => {
+  if (button.dataset.portfolioFilter !== "project-type") return;
+
+  const value = button.dataset.filterValue || "all";
+  button.textContent = portfolioProjectTypeFilterLabels[value] || "";
+});
 
 portfolioItems.forEach((item) => {
   const methodLabel = item.querySelector(".research-entry-type");
