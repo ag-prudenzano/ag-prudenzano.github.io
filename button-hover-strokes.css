@@ -116,3 +116,59 @@ footer {
   background: transparent;
   transition: none;
 }
+
+/* Survey report refinements */
+.report-page .report-back {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: transparent;
+  font-size: 0;
+  background: transparent url("assets/report-back.svg") center / 38px 38px no-repeat;
+}
+
+.report-page .report-back:hover,
+.report-page .report-back:focus-visible {
+  border: 0;
+  color: transparent;
+  background: transparent url("assets/report-back-hover.svg") center / 38px 38px no-repeat;
+}
+
+.report-page .report-hero {
+  max-width: 1240px;
+}
+
+.report-page .report-title {
+  max-width: none;
+  font-size: clamp(3rem, 5.2vw, 5rem);
+  white-space: nowrap;
+}
+
+.report-page .report-eyebrow {
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+.report-page .report-eyebrow::before {
+  content: "Quantitative / Simulated Case Study";
+  font-size: .8125rem;
+  letter-spacing: .04em;
+}
+
+.report-page .report-action {
+  font-size: 0;
+}
+
+.report-page .report-action::before {
+  content: "View Source Repository";
+  font-size: .875rem;
+}
+
+@media (max-width: 800px) {
+  .report-page .report-title {
+    font-size: clamp(2.65rem, 12vw, 4rem);
+    white-space: normal;
+  }
+}
