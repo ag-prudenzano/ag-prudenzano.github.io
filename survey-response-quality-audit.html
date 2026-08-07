@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Survey Response Quality Audit — a simulated quantitative research case study by Andrea Prudenzano.">
+  <title>Survey Response Quality Audit | Andrea Prudenzano</title>
+  <link rel="stylesheet" href="styles.css?v=20260801-inactive-list-contrast-v2">
+  <link rel="stylesheet" href="header-menu.css?v=20260802-button-centering-v5">
+  <link rel="stylesheet" href="button-hover-strokes.css?v=20260802-header-alignment-v8">
+  <link rel="stylesheet" href="case-study-report.css?v=20260807-survey-qc-report-v1">
+</head>
+<body class="report-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Andrea Prudenzano, home">
+      <img class="brand-photo" src="assets/profile-picture.jpeg" alt="">
+      <span>Andrea Prudenzano</span>
+    </a>
+    <nav class="header-actions" aria-label="Contact and CV">
+      <a class="header-button" href="mailto:eroswysen@icloud.com">eroswysen@icloud.com</a>
+      <a class="header-button" href="https://andreaprudenzano.craft.me/UqIWkGUKM1rHyt" target="_blank" rel="noopener noreferrer">cv</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <span class="menu-toggle-lines" aria-hidden="true"></span>
+    </button>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile contact and CV" hidden>
+      <a class="header-button" href="mailto:eroswysen@icloud.com">eroswysen@icloud.com</a>
+      <a class="header-button" href="https://andreaprudenzano.craft.me/UqIWkGUKM1rHyt" target="_blank" rel="noopener noreferrer">cv</a>
+    </nav>
+  </header>
+
+  <main id="main" class="case-study-page">
+    <a class="back-link report-back" href="index.html" aria-label="Back to research portfolio">←</a>
+
+    <header class="report-hero">
+      <p class="report-eyebrow">Quantitative · Simulated case study</p>
+      <h1 class="report-title">Survey Response Quality Audit</h1>
+      <p class="report-lede">A reproducible survey-quality workflow that uses paradata and answer-pattern checks to identify incomplete responses, speeders, straight-lining, attention-check failures, logical inconsistencies, duplicate-like submissions, invalid values, and low-quality open text.</p>
+      <div class="report-actions">
+        <a class="report-action" href="https://github.com/ag-prudenzano/survey-response-quality-audit" target="_blank" rel="noopener noreferrer">View source repository ↗</a>
+      </div>
+    </header>
+
+    <dl class="report-meta" aria-label="Case study details">
+      <div class="report-meta-item">
+        <dt>Study</dt>
+        <dd>UK restaurant delivery survey</dd>
+      </div>
+      <div class="report-meta-item">
+        <dt>Sample</dt>
+        <dd>1,250 simulated responses</dd>
+      </div>
+      <div class="report-meta-item">
+        <dt>Method</dt>
+        <dd>Rule-based survey QC</dd>
+      </div>
+      <div class="report-meta-item">
+        <dt>Tools</dt>
+        <dd>Python · pandas · NumPy · Matplotlib</dd>
+      </div>
+    </dl>
+
+    <section class="report-section" aria-labelledby="overview-heading">
+      <h2 id="overview-heading" class="report-section-heading">Overview</h2>
+      <div class="report-copy">
+        <p>This case study audits a simulated online survey for common response-quality problems. The dataset contains 1,250 responses, including 1,200 completed responses and 50 partial responses.</p>
+        <p>The audit deliberately uses transparent, interpretable rules rather than a black-box quality score. Each respondent receives individual QC flags, followed by a recommendation for manual review or exclusion.</p>
+      </div>
+    </section>
+
+    <section class="report-section" aria-labelledby="results-heading">
+      <h2 id="results-heading" class="report-section-heading">Headline results</h2>
+      <div class="report-metrics" aria-label="Headline results">
+        <div class="report-metric">
+          <span class="report-metric-value">272</span>
+          <span class="report-metric-label">responses received at least one QC flag</span>
+        </div>
+        <div class="report-metric">
+          <span class="report-metric-value">177</span>
+          <span class="report-metric-label">responses recommended for manual review</span>
+        </div>
+        <div class="report-metric">
+          <span class="report-metric-value">95</span>
+          <span class="report-metric-label">responses recommended for exclusion</span>
+        </div>
+        <div class="report-metric">
+          <span class="report-metric-value">177.3s</span>
+          <span class="report-metric-label">data-derived speeder threshold</span>
+        </div>
+      </div>
+      <p class="report-note">The speeder threshold is one-third of the median completed-response duration of 532.0 seconds.</p>
+    </section>
+
+    <section class="report-section" aria-labelledby="checks-heading">
+      <h2 id="checks-heading" class="report-section-heading">Quality checks</h2>
+      <div class="report-checks">
+        <article class="report-check">
+          <h3>Partial responses</h3>
+          <p>Flags surveys not marked complete or with progress below 100%.</p>
+        </article>
+        <article class="report-check">
+          <h3>Speeding</h3>
+          <p>Flags completed surveys below one-third of the median completed survey duration.</p>
+        </article>
+        <article class="report-check">
+          <h3>Straight-lining</h3>
+          <p>Detects the same response across all eight items in the main 1–7 rating grid.</p>
+        </article>
+        <article class="report-check">
+          <h3>Attention-check failure</h3>
+          <p>Flags respondents who do not select the instructed answer on the embedded attention check.</p>
+        </article>
+        <article class="report-check">
+          <h3>Invalid values</h3>
+          <p>Checks age, NPS, and 1–7 rating variables for values outside their permitted ranges.</p>
+        </article>
+        <article class="report-check">
+          <h3>Logical inconsistencies</h3>
+          <p>Tests contradictions across eligibility, recency, routing, support-contact, and related survey answers.</p>
+        </article>
+        <article class="report-check">
+          <h3>Duplicate-like submissions</h3>
+          <p>Identifies repeated browser fingerprints combined with identical substantive answer patterns.</p>
+        </article>
+        <article class="report-check">
+          <h3>Low-quality open text</h3>
+          <p>Detects blank, nonsensical, extremely short, numeric-only, or repetitive open-ended responses.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="report-section" aria-labelledby="breakdown-heading">
+      <h2 id="breakdown-heading" class="report-section-heading">Flag breakdown</h2>
+      <div class="report-table-wrap">
+        <table class="report-table">
+          <thead>
+            <tr>
+              <th scope="col">QC check</th>
+              <th scope="col">Responses flagged</th>
+              <th scope="col">Share of all responses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Partial</td><td>50</td><td>4.0%</td></tr>
+            <tr><td>Speeder</td><td>55</td><td>4.4%</td></tr>
+            <tr><td>Straight-liner</td><td>53</td><td>4.2%</td></tr>
+            <tr><td>Attention fail</td><td>44</td><td>3.5%</td></tr>
+            <tr><td>Invalid value</td><td>7</td><td>0.6%</td></tr>
+            <tr><td>Logic error</td><td>36</td><td>2.9%</td></tr>
+            <tr><td>Duplicate-like</td><td>18</td><td>1.4%</td></tr>
+            <tr><td>Low-quality open text</td><td>32</td><td>2.6%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="report-note">A single behavioural warning is not treated as sufficient evidence for automatic exclusion. Partial responses, invalid values, and duplicate-like submissions are hard failures; otherwise, at least two behavioural indicators are required for an exclusion recommendation.</p>
+    </section>
+
+    <section class="report-section" aria-labelledby="figures-heading">
+      <h2 id="figures-heading" class="report-section-heading">Figures</h2>
+      <div class="report-figures">
+        <figure class="report-figure">
+          <img src="https://raw.githubusercontent.com/ag-prudenzano/survey-response-quality-audit/main/figures/completion_duration_distribution.png" alt="Histogram of survey completion duration with the speeder threshold marked by a dashed vertical line.">
+          <figcaption>Completion-duration distribution. The dashed line marks the 177.3-second speeder threshold.</figcaption>
+        </figure>
+        <figure class="report-figure">
+          <img src="https://raw.githubusercontent.com/ag-prudenzano/survey-response-quality-audit/main/figures/quality_flag_counts.png" alt="Horizontal bar chart showing the number of responses identified by each survey quality flag.">
+          <figcaption>Counts for each QC rule, showing which quality issues were most frequently detected.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="report-section" aria-labelledby="workflow-heading">
+      <h2 id="workflow-heading" class="report-section-heading">Decision logic</h2>
+      <div class="report-copy">
+        <p>The workflow separates hard failures from behavioural warning signals. Partial responses, invalid values, and duplicate-like submissions are recommended for exclusion immediately. For behavioural indicators such as speeding, straight-lining, attention failure, logic errors, and low-quality open text, one signal leads to review while two or more lead to exclusion.</p>
+        <p>This approach keeps the decision rule auditable and avoids treating a single suspicious pattern as definitive evidence of poor response quality.</p>
+      </div>
+    </section>
+
+    <section class="report-section" aria-labelledby="outputs-heading">
+      <h2 id="outputs-heading" class="report-section-heading">Project files</h2>
+      <div class="report-copy">
+        <p>The analysis is fully reproducible from the public repository. The Python script reads the raw simulated survey data, generates the respondent-level QC flags and summary, creates both figures, and rewrites the Markdown report.</p>
+      </div>
+      <ul class="report-output-links">
+        <li><a href="https://github.com/ag-prudenzano/survey-response-quality-audit/blob/main/analysis.py" target="_blank" rel="noopener noreferrer"><span>Analysis script</span><span>analysis.py ↗</span></a></li>
+        <li><a href="https://github.com/ag-prudenzano/survey-response-quality-audit/blob/main/outputs/quality_flags.csv" target="_blank" rel="noopener noreferrer"><span>Respondent-level QC output</span><span>quality_flags.csv ↗</span></a></li>
+        <li><a href="https://github.com/ag-prudenzano/survey-response-quality-audit/blob/main/outputs/quality_summary.csv" target="_blank" rel="noopener noreferrer"><span>Quality summary</span><span>quality_summary.csv ↗</span></a></li>
+        <li><a href="https://github.com/ag-prudenzano/survey-response-quality-audit/blob/main/data/survey_response_quality_audit_raw.csv" target="_blank" rel="noopener noreferrer"><span>Simulated raw survey data</span><span>raw.csv ↗</span></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> AG Prudenzano</span><span>Built with care and hosted on GitHub Pages.</span></footer>
+  <script src="script.js?v=20260807-portfolio-filters-v1"></script>
+</body>
+</html>
