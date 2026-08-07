@@ -118,6 +118,12 @@ const portfolioProjectTypeFilterLabels = {
   real: "Real projects",
   hypothetical: "Simulated case studies",
 };
+const publishedPortfolioStudies = {
+  "Survey Response Quality Audit": {
+    href: "survey-response-quality-audit.html",
+    date: "2026",
+  },
+};
 
 document.querySelector(".portfolio-filter-note")?.remove();
 
@@ -131,6 +137,8 @@ portfolioFilterButtons.forEach((button) => {
 portfolioItems.forEach((item) => {
   const methodLabel = item.querySelector(".research-entry-type");
   const projectTypeLabel = item.querySelector(".portfolio-entry-kind");
+  const title = item.querySelector(".research-entry-title");
+  const date = item.querySelector(".research-entry-date");
 
   if (methodLabel) {
     methodLabel.textContent = portfolioMethodLabels[item.dataset.method] || "";
@@ -141,6 +149,26 @@ portfolioItems.forEach((item) => {
       item.dataset.projectType === "real"
         ? "Real project"
         : "Simulated case study";
+  }
+
+  const publishedStudy = publishedPortfolioStudies[title?.textContent.trim()];
+  if (publishedStudy && title) {
+    item.classList.add("active");
+    if (date) date.textContent = publishedStudy.date;
+
+    const link = document.createElement("a");
+    link.className = `${title.className} study-link`;
+    link.href = publishedStudy.href;
+    link.textContent = title.textContent;
+    title.replaceWith(link);
+
+    if (!item.querySelector(".study-arrow")) {
+      const arrow = document.createElement("span");
+      arrow.className = "study-arrow";
+      arrow.setAttribute("aria-hidden", "true");
+      arrow.textContent = "→";
+      item.appendChild(arrow);
+    }
   }
 });
 
