@@ -167,6 +167,10 @@ footer {
   max-width: none;
 }
 
+.report-page .report-section {
+  border-bottom: 0;
+}
+
 .report-page .report-eyebrow {
   font-size: 0;
   letter-spacing: 0;
