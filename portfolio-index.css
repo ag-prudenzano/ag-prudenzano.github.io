@@ -4,7 +4,7 @@
 }
 
 .portfolio-page-intro {
-  max-width: 940px;
+  max-width: none;
   margin-bottom: 2.5rem;
 }
 
@@ -17,14 +17,21 @@
 }
 
 .portfolio-controls {
+  width: 100%;
   margin-top: 3rem;
   display: grid;
-  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  column-gap: 3rem;
 }
 
 .portfolio-filter-block {
   display: grid;
   gap: .7rem;
+}
+
+.portfolio-type-filter-block {
+  justify-items: end;
 }
 
 .portfolio-filter-label {
@@ -84,10 +91,7 @@
 }
 
 .portfolio-filter-note {
-  margin: 0;
-  color: var(--research-list-secondary);
-  font-size: .8125rem;
-  line-height: 1.45;
+  display: none;
 }
 
 .portfolio-research-list .research-entry[hidden],
@@ -132,7 +136,13 @@
 
   .portfolio-controls {
     margin-top: 2.25rem;
+    grid-template-columns: 1fr;
+    align-items: stretch;
     gap: 1.25rem;
+  }
+
+  .portfolio-type-filter-block {
+    justify-items: start;
   }
 
   .project-type-toggle {
