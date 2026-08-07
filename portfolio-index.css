@@ -73,6 +73,7 @@
   font-size: var(--type-interface);
   font-weight: 500;
   line-height: 1.4;
+  text-transform: capitalize;
   cursor: pointer;
   transition: color .2s ease;
 }
