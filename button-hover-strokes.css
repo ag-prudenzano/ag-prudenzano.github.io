@@ -14,11 +14,22 @@
   --research-list-secondary: #a3a3a3;
   --research-list-body: #a3a3a3;
   --research-list-line: #393939;
+  --site-layout-width: 1500px;
 }
 
 body {
   color: #f6f6f6;
   background: #000000;
+}
+
+/* One shared outer frame for headers and page content. */
+.site-header,
+.choice-page,
+.case-study-page {
+  width: 100%;
+  max-width: var(--site-layout-width) !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 
 .header-button {
