@@ -131,42 +131,6 @@ if (liveReport) {
     skillsParagraph.replaceWith(block);
   };
 
-  const enhanceSectionNavigation = (container) => {
-    const snapshot = container.querySelector('[data-section="project-snapshot"]');
-    if (!snapshot) return;
-
-    const sections = Array.from(container.querySelectorAll(":scope > .live-report-section")).filter(
-      (section) => section.dataset.section !== "project-snapshot"
-    );
-    if (!sections.length) return;
-
-    const nav = document.createElement("nav");
-    nav.className = "live-report-index";
-    nav.setAttribute("aria-label", "Report sections");
-
-    const label = document.createElement("p");
-    label.className = "live-report-index-label";
-    label.textContent = "On This Page";
-
-    const list = document.createElement("ul");
-    list.className = "live-report-index-list";
-
-    sections.forEach((section) => {
-      const heading = section.querySelector(":scope > h2");
-      if (!heading || !section.id) return;
-
-      const item = document.createElement("li");
-      const link = document.createElement("a");
-      link.href = `#${section.id}`;
-      link.textContent = heading.textContent.trim();
-      item.appendChild(link);
-      list.appendChild(item);
-    });
-
-    nav.append(label, list);
-    snapshot.appendChild(nav);
-  };
-
   const enhanceQualityChecks = (container) => {
     const section = container.querySelector('[data-section="quality-checks"]');
     const list = section?.querySelector(":scope > ol");
@@ -356,7 +320,6 @@ if (liveReport) {
 
       liveReport.replaceChildren(buildSections(parsed));
       enhanceProjectSnapshot(liveReport);
-      enhanceSectionNavigation(liveReport);
       enhanceQualityChecks(liveReport);
       enhanceFindings(liveReport);
       enhanceTables(liveReport);
