@@ -24,7 +24,6 @@ body {
 
 /* One shared outer frame for headers and page content. */
 .site-header,
-.choice-page,
 .case-study-page {
   width: 100%;
   max-width: var(--site-layout-width) !important;
@@ -41,8 +40,6 @@ body {
   line-height: 1;
 }
 
-.intro-copy,
-.choice-description,
 .research-entry-date,
 .research-entry-description,
 .research-filter-button,
@@ -51,9 +48,6 @@ footer {
   color: #a3a3a3;
 }
 
-.intro-heading,
-.choice-name,
-.choice-summary,
 .research-heading,
 .research-entry-type,
 .research-entry-title,
@@ -63,35 +57,23 @@ footer {
   color: #f6f6f6;
 }
 
-.research-choice,
-.research-choice:last-child {
-  background-color: #000000;
-}
-
 .mobile-menu {
   background-color: #141414;
 }
 
-.research-choice,
-.research-choice:last-child,
 .header-button,
-.contact-button,
 .back-link,
 .menu-toggle,
-.choice-arrow,
 .brand-photo {
   border-color: #393939;
 }
 
-.choice-arrow,
 .research-index-list .study-arrow {
   color: #f6f6f6;
 }
 
 .header-button:hover,
 .header-button:focus-visible,
-.contact-button:hover,
-.contact-button:focus-visible,
 .back-link:hover,
 .back-link:focus-visible,
 .menu-toggle:hover,
@@ -99,101 +81,4 @@ footer {
   color: #000000;
   border-color: #393939;
   background: #f6f6f6;
-}
-
-.research-choice {
-  transform: none;
-  border-color: #393939;
-  color: #f6f6f6;
-  background: #000000;
-  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
-  transition: none;
-}
-
-.research-choice:hover,
-.research-choice:focus-visible {
-  transform: none;
-  border-color: #393939;
-  color: #f6f6f6;
-  background: linear-gradient(180deg, #000000 0%, #141414 100%);
-  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
-}
-
-.choice-arrow,
-.research-choice:hover .choice-arrow,
-.research-choice:focus-visible .choice-arrow {
-  color: #f6f6f6;
-  border-color: #393939;
-  background: transparent;
-  transition: none;
-}
-
-/* Survey report refinements */
-.report-page .report-back {
-  width: 38px;
-  height: 38px;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
-  color: transparent;
-  font-size: 0;
-  background: transparent url("assets/report-back.svg") center / 38px 38px no-repeat;
-}
-
-.report-page .report-back:hover,
-.report-page .report-back:focus-visible {
-  border: 0;
-  color: transparent;
-  background: transparent url("assets/report-back-hover.svg") center / 38px 38px no-repeat;
-}
-
-.report-page .report-hero {
-  width: 100%;
-  max-width: none;
-}
-
-.report-page .report-title {
-  max-width: none;
-  font-size: clamp(3rem, 5.2vw, 5rem);
-  white-space: nowrap;
-}
-
-.report-page .report-lede,
-.report-page .report-copy,
-.report-page .report-note,
-.report-page .report-check p,
-.report-page .report-metric-label {
-  width: 100%;
-  max-width: none;
-}
-
-.report-page .report-section {
-  border-bottom: 0;
-}
-
-.report-page .report-eyebrow {
-  font-size: 0;
-  letter-spacing: 0;
-}
-
-.report-page .report-eyebrow::before {
-  content: "Quantitative / Simulated Case Study";
-  font-size: .8125rem;
-  letter-spacing: .04em;
-}
-
-.report-page .report-action {
-  font-size: 0;
-}
-
-.report-page .report-action::before {
-  content: "View Source Repository";
-  font-size: .875rem;
-}
-
-@media (max-width: 800px) {
-  .report-page .report-title {
-    font-size: clamp(2.65rem, 12vw, 4rem);
-    white-space: normal;
-  }
 }
