@@ -1,0 +1,33 @@
+.live-report-section > h3 {
+  max-width: 42ch;
+  margin: 2.25rem 0 .75rem;
+  color: var(--text-primary);
+  font-size: var(--type-heading-03);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: normal;
+}
+
+.live-report-section[data-section="findings"] table th,
+.live-report-section[data-section="findings"] table td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.live-report-section[data-section="findings"] table th:first-child,
+.live-report-section[data-section="findings"] table td:first-child {
+  width: 34%;
+  padding-right: 2rem;
+}
+
+@media (max-width: 800px) {
+  .live-report-section > h3 {
+    margin-top: 2rem;
+  }
+
+  .live-report-section[data-section="findings"] table th:first-child,
+  .live-report-section[data-section="findings"] table td:first-child {
+    width: auto;
+    padding-right: 1rem;
+  }
+}
