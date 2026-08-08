@@ -54,6 +54,39 @@ if (liveReport) {
     return fragment;
   };
 
+  const enhanceQualityChecks = (container) => {
+    const section = container.querySelector('[data-section="quality-checks"]');
+    const list = section?.querySelector(":scope > ol");
+    if (!section || !list) return;
+
+    const grid = document.createElement("div");
+    grid.className = "live-report-checks";
+
+    Array.from(list.children).forEach((item) => {
+      const titleNode = item.querySelector(":scope > strong");
+      const title = titleNode?.textContent?.trim() || "Quality check";
+      if (titleNode) titleNode.remove();
+
+      const description = item.textContent
+        .replace(/^\s*[—–-]\s*/, "")
+        .trim();
+
+      const article = document.createElement("article");
+      article.className = "live-report-check";
+
+      const heading = document.createElement("h3");
+      heading.textContent = title;
+
+      const paragraph = document.createElement("p");
+      paragraph.textContent = description;
+
+      article.append(heading, paragraph);
+      grid.appendChild(article);
+    });
+
+    list.replaceWith(grid);
+  };
+
   const enhanceFigures = (container) => {
     const section = container.querySelector('[data-section="figures"]');
     if (!section) return;
@@ -95,6 +128,41 @@ if (liveReport) {
     section.appendChild(grid);
   };
 
+  const enhanceProjectFiles = (container) => {
+    const section = container.querySelector('[data-section="project-files"]');
+    const list = section?.querySelector(":scope > ul");
+    if (!section || !list) return;
+
+    list.classList.add("live-report-file-list");
+
+    Array.from(list.children).forEach((item) => {
+      const sourceLink = item.querySelector("a[href]");
+      if (!sourceLink) return;
+
+      const filename = sourceLink.textContent.trim();
+      const fullText = item.textContent.trim();
+      const description = fullText
+        .slice(filename.length)
+        .replace(/^\s*[—–-]\s*/, "")
+        .replace(/\.$/, "")
+        .trim();
+
+      const row = document.createElement("a");
+      row.href = sourceLink.href;
+      row.target = sourceLink.target || "_blank";
+      row.rel = sourceLink.rel || "noopener noreferrer";
+
+      const label = document.createElement("span");
+      label.textContent = description || filename;
+
+      const file = document.createElement("span");
+      file.textContent = `${filename} ↗`;
+
+      row.append(label, file);
+      item.replaceChildren(row);
+    });
+  };
+
   const loadReport = async () => {
     try {
       if (!reportUrl || !window.marked) {
@@ -123,7 +191,9 @@ if (liveReport) {
       reportHeading?.remove();
 
       liveReport.replaceChildren(buildSections(parsed));
+      enhanceQualityChecks(liveReport);
       enhanceFigures(liveReport);
+      enhanceProjectFiles(liveReport);
 
       const objective = liveReport.querySelector('[data-section="audit-objective"] > p');
       const lede = document.querySelector(".report-lede");
