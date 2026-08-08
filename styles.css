@@ -26,8 +26,10 @@
   --mixed-methods: #bf5af2;
   --line: var(--separator);
 
-  --type-display: clamp(3rem, 6vw, 5.5rem);
-  --type-home-heading: clamp(2.25rem, 4vw, 4rem);
+  --type-page-heading: clamp(2.75rem, 3.6vw, 3.125rem);
+  --type-page-heading-mobile: clamp(2.35rem, 10vw, 2.75rem);
+  --type-display: var(--type-page-heading);
+  --type-home-heading: var(--type-page-heading);
   --type-card-title: clamp(1.375rem, 2vw, 1.75rem);
   --type-list-title: clamp(1.0625rem, 2vw, 1.2rem);
   --type-body: 1.0625rem;
@@ -164,10 +166,10 @@ a { color: inherit; }
 .intro-heading {
   max-width: none;
   margin: 0 auto 1.25rem;
-  font-size: var(--type-home-heading);
+  font-size: var(--type-page-heading);
   font-family: var(--font-system);
-  font-weight: 600;
-  line-height: 1.1;
+  font-weight: 500;
+  line-height: 1.06;
   letter-spacing: normal;
   white-space: nowrap;
 }
@@ -335,7 +337,7 @@ a { color: inherit; }
 }
 
 .projects-heading {
-  font-size: var(--type-display);
+  font-size: var(--type-page-heading);
   white-space: nowrap;
 }
 
@@ -357,9 +359,23 @@ a { color: inherit; }
 h1 {
   margin: 0;
   font-family: var(--font-system);
-  font-size: var(--type-display);
+  font-size: var(--type-page-heading);
   font-weight: 500;
-  line-height: 1.05;
+  line-height: 1.06;
+  letter-spacing: normal;
+}
+
+/* One canonical H1 treatment across every top-level page. */
+body.portfolio-page .research-heading,
+body.quantitative-page .research-heading,
+body.qualitative-page .research-heading,
+body.mixed-methods-page .research-heading,
+body.report-page .report-title,
+body .projects-heading,
+body .intro-heading {
+  font-size: var(--type-page-heading);
+  font-weight: 500;
+  line-height: 1.06;
   letter-spacing: normal;
 }
 
@@ -487,6 +503,16 @@ footer {
   .choice-page, .case-study-page { padding: 3rem 1.2rem 5rem; }
   .portfolio-intro { margin-bottom: 3rem; }
   .intro-heading { white-space: normal; }
+  body.portfolio-page .research-heading,
+  body.quantitative-page .research-heading,
+  body.qualitative-page .research-heading,
+  body.mixed-methods-page .research-heading,
+  body.report-page .report-title,
+  body .projects-heading,
+  body .intro-heading {
+    font-size: var(--type-page-heading-mobile);
+    line-height: 1.08;
+  }
   .choice-grid { grid-template-columns: 1fr; }
   .research-choice {
     min-height: 390px;
