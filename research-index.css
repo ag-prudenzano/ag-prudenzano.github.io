@@ -98,7 +98,7 @@
 }
 
 .research-entry-type {
-  color: var(--text-primary);
+  color: var(--text-secondary);
   font-weight: 400;
 }
 
@@ -181,7 +181,7 @@
 
 .research-index-list .research-entry.active:hover .research-entry-type,
 .research-index-list .research-entry.active:focus-within .research-entry-type {
-  color: var(--text-primary);
+  color: var(--text-secondary);
 }
 
 .research-index-list .research-entry.active:hover .research-entry-date,
