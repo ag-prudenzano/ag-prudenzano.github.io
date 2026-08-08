@@ -19,14 +19,16 @@
   --white: var(--inverse-text);
   --line: var(--separator);
 
-  --type-page-heading: 3.125rem;
-  --type-page-heading-mobile: 2.75rem;
-  --type-list-title: 1.1875rem;
+  /* Canonical typography scale: 50 / 36 / 18 / 17 / 15 / 13px + 48px metric. */
+  --type-h1: 3.125rem;
+  --type-h1-mobile: 2.75rem;
+  --type-h2: 2.25rem;
+  --type-h2-mobile: 2rem;
+  --type-heading: 1.125rem;
   --type-body: 1.0625rem;
-  --type-supporting: .9375rem;
-  --type-interface: .9375rem;
-  --type-label: .8125rem;
-  --type-caption: .8125rem;
+  --type-small: .9375rem;
+  --type-meta: .8125rem;
+  --type-metric: 3rem;
 }
 
 * { box-sizing: border-box; }
@@ -94,7 +96,7 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   gap: .75rem;
-  font-size: var(--type-interface);
+  font-size: var(--type-small);
   font-weight: 600;
   text-decoration: none;
 }
@@ -145,7 +147,7 @@ a { color: inherit; }
 h1 {
   margin: 0;
   font-family: var(--font-system);
-  font-size: var(--type-page-heading);
+  font-size: var(--type-h1);
   font-weight: 500;
   line-height: 1.06;
   letter-spacing: normal;
@@ -157,7 +159,7 @@ body.quantitative-page .research-heading,
 body.qualitative-page .research-heading,
 body.mixed-methods-page .research-heading,
 body.report-page .report-title {
-  font-size: var(--type-page-heading);
+  font-size: var(--type-h1);
   font-weight: 500;
   line-height: 1.06;
   letter-spacing: normal;
@@ -192,7 +194,7 @@ body.report-page .report-title {
 }
 
 .study-title {
-  font-size: var(--type-list-title);
+  font-size: var(--type-heading);
   font-weight: 500;
 }
 
@@ -243,13 +245,13 @@ footer {
   justify-content: space-between;
   gap: 1rem;
   color: var(--muted);
-  font-size: var(--type-caption);
+  font-size: var(--type-meta);
   font-weight: 400;
 }
 
 @media (max-width: 800px) {
   .site-header { min-height: 72px; padding: 0 1.2rem; }
-  .brand { gap: .55rem; font-size: var(--type-interface); }
+  .brand { gap: .55rem; }
   .brand-photo { width: 36px; height: 36px; }
   .case-study-page { padding: 3rem 1.2rem 5rem; }
   body.portfolio-page .research-heading,
@@ -257,7 +259,7 @@ footer {
   body.qualitative-page .research-heading,
   body.mixed-methods-page .research-heading,
   body.report-page .report-title {
-    font-size: var(--type-page-heading-mobile);
+    font-size: var(--type-h1-mobile);
     line-height: 1.08;
   }
   .study-item { grid-template-columns: 38px 1fr; }
