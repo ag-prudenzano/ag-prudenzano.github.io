@@ -33,13 +33,6 @@
   margin-bottom: var(--research-navigation-gap);
 }
 
-.research-heading {
-  font-size: var(--type-page-heading);
-  font-weight: 500;
-  line-height: 1.06;
-  letter-spacing: normal;
-}
-
 .research-filter {
   margin-top: var(--research-navigation-gap);
 }
@@ -227,11 +220,6 @@
   .qualitative-page .back-link,
   .mixed-methods-page .back-link {
     margin-bottom: 1.75rem;
-  }
-
-  .research-heading {
-    font-size: var(--type-page-heading-mobile);
-    line-height: 1.08;
   }
 
   .research-groups {
