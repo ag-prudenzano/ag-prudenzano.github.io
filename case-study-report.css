@@ -94,6 +94,10 @@
   outline-offset: 3px;
 }
 
+body.report-page .live-report-section[data-section="quality-checks"] > .live-report-checks + p {
+  color: var(--text-tertiary);
+}
+
 @media (max-width: 800px) {
   .report-page .case-study-page {
     padding-top: 2.5rem;
