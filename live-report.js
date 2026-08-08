@@ -54,6 +54,79 @@ if (liveReport) {
     return fragment;
   };
 
+  const enhanceProjectSnapshot = (container) => {
+    const section = container.querySelector('[data-section="project-snapshot"]');
+    if (!section) return;
+
+    const table = section.querySelector(":scope > table");
+    const headers = table ? Array.from(table.querySelectorAll("thead th")) : [];
+    const values = table ? Array.from(table.querySelectorAll("tbody tr:first-child td")) : [];
+
+    if (table && headers.length && values.length) {
+      const snapshot = document.createElement("dl");
+      snapshot.className = "live-report-snapshot";
+
+      headers.forEach((header, index) => {
+        const value = values[index];
+        if (!value) return;
+
+        const item = document.createElement("div");
+        item.className = "live-report-snapshot-item";
+
+        const term = document.createElement("dt");
+        term.textContent = header.textContent.trim();
+
+        const description = document.createElement("dd");
+        description.innerHTML = value.innerHTML;
+
+        item.append(term, description);
+        snapshot.appendChild(item);
+      });
+
+      table.replaceWith(snapshot);
+    }
+
+    const skillsParagraph = Array.from(section.querySelectorAll(":scope > p")).find((paragraph) => {
+      const label = paragraph.querySelector(":scope > strong");
+      return label?.textContent?.trim().toLowerCase().startsWith("skills demonstrated");
+    });
+
+    if (!skillsParagraph) return;
+
+    const labelNode = skillsParagraph.querySelector(":scope > strong");
+    const labelText = labelNode?.textContent?.replace(/:\s*$/, "").trim() || "Skills demonstrated";
+    const skillText = skillsParagraph.textContent
+      .replace(labelNode?.textContent || "", "")
+      .replace(/^\s*:\s*/, "")
+      .trim();
+    const skills = skillText
+      .split("·")
+      .map((skill) => skill.trim())
+      .filter(Boolean);
+
+    if (!skills.length) return;
+
+    const block = document.createElement("div");
+    block.className = "live-report-skill-block";
+
+    const label = document.createElement("p");
+    label.className = "live-report-skill-label";
+    label.textContent = labelText;
+
+    const list = document.createElement("ul");
+    list.className = "live-report-skill-list";
+    list.setAttribute("aria-label", labelText);
+
+    skills.forEach((skill) => {
+      const item = document.createElement("li");
+      item.textContent = skill;
+      list.appendChild(item);
+    });
+
+    block.append(label, list);
+    skillsParagraph.replaceWith(block);
+  };
+
   const enhanceQualityChecks = (container) => {
     const section = container.querySelector('[data-section="quality-checks"]');
     const list = section?.querySelector(":scope > ol");
@@ -191,6 +264,7 @@ if (liveReport) {
       reportHeading?.remove();
 
       liveReport.replaceChildren(buildSections(parsed));
+      enhanceProjectSnapshot(liveReport);
       enhanceQualityChecks(liveReport);
       enhanceFigures(liveReport);
       enhanceProjectFiles(liveReport);
