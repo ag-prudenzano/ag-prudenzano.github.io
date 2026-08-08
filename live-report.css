@@ -1,3 +1,21 @@
+.report-page {
+  --background: #000000;
+  --paper: #000000;
+  --text-primary: #f6f6f6;
+  --ink: #f6f6f6;
+  --text-secondary: #a3a3a3;
+  --muted: #a3a3a3;
+  --text-inactive: #575757;
+  --report-tertiary: #575757;
+  --separator: #393939;
+  --line: #393939;
+  --inverse-background: #f6f6f6;
+}
+
+.report-page footer {
+  color: var(--report-tertiary);
+}
+
 .live-report {
   width: 100%;
   border-top: 1px solid var(--line);
@@ -55,6 +73,20 @@
 .live-report-section > p strong {
   color: inherit;
   font-weight: inherit;
+}
+
+.live-report-section[data-section="quality-checks"] > p {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.live-report-section[data-section="quality-checks"] > .live-report-checks + p,
+.live-report table + p,
+.live-report-figures + p,
+.live-report table caption {
+  color: var(--report-tertiary);
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 .live-report-section code {
@@ -156,7 +188,7 @@
   height: auto;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: #000;
+  background: #000000;
 }
 
 .live-report-figure h3 {
@@ -168,9 +200,9 @@
 
 .live-report-figure figcaption {
   margin-top: .85rem;
-  color: var(--text-secondary);
-  font-size: .85rem;
-  line-height: 1.5;
+  color: var(--report-tertiary);
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 .live-report-section[data-section="project-files"] > ul,
