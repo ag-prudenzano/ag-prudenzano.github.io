@@ -18,11 +18,15 @@
 
 .live-report-section {
   width: 100%;
-  padding: 3.75rem 0;
+  padding: 4.25rem 0 0;
 }
 
-.live-report-section + .live-report-section {
-  border-top: 1px solid var(--line);
+.live-report-section:first-child {
+  padding-top: 3.75rem;
+}
+
+.live-report-section:last-child {
+  padding-bottom: 4.5rem;
 }
 
 .live-report-section > h2 {
@@ -213,8 +217,13 @@
 }
 
 @media (max-width: 800px) {
-  .live-report-section {
-    padding: 3rem 0;
+  .live-report-section,
+  .live-report-section:first-child {
+    padding-top: 3rem;
+  }
+
+  .live-report-section:last-child {
+    padding-bottom: 3.5rem;
   }
 
   .live-report-checks,
