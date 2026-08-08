@@ -13,7 +13,7 @@
   color: var(--ink);
   background: transparent;
   font: inherit;
-  font-size: var(--type-interface);
+  font-size: var(--type-small);
   font-weight: 500;
   line-height: 1;
   white-space: nowrap;
