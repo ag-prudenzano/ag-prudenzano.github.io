@@ -80,7 +80,13 @@
   line-height: 1.37;
 }
 
-.portfolio-research-list .research-entry-type,
+.portfolio-research-list .research-entry-type {
+  color: var(--text-primary);
+  font-size: var(--type-tertiary-text);
+  font-weight: 400;
+  line-height: 1.37;
+}
+
 .portfolio-research-list .research-entry-date,
 .portfolio-entry-kind {
   color: var(--text-tertiary);
