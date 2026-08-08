@@ -51,7 +51,7 @@
   max-width: 18ch;
   margin: 0 0 2rem;
   color: var(--text-primary);
-  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-size: 2.25rem;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: normal;
@@ -288,7 +288,7 @@
 .live-report-metric dd {
   margin: 1rem 0 0;
   color: var(--text-primary);
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: 3rem;
   font-weight: 500;
   line-height: 1.05;
   letter-spacing: normal;
@@ -454,6 +454,14 @@
     padding-bottom: 3.5rem;
   }
 
+  .live-report-section > h2 {
+    font-size: 2rem;
+  }
+
+  .live-report-section[data-section="project-snapshot"] > h2 {
+    font-size: .8125rem;
+  }
+
   .live-report-snapshot,
   .live-report-checks,
   .live-report-metrics,
@@ -508,7 +516,7 @@
 
   .live-report-metric dd {
     margin-top: .65rem;
-    font-size: clamp(2.25rem, 12vw, 3.25rem);
+    font-size: 2.5rem;
   }
 
   .live-report-figures {
