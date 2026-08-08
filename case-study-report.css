@@ -44,10 +44,6 @@
 
 .report-title {
   max-width: none;
-  font-size: var(--type-page-heading);
-  font-weight: 500;
-  line-height: 1.06;
-  letter-spacing: normal;
   white-space: normal;
   text-wrap: balance;
 }
@@ -109,9 +105,5 @@
 
   .report-hero {
     margin-bottom: 3rem;
-  }
-
-  .report-title {
-    max-width: none;
   }
 }
