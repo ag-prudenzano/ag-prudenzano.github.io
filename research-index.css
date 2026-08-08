@@ -45,7 +45,7 @@
 .research-group-heading {
   margin: 0 0 1rem;
   color: var(--research-list-primary);
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.25;
   letter-spacing: normal;
@@ -228,6 +228,7 @@
 
   .research-group-heading {
     margin-bottom: .75rem;
+    font-size: 1.25rem;
   }
 
   .research-index-list .research-entry,
