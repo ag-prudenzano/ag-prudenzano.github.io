@@ -97,7 +97,11 @@
   line-height: 1.37;
 }
 
-.research-entry-type,
+.research-entry-type {
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
 .research-entry-date {
   color: var(--text-tertiary);
   font-weight: 400;
@@ -176,7 +180,10 @@
 }
 
 .research-index-list .research-entry.active:hover .research-entry-type,
-.research-index-list .research-entry.active:focus-within .research-entry-type,
+.research-index-list .research-entry.active:focus-within .research-entry-type {
+  color: var(--text-primary);
+}
+
 .research-index-list .research-entry.active:hover .research-entry-date,
 .research-index-list .research-entry.active:focus-within .research-entry-date {
   color: var(--text-tertiary);
