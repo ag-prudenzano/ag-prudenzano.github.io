@@ -41,9 +41,13 @@ if (liveReport) {
 
     Array.from(container.children).forEach((element) => {
       if (element.tagName === "H2") {
+        const slug = slugify(element.textContent || "section");
         section = document.createElement("section");
         section.className = "live-report-section";
-        section.dataset.section = slugify(element.textContent || "section");
+        section.dataset.section = slug;
+        section.id = `report-${slug}`;
+        element.id = `report-${slug}-heading`;
+        section.setAttribute("aria-labelledby", element.id);
         section.appendChild(element);
         fragment.appendChild(section);
       } else if (section) {
@@ -94,7 +98,7 @@ if (liveReport) {
     if (!skillsParagraph) return;
 
     const labelNode = skillsParagraph.querySelector(":scope > strong");
-    const labelText = labelNode?.textContent?.replace(/:\s*$/, "").trim() || "Skills demonstrated";
+    const labelText = labelNode?.textContent?.replace(/:\s*$/, "").trim() || "Skills Demonstrated";
     const skillText = skillsParagraph.textContent
       .replace(labelNode?.textContent || "", "")
       .replace(/^\s*:\s*/, "")
@@ -127,25 +131,60 @@ if (liveReport) {
     skillsParagraph.replaceWith(block);
   };
 
+  const enhanceSectionNavigation = (container) => {
+    const snapshot = container.querySelector('[data-section="project-snapshot"]');
+    if (!snapshot) return;
+
+    const sections = Array.from(container.querySelectorAll(":scope > .live-report-section")).filter(
+      (section) => section.dataset.section !== "project-snapshot"
+    );
+    if (!sections.length) return;
+
+    const nav = document.createElement("nav");
+    nav.className = "live-report-index";
+    nav.setAttribute("aria-label", "Report sections");
+
+    const label = document.createElement("p");
+    label.className = "live-report-index-label";
+    label.textContent = "On This Page";
+
+    const list = document.createElement("ul");
+    list.className = "live-report-index-list";
+
+    sections.forEach((section) => {
+      const heading = section.querySelector(":scope > h2");
+      if (!heading || !section.id) return;
+
+      const item = document.createElement("li");
+      const link = document.createElement("a");
+      link.href = `#${section.id}`;
+      link.textContent = heading.textContent.trim();
+      item.appendChild(link);
+      list.appendChild(item);
+    });
+
+    nav.append(label, list);
+    snapshot.appendChild(nav);
+  };
+
   const enhanceQualityChecks = (container) => {
     const section = container.querySelector('[data-section="quality-checks"]');
     const list = section?.querySelector(":scope > ol");
     if (!section || !list) return;
 
-    const grid = document.createElement("div");
-    grid.className = "live-report-checks";
+    list.classList.add("live-report-checks");
+    list.setAttribute("aria-label", "Eight respondent-level quality checks");
 
     Array.from(list.children).forEach((item) => {
       const titleNode = item.querySelector(":scope > strong");
-      const title = titleNode?.textContent?.trim() || "Quality check";
+      const title = titleNode?.textContent?.trim() || "Quality Check";
       if (titleNode) titleNode.remove();
 
       const description = item.textContent
         .replace(/^\s*[—–-]\s*/, "")
         .trim();
 
-      const article = document.createElement("article");
-      article.className = "live-report-check";
+      item.classList.add("live-report-check");
 
       const heading = document.createElement("h3");
       heading.textContent = title;
@@ -153,11 +192,61 @@ if (liveReport) {
       const paragraph = document.createElement("p");
       paragraph.textContent = description;
 
-      article.append(heading, paragraph);
-      grid.appendChild(article);
+      item.replaceChildren(heading, paragraph);
+    });
+  };
+
+  const enhanceFindings = (container) => {
+    const section = container.querySelector('[data-section="findings"]');
+    if (!section) return;
+
+    const tables = Array.from(section.querySelectorAll(":scope > table"));
+    const summaryTable = tables.find((table) => {
+      const headers = Array.from(table.querySelectorAll("thead th")).map((header) =>
+        header.textContent.trim().toLowerCase()
+      );
+      return headers.includes("flagged") && headers.includes("manual review") && headers.includes("exclusion");
     });
 
-    list.replaceWith(grid);
+    if (!summaryTable) return;
+
+    const headers = Array.from(summaryTable.querySelectorAll("thead th"));
+    const values = Array.from(summaryTable.querySelectorAll("tbody tr:first-child td"));
+    if (!headers.length || !values.length) return;
+
+    const metrics = document.createElement("dl");
+    metrics.className = "live-report-metrics";
+    metrics.setAttribute("aria-label", "Key audit findings");
+
+    headers.forEach((header, index) => {
+      const value = values[index];
+      if (!value) return;
+
+      const item = document.createElement("div");
+      item.className = "live-report-metric";
+
+      const term = document.createElement("dt");
+      term.textContent = header.textContent.trim();
+
+      const description = document.createElement("dd");
+      description.innerHTML = value.innerHTML;
+
+      item.append(term, description);
+      metrics.appendChild(item);
+    });
+
+    summaryTable.replaceWith(metrics);
+  };
+
+  const enhanceTables = (container) => {
+    container.querySelectorAll("table").forEach((table) => {
+      if (table.parentElement?.classList.contains("live-report-table-wrap")) return;
+
+      const wrapper = document.createElement("div");
+      wrapper.className = "live-report-table-wrap";
+      table.before(wrapper);
+      wrapper.appendChild(table);
+    });
   };
 
   const enhanceFigures = (container) => {
@@ -188,7 +277,10 @@ if (liveReport) {
       const captionParagraph = nodes[index + 1];
       if (captionParagraph?.tagName === "P" && !captionParagraph.querySelector("img")) {
         const caption = document.createElement("figcaption");
+        const captionId = `figure-${slugify(node.textContent || "chart")}-caption`;
+        caption.id = captionId;
         caption.innerHTML = captionParagraph.innerHTML;
+        if (image) image.setAttribute("aria-describedby", captionId);
         figure.appendChild(caption);
         captionParagraph.remove();
         index += 1;
@@ -237,15 +329,14 @@ if (liveReport) {
   };
 
   const loadReport = async () => {
+    liveReport.setAttribute("aria-busy", "true");
+
     try {
       if (!reportUrl || !window.marked) {
         throw new Error("Report renderer unavailable.");
       }
 
-      const separator = reportUrl.includes("?") ? "&" : "?";
-      const response = await fetch(`${reportUrl}${separator}v=${Date.now()}`, {
-        cache: "no-store",
-      });
+      const response = await fetch(reportUrl, { cache: "no-cache" });
 
       if (!response.ok) {
         throw new Error(`Report request failed with status ${response.status}.`);
@@ -265,22 +356,21 @@ if (liveReport) {
 
       liveReport.replaceChildren(buildSections(parsed));
       enhanceProjectSnapshot(liveReport);
+      enhanceSectionNavigation(liveReport);
       enhanceQualityChecks(liveReport);
+      enhanceFindings(liveReport);
+      enhanceTables(liveReport);
       enhanceFigures(liveReport);
       enhanceProjectFiles(liveReport);
-
-      const objective = liveReport.querySelector('[data-section="audit-objective"] > p');
-      const lede = document.querySelector(".report-lede");
-      if (objective && lede) {
-        lede.textContent = objective.textContent;
-      }
     } catch (error) {
       liveReport.innerHTML = `
-        <p class="live-report-error">
+        <p class="live-report-error" role="status">
           The report could not be loaded here. You can read the canonical report
           <a href="https://github.com/ag-prudenzano/survey-response-quality-audit/blob/main/report.md" target="_blank" rel="noopener noreferrer">on GitHub</a>.
         </p>`;
       console.error(error);
+    } finally {
+      liveReport.setAttribute("aria-busy", "false");
     }
   };
 
