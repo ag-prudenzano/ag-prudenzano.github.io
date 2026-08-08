@@ -139,8 +139,7 @@
   margin-top: 1.5rem;
 }
 
-.live-report-skill-label,
-.live-report-index-label {
+.live-report-skill-label {
   margin: 0 0 .75rem;
   color: var(--report-tertiary);
   font-size: .8125rem;
@@ -166,34 +165,6 @@
   color: var(--text-secondary);
   font-size: .8125rem;
   line-height: 1.3;
-}
-
-.live-report-index {
-  width: 100%;
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
-}
-
-.live-report-index-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem 1.25rem;
-  list-style: none;
-}
-
-.live-report-index-list a {
-  color: var(--text-secondary);
-  font-size: .9375rem;
-  line-height: 1.5;
-  text-decoration: none;
-}
-
-.live-report-index-list a:hover,
-.live-report-index-list a:focus-visible {
-  color: var(--text-primary);
 }
 
 .live-report-section[data-section="project-snapshot"] th,
@@ -512,14 +483,6 @@
 
   .live-report-skill-list li {
     font-size: .8125rem;
-  }
-
-  .live-report-index {
-    margin-top: 1.5rem;
-  }
-
-  .live-report-index-list {
-    gap: .4rem 1rem;
   }
 
   .live-report-check,
