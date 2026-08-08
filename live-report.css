@@ -280,9 +280,9 @@
 .live-report-metric dd {
   margin: 1rem 0 0;
   color: var(--text-primary);
-  font-size: var(--type-finding-metric);
+  font-size: var(--type-heading-01);
   font-weight: 500;
-  line-height: 1.05;
+  line-height: 1.06;
   letter-spacing: normal;
 }
 
@@ -511,7 +511,8 @@
 
   .live-report-metric dd {
     margin-top: .65rem;
-    font-size: 2.5rem;
+    font-size: var(--type-heading-01-mobile);
+    line-height: 1.08;
   }
 
   .live-report-figures {
