@@ -52,8 +52,8 @@
   width: 100%;
   max-width: 760px;
   margin: 1.5rem 0 0;
-  color: var(--text-secondary);
-  font-size: var(--type-body);
+  color: var(--text-primary);
+  font-size: var(--type-primary-text);
   font-weight: 400;
   line-height: 1.6;
 }
@@ -71,12 +71,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--line);
+  border: 1px solid var(--separator);
   border-radius: 999px;
   color: var(--text-primary);
-  font-size: var(--type-small);
+  font-size: var(--type-secondary-text);
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.53;
   text-decoration: none;
   transition: color .2s ease, background-color .2s ease, border-color .2s ease;
 }
@@ -84,7 +84,7 @@
 .report-action:hover,
 .report-action:focus-visible {
   color: var(--inverse-text);
-  border-color: var(--text-primary);
+  border-color: var(--separator);
   background: var(--text-primary);
 }
 
