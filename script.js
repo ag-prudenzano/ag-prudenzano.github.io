@@ -121,6 +121,10 @@ const publishedPortfolioStudies = {
     href: "survey-response-quality-audit.html",
     date: "2026",
   },
+  "Socialising in Cyberspace: A Phenomenologically Informed Interview Study of Discord Users' Social Experiences": {
+    href: "socialising-in-cyberspace.html",
+    date: "2022",
+  },
 };
 
 document.querySelector(".portfolio-filter-note")?.remove();
@@ -169,6 +173,26 @@ portfolioItems.forEach((item) => {
     }
   }
 });
+
+const prioritiseActiveEntries = () => {
+  document.querySelectorAll(".study-list").forEach((list) => {
+    const items = Array.from(list.children).filter((item) =>
+      item.classList.contains("study-item")
+    );
+
+    if (items.length < 2) return;
+
+    items.sort(
+      (a, b) =>
+        Number(b.classList.contains("active")) -
+        Number(a.classList.contains("active"))
+    );
+
+    items.forEach((item) => list.appendChild(item));
+  });
+};
+
+prioritiseActiveEntries();
 
 if (
   portfolioFilterButtons.length &&
