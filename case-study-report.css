@@ -34,9 +34,9 @@
 
 .report-title {
   max-width: 16ch;
-  font-size: clamp(3rem, 6vw, 5.25rem);
+  font-size: clamp(2.75rem, 3.6vw, 3.125rem);
   font-weight: 500;
-  line-height: 1.04;
+  line-height: 1.06;
   letter-spacing: normal;
 }
 
@@ -365,8 +365,8 @@
 
   .report-title {
     max-width: none;
-    font-size: clamp(2.65rem, 12vw, 4rem);
-    line-height: 1.05;
+    font-size: clamp(2.35rem, 10vw, 2.75rem);
+    line-height: 1.08;
   }
 
   .report-meta,
