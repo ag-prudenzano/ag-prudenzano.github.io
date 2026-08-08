@@ -1,25 +1,10 @@
 :root {
-  --background: #000000;
-  --paper: #000000;
-  --text-primary: #f6f6f6;
-  --ink: #f6f6f6;
-  --text-secondary: #a3a3a3;
-  --muted: #a3a3a3;
-  --separator: #393939;
-  --line: #393939;
-  --inverse-background: #f6f6f6;
-  --inverse-text: #000000;
-  --white: #000000;
-  --research-list-primary: #f6f6f6;
-  --research-list-secondary: #a3a3a3;
-  --research-list-body: #a3a3a3;
-  --research-list-line: #393939;
   --site-layout-width: 1500px;
 }
 
 body {
-  color: #f6f6f6;
-  background: #000000;
+  color: var(--text-primary);
+  background: var(--background);
 }
 
 /* One shared outer frame for headers and page content. */
@@ -37,39 +22,21 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  line-height: 1;
-}
-
-.research-entry-date,
-.research-entry-description,
-.research-filter-button,
-.research-empty,
-footer {
-  color: #a3a3a3;
-}
-
-.research-heading,
-.research-entry-type,
-.research-entry-title,
-.research-filter-button:hover,
-.research-filter-button:focus-visible,
-.research-filter-button.is-active {
-  color: #f6f6f6;
 }
 
 .mobile-menu {
-  background-color: #141414;
+  background-color: var(--background);
 }
 
 .header-button,
 .back-link,
 .menu-toggle,
 .brand-photo {
-  border-color: #393939;
+  border-color: var(--separator);
 }
 
 .research-index-list .study-arrow {
-  color: #f6f6f6;
+  color: var(--text-primary);
 }
 
 .header-button:hover,
@@ -78,7 +45,7 @@ footer {
 .back-link:focus-visible,
 .menu-toggle:hover,
 .menu-toggle:focus-visible {
-  color: #000000;
-  border-color: #393939;
-  background: #f6f6f6;
+  color: var(--inverse-text);
+  border-color: var(--separator);
+  background: var(--text-primary);
 }
