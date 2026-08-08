@@ -15,7 +15,7 @@
   font: inherit;
   font-size: var(--type-secondary-text);
   font-weight: 500;
-  line-height: 1.53;
+  line-height: var(--leading-secondary-text);
   white-space: nowrap;
   cursor: pointer;
   display: inline-flex;
