@@ -1,0 +1,210 @@
+.live-report {
+  width: 100%;
+}
+
+.live-report-loading,
+.live-report-error {
+  max-width: 760px;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.live-report-error a {
+  color: var(--text-primary);
+}
+
+.live-report-section {
+  padding: 3.75rem 0;
+}
+
+.live-report-section + .live-report-section {
+  border-top: 1px solid var(--line);
+}
+
+.live-report-section > h2 {
+  max-width: 18ch;
+  margin: 0 0 2rem;
+  color: var(--text-primary);
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -.03em;
+}
+
+.live-report-section > p,
+.live-report-section > ol,
+.live-report-section > ul {
+  max-width: 900px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.live-report-section > p {
+  margin: 0 0 1.25rem;
+}
+
+.live-report-section strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.live-report-section code {
+  color: var(--text-primary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: .9em;
+}
+
+.live-report-section[data-section="quality-checks"] > ol {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  list-style: none;
+  counter-reset: qc-check;
+}
+
+.live-report-section[data-section="quality-checks"] > ol > li {
+  min-height: 130px;
+  padding: 1.4rem 0 1.55rem;
+  border-bottom: 1px solid var(--line);
+  counter-increment: qc-check;
+}
+
+.live-report-section[data-section="quality-checks"] > ol > li:nth-child(odd) {
+  padding-right: 2rem;
+}
+
+.live-report-section[data-section="quality-checks"] > ol > li:nth-child(even) {
+  padding-left: 2rem;
+  border-left: 1px solid var(--line);
+}
+
+.live-report-section[data-section="quality-checks"] > ol > li::before {
+  content: counter(qc-check, decimal-leading-zero);
+  display: block;
+  margin-bottom: .55rem;
+  color: var(--text-secondary);
+  font-size: .75rem;
+  letter-spacing: .06em;
+}
+
+.live-report-section[data-section="findings"] > p:first-of-type {
+  max-width: 980px;
+  color: var(--text-primary);
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  line-height: 1.5;
+}
+
+.live-report table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  font-size: .925rem;
+}
+
+.live-report th,
+.live-report td {
+  padding: .95rem 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+.live-report th {
+  color: var(--text-secondary);
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.live-report td {
+  color: var(--text-primary);
+}
+
+.live-report th:nth-child(n+2),
+.live-report td:nth-child(n+2) {
+  text-align: right;
+}
+
+.live-report-figures {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.live-report-figure {
+  margin: 0;
+}
+
+.live-report-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #000;
+}
+
+.live-report-figure h3 {
+  margin: 0 0 .8rem;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.live-report-figure figcaption {
+  margin-top: .85rem;
+  color: var(--text-secondary);
+  font-size: .85rem;
+  line-height: 1.5;
+}
+
+.live-report-section[data-section="project-files"] > ul {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.live-report-section[data-section="project-files"] > ul > li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.live-report-section[data-section="project-files"] a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.live-report-section[data-section="project-files"] a:hover,
+.live-report-section[data-section="project-files"] a:focus-visible {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 800px) {
+  .live-report-section {
+    padding: 3rem 0;
+  }
+
+  .live-report-section[data-section="quality-checks"] > ol,
+  .live-report-figures {
+    grid-template-columns: 1fr;
+  }
+
+  .live-report-section[data-section="quality-checks"] > ol > li,
+  .live-report-section[data-section="quality-checks"] > ol > li:nth-child(odd),
+  .live-report-section[data-section="quality-checks"] > ol > li:nth-child(even) {
+    min-height: 0;
+    padding: 1.25rem 0 1.4rem;
+    border-left: 0;
+  }
+
+  .live-report-figures {
+    gap: 2.5rem;
+  }
+}
