@@ -19,17 +19,26 @@
   --white: var(--inverse-text);
   --line: var(--separator);
 
-  /* Canonical desktop typography from website_typography.numbers. */
+  /* Canonical typography from website_typography.numbers. */
   --type-heading-01: 3.125rem; /* 50px */
   --type-heading-02: 2.25rem;  /* 36px */
-  --type-heading-03: 1.125rem; /* 18px */
+  --type-heading-03: 1.5rem;   /* 24px */
+  --type-heading-04: 1.0625rem; /* 17px */
   --type-primary-text: 1.0625rem; /* 17px */
   --type-secondary-text: .9375rem; /* 15px */
   --type-tertiary-text: .8125rem; /* 13px */
 
-  /* Responsive exceptions for small screens. */
-  --type-heading-01-mobile: 2.75rem;
-  --type-heading-02-mobile: 2rem;
+  --leading-heading-01: 1.10;
+  --leading-heading-02: 1.20;
+  --leading-heading-03: 1.30;
+  --leading-heading-04: 1.50;
+  --leading-primary-text: 1.50;
+  --leading-secondary-text: 1.50;
+  --leading-tertiary-text: 1.50;
+
+  /* Keep the same named styles on small screens unless a component needs a layout-only adjustment. */
+  --type-heading-01-mobile: var(--type-heading-01);
+  --type-heading-02-mobile: var(--type-heading-02);
 }
 
 * { box-sizing: border-box; }
@@ -59,7 +68,7 @@ body {
   background: var(--background);
   font-size: var(--type-primary-text);
   font-weight: 400;
-  line-height: 1.6;
+  line-height: var(--leading-primary-text);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -101,7 +110,7 @@ a { color: inherit; }
   color: var(--text-primary);
   font-size: var(--type-secondary-text);
   font-weight: 400;
-  line-height: 1.53;
+  line-height: var(--leading-secondary-text);
   text-decoration: none;
 }
 
@@ -154,7 +163,7 @@ h1 {
   font-family: var(--font-system);
   font-size: var(--type-heading-01);
   font-weight: 500;
-  line-height: 1.06;
+  line-height: var(--leading-heading-01);
   letter-spacing: normal;
 }
 
@@ -166,7 +175,7 @@ body.mixed-methods-page .research-heading,
 body.report-page .report-title {
   font-size: var(--type-heading-01);
   font-weight: 500;
-  line-height: 1.06;
+  line-height: var(--leading-heading-01);
   letter-spacing: normal;
 }
 
@@ -198,11 +207,12 @@ body.report-page .report-title {
   border-bottom: 1px solid var(--separator);
 }
 
+/* Former Heading 03 list titles now use Heading 04. */
 .study-title {
   color: var(--text-primary);
-  font-size: var(--type-heading-03);
+  font-size: var(--type-heading-04);
   font-weight: 500;
-  line-height: 1.35;
+  line-height: var(--leading-heading-04);
 }
 
 .study-item:not(.active) .study-title {
@@ -252,7 +262,7 @@ footer {
   color: var(--text-tertiary);
   font-size: var(--type-tertiary-text);
   font-weight: 400;
-  line-height: 1.37;
+  line-height: var(--leading-tertiary-text);
 }
 
 @media (max-width: 800px) {
@@ -266,7 +276,7 @@ footer {
   body.mixed-methods-page .research-heading,
   body.report-page .report-title {
     font-size: var(--type-heading-01-mobile);
-    line-height: 1.08;
+    line-height: var(--leading-heading-01);
   }
   .study-item { grid-template-columns: 38px 1fr; }
   .study-arrow { grid-column: 2; }
