@@ -114,6 +114,7 @@ if (
   item.className = "study-item research-entry";
   item.dataset.method = "qualitative";
   item.dataset.projectType = "real";
+  item.dataset.portfolioKind = "Research Project";
   item.innerHTML = `
     <div class="research-entry-meta"><span class="research-entry-type">Qualitative</span><span class="portfolio-entry-kind">Research Project</span><span class="research-entry-date">2022</span></div>
     <div class="research-entry-content"><span class="study-title research-entry-title">${discordPortfolioTitle}</span><p class="research-entry-description">An exploratory qualitative study of how two regular Discord users experienced social connection, mediated intimacy, learning, everyday support, and friction in voice-centred online communities.</p></div>`;
@@ -166,9 +167,10 @@ portfolioItems.forEach((item) => {
 
   if (projectTypeLabel) {
     projectTypeLabel.textContent =
-      item.dataset.projectType === "real"
+      item.dataset.portfolioKind ||
+      (item.dataset.projectType === "real"
         ? "Real project"
-        : "Simulated case study";
+        : "Simulated case study");
   }
 
   const publishedStudy = publishedPortfolioStudies[title?.textContent.trim()];
