@@ -281,17 +281,23 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
   gap: 2rem;
 }
 
 .live-report-figure {
+  min-width: 0;
   margin: 0;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-content: start;
 }
 
 .live-report-figure img {
   display: block;
   width: 100%;
-  height: auto;
+  aspect-ratio: 12 / 7;
+  object-fit: contain;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: #000000;
