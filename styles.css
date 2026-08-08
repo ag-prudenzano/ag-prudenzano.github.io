@@ -19,9 +19,9 @@
   --white: var(--inverse-text);
   --line: var(--separator);
 
-  --type-page-heading: clamp(2.75rem, 3.6vw, 3.125rem);
-  --type-page-heading-mobile: clamp(2.35rem, 10vw, 2.75rem);
-  --type-list-title: clamp(1.0625rem, 2vw, 1.2rem);
+  --type-page-heading: 3.125rem;
+  --type-page-heading-mobile: 2.75rem;
+  --type-list-title: 1.1875rem;
   --type-body: 1.0625rem;
   --type-supporting: .9375rem;
   --type-interface: .9375rem;
