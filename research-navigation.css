@@ -22,7 +22,7 @@
   color: var(--muted);
   background: transparent;
   font: inherit;
-  font-size: var(--type-interface);
+  font-size: var(--type-small);
   font-weight: 500;
   line-height: 1.4;
   cursor: pointer;
@@ -47,7 +47,7 @@
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   color: var(--muted);
-  font-size: var(--type-supporting);
+  font-size: var(--type-small);
 }
 
 @media (max-width: 800px) {
