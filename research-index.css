@@ -45,9 +45,9 @@
 .research-group-heading {
   margin: 0 0 1rem;
   color: var(--research-list-primary);
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.25;
+  font-size: var(--type-heading);
+  font-weight: 600;
+  line-height: 1.35;
   letter-spacing: normal;
 }
 
@@ -57,6 +57,7 @@
   border-top: 1px solid var(--research-list-line);
   border-bottom: 1px solid var(--research-list-line);
   color: var(--research-list-secondary);
+  font-size: var(--type-small);
 }
 
 .research-index-list {
@@ -101,7 +102,7 @@
   display: grid;
   gap: .85rem;
   align-content: start;
-  font-size: var(--type-supporting);
+  font-size: var(--type-meta);
   line-height: 1.4;
 }
 
@@ -123,7 +124,7 @@
 
 .research-entry-title {
   color: inherit;
-  font-size: 1.125rem;
+  font-size: var(--type-heading);
   font-weight: 500;
   line-height: 1.35;
   letter-spacing: normal;
@@ -134,7 +135,7 @@
   max-width: 64ch;
   margin: 0;
   color: var(--research-list-body);
-  font-size: var(--type-supporting);
+  font-size: var(--type-small);
   font-weight: 400;
   line-height: 1.55;
 }
@@ -228,7 +229,6 @@
 
   .research-group-heading {
     margin-bottom: .75rem;
-    font-size: 1.25rem;
   }
 
   .research-index-list .research-entry,
@@ -250,14 +250,6 @@
     grid-column: 1 / -1;
     gap: .65rem;
     padding-right: 1.5rem;
-  }
-
-  .research-entry-title {
-    font-size: 1.0625rem;
-  }
-
-  .research-entry-description {
-    font-size: var(--type-supporting);
   }
 
   .research-index-list .study-arrow,
