@@ -8,14 +8,14 @@
   height: 42px;
   min-height: 42px;
   padding: 0 1.15rem 2px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--separator);
   border-radius: 999px;
-  color: var(--ink);
+  color: var(--text-primary);
   background: transparent;
   font: inherit;
-  font-size: var(--type-small);
+  font-size: var(--type-secondary-text);
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.53;
   white-space: nowrap;
   cursor: pointer;
   display: inline-flex;
@@ -28,9 +28,9 @@
 
 .header-button:hover,
 .header-button:focus-visible {
-  color: var(--white);
-  border-color: var(--ink);
-  background: var(--ink);
+  color: var(--inverse-text);
+  border-color: var(--separator);
+  background: var(--text-primary);
 }
 
 .menu-toggle,
@@ -53,9 +53,9 @@
     padding: 0;
     display: grid;
     place-items: center;
-    border: 1px solid var(--line);
+    border: 1px solid var(--separator);
     border-radius: 50%;
-    color: var(--ink);
+    color: var(--text-primary);
     background: transparent;
     cursor: pointer;
   }
@@ -106,9 +106,9 @@
     padding: .65rem;
     display: grid;
     gap: .5rem;
-    border: 1px solid var(--line);
+    border: 1px solid var(--separator);
     border-radius: 18px;
-    background: rgba(20, 20, 22, .98);
+    background: var(--background);
     box-shadow: 0 18px 44px rgba(0, 0, 0, .45);
   }
 
