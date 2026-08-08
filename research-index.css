@@ -32,9 +32,9 @@
 .research-group-heading {
   margin: 0 0 1rem;
   color: var(--text-primary);
-  font-size: var(--type-heading-03);
+  font-size: var(--type-heading-04);
   font-weight: 500;
-  line-height: 1.35;
+  line-height: var(--leading-heading-04);
   letter-spacing: normal;
 }
 
@@ -46,7 +46,7 @@
   color: var(--text-secondary);
   font-size: var(--type-secondary-text);
   font-weight: 400;
-  line-height: 1.53;
+  line-height: var(--leading-secondary-text);
 }
 
 .research-index-list {
@@ -94,7 +94,7 @@
   color: var(--text-tertiary);
   font-size: var(--type-tertiary-text);
   font-weight: 400;
-  line-height: 1.37;
+  line-height: var(--leading-tertiary-text);
 }
 
 .research-entry-type {
@@ -115,9 +115,9 @@
 
 .research-entry-title {
   color: var(--text-primary);
-  font-size: var(--type-heading-03);
+  font-size: var(--type-heading-04);
   font-weight: 500;
-  line-height: 1.35;
+  line-height: var(--leading-heading-04);
   letter-spacing: normal;
   text-decoration: none;
 }
@@ -128,7 +128,7 @@
   color: var(--text-secondary);
   font-size: var(--type-secondary-text);
   font-weight: 400;
-  line-height: 1.53;
+  line-height: var(--leading-secondary-text);
 }
 
 .research-index-list .study-arrow {
