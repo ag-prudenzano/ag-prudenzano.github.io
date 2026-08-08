@@ -3,15 +3,15 @@
 
   --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
 
+  /* Canonical colour palette from website_colours.png. */
   --background: #000000;
-  --surface: #1c1c1e;
-  --text-primary: #f5f5f7;
-  --text-secondary: #a1a1a6;
-  --text-inactive: #636366;
-  --inverse-background: #f5f5f7;
-  --inverse-text: #0b0b0d;
-  --separator: #38383a;
-  --focus: #0a84ff;
+  --text-primary: #f6f6f6;
+  --text-secondary: #a3a3a3;
+  --text-tertiary: #575757;
+  --separator: #393939;
+  --inverse-background: #f6f6f6;
+  --inverse-text: #000000;
+  --focus: #f6f6f6;
 
   --ink: var(--text-primary);
   --muted: var(--text-secondary);
@@ -19,16 +19,18 @@
   --white: var(--inverse-text);
   --line: var(--separator);
 
-  /* Canonical typography scale: 50 / 36 / 18 / 17 / 15 / 13px + 48px metric. */
-  --type-h1: 3.125rem;
-  --type-h1-mobile: 2.75rem;
-  --type-h2: 2.25rem;
-  --type-h2-mobile: 2rem;
-  --type-heading: 1.125rem;
-  --type-body: 1.0625rem;
-  --type-small: .9375rem;
-  --type-meta: .8125rem;
-  --type-metric: 3rem;
+  /* Canonical desktop typography from website_typography.numbers. */
+  --type-heading-01: 3.125rem; /* 50px */
+  --type-heading-02: 2.25rem;  /* 36px */
+  --type-heading-03: 1.125rem; /* 18px */
+  --type-primary-text: 1.0625rem; /* 17px */
+  --type-secondary-text: .9375rem; /* 15px */
+  --type-tertiary-text: .8125rem; /* 13px */
+  --type-finding-metric: 3rem; /* 48px */
+
+  /* Responsive exceptions for small screens. */
+  --type-heading-01-mobile: 2.75rem;
+  --type-heading-02-mobile: 2rem;
 }
 
 * { box-sizing: border-box; }
@@ -54,9 +56,10 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  color: var(--ink);
-  background: var(--paper);
-  font-size: var(--type-body);
+  color: var(--text-primary);
+  background: var(--background);
+  font-size: var(--type-primary-text);
+  font-weight: 400;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -89,15 +92,17 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--separator);
 }
 
 .brand {
   display: flex;
   align-items: center;
   gap: .75rem;
-  font-size: var(--type-small);
-  font-weight: 600;
+  color: var(--text-primary);
+  font-size: var(--type-secondary-text);
+  font-weight: 500;
+  line-height: 1.53;
   text-decoration: none;
 }
 
@@ -105,7 +110,7 @@ a { color: inherit; }
   display: block;
   width: 38px;
   height: 38px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--separator);
   border-radius: 50%;
   object-fit: cover;
   object-position: 72% 35%;
@@ -125,18 +130,18 @@ a { color: inherit; }
   margin-bottom: 3.5rem;
   display: grid;
   place-items: center;
-  border: 1px solid var(--line);
+  border: 1px solid var(--separator);
   border-radius: 50%;
-  color: var(--ink);
+  color: var(--text-primary);
   text-decoration: none;
   transition: color .2s ease, background-color .2s ease, border-color .2s ease;
 }
 
 .back-link:hover,
 .back-link:focus-visible {
-  color: var(--white);
-  border-color: var(--ink);
-  background: var(--ink);
+  color: var(--inverse-text);
+  border-color: var(--separator);
+  background: var(--text-primary);
 }
 
 .page-intro {
@@ -146,20 +151,21 @@ a { color: inherit; }
 
 h1 {
   margin: 0;
+  color: var(--text-primary);
   font-family: var(--font-system);
-  font-size: var(--type-h1);
+  font-size: var(--type-heading-01);
   font-weight: 500;
   line-height: 1.06;
   letter-spacing: normal;
 }
 
-/* One canonical H1 treatment across every top-level page. */
+/* One Heading 01 treatment across every top-level page. */
 body.portfolio-page .research-heading,
 body.quantitative-page .research-heading,
 body.qualitative-page .research-heading,
 body.mixed-methods-page .research-heading,
 body.report-page .report-title {
-  font-size: var(--type-h1);
+  font-size: var(--type-heading-01);
   font-weight: 500;
   line-height: 1.06;
   letter-spacing: normal;
@@ -168,19 +174,19 @@ body.report-page .report-title {
 .study-list {
   margin: 0;
   padding: 0;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--separator);
   list-style: none;
   transition: border-color .2s ease;
 }
 
 .study-list:has(> .study-item:first-child.active:hover),
 .study-list:has(> .study-item:first-child.active:focus-within) {
-  border-top-color: transparent;
+  border-top-color: var(--separator);
 }
 
 .study-item:has(+ .study-item.active:hover),
 .study-item:has(+ .study-item.active:focus-within) {
-  border-bottom-color: transparent;
+  border-bottom-color: var(--separator);
 }
 
 .study-item {
@@ -190,35 +196,34 @@ body.report-page .report-title {
   grid-template-columns: 52px 1fr auto;
   gap: 1rem;
   align-items: center;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--separator);
 }
 
 .study-title {
-  font-size: var(--type-heading);
+  color: var(--text-primary);
+  font-size: var(--type-heading-03);
   font-weight: 500;
+  line-height: 1.35;
 }
 
 .study-item:not(.active) .study-title {
-  color: var(--text-inactive);
+  color: var(--text-tertiary);
 }
 
 .study-item.active {
   position: relative;
-  color: var(--ink);
-  border-color: var(--line);
+  color: var(--text-primary);
+  border-color: var(--separator);
   background: transparent;
-  transition: color .2s ease, border-color .2s ease, background-color .2s ease, padding .2s ease;
+  transition: color .2s ease, border-color .2s ease, padding .2s ease;
 }
 
 .study-item.active:hover,
 .study-item.active:focus-within {
-  overflow: hidden;
-  border-radius: 10px;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
+  overflow: visible;
   color: var(--text-primary);
-  border-color: transparent;
-  background: var(--surface);
+  border-color: var(--separator);
+  background: transparent;
 }
 
 .study-link {
@@ -236,6 +241,7 @@ body.report-page .report-title {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--text-primary);
   font-size: 1.2rem;
 }
 
@@ -244,9 +250,10 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  color: var(--muted);
-  font-size: var(--type-meta);
+  color: var(--text-tertiary);
+  font-size: var(--type-tertiary-text);
   font-weight: 400;
+  line-height: 1.37;
 }
 
 @media (max-width: 800px) {
@@ -259,7 +266,7 @@ footer {
   body.qualitative-page .research-heading,
   body.mixed-methods-page .research-heading,
   body.report-page .report-title {
-    font-size: var(--type-h1-mobile);
+    font-size: var(--type-heading-01-mobile);
     line-height: 1.08;
   }
   .study-item { grid-template-columns: 38px 1fr; }
