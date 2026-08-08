@@ -124,11 +124,11 @@
 .live-report-skill-block {
   width: 100%;
   max-width: 1200px;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 
 .live-report-skill-label {
-  margin: 0 0 .75rem;
+  margin: 0 0 1.25rem;
   color: var(--text-tertiary);
   font-size: var(--type-tertiary-text);
   font-weight: 400;
