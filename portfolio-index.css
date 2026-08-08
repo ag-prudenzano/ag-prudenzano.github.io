@@ -22,8 +22,8 @@
 .portfolio-introduction {
   max-width: 72ch;
   margin: 1.25rem 0 0;
-  color: var(--research-list-secondary);
-  font-size: var(--type-body);
+  color: var(--text-primary);
+  font-size: var(--type-primary-text);
   font-weight: 400;
   line-height: 1.6;
 }
@@ -46,11 +46,11 @@
 
 .portfolio-filter-label {
   display: none;
-  color: var(--research-list-secondary);
-  font-size: var(--type-meta);
-  font-weight: 600;
-  letter-spacing: .1em;
-  line-height: 1.35;
+  color: var(--text-tertiary);
+  font-size: var(--type-tertiary-text);
+  font-weight: 400;
+  letter-spacing: .06em;
+  line-height: 1.37;
   text-transform: uppercase;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .portfolio-method-filter .research-filter-button {
-  font-size: var(--type-small);
+  font-size: var(--type-secondary-text);
 }
 
 .portfolio-filter-note {
@@ -74,38 +74,45 @@
 
 .portfolio-research-list .research-entry-meta {
   gap: .35rem;
-  font-size: var(--type-meta);
-  line-height: 1.4;
+  color: var(--text-tertiary);
+  font-size: var(--type-tertiary-text);
+  font-weight: 400;
+  line-height: 1.37;
+}
+
+.portfolio-research-list .research-entry-type,
+.portfolio-research-list .research-entry-date,
+.portfolio-entry-kind {
+  color: var(--text-tertiary);
+  font-size: var(--type-tertiary-text);
+  font-weight: 400;
+  line-height: 1.37;
 }
 
 .portfolio-research-list .research-entry-title {
-  font-size: var(--type-heading);
+  color: var(--text-primary);
+  font-size: var(--type-heading-03);
+  font-weight: 500;
   line-height: 1.35;
   letter-spacing: normal;
 }
 
 .portfolio-research-list .research-entry-description {
   max-width: 68ch;
-  color: var(--research-list-secondary);
-  font-size: var(--type-small);
-  line-height: 1.55;
+  color: var(--text-secondary);
+  font-size: var(--type-secondary-text);
+  font-weight: 400;
+  line-height: 1.53;
 }
 
 .portfolio-entry-kind {
-  color: var(--research-list-secondary);
-  font-size: var(--type-meta);
-  font-weight: 400;
-  line-height: 1.35;
   text-transform: capitalize;
 }
 
-.portfolio-research-list .research-entry:not(.active) .portfolio-entry-kind {
-  color: var(--research-list-inactive);
-}
-
+.portfolio-research-list .research-entry:not(.active) .portfolio-entry-kind,
 .portfolio-research-list .research-entry.active:hover .portfolio-entry-kind,
 .portfolio-research-list .research-entry.active:focus-within .portfolio-entry-kind {
-  color: var(--research-list-secondary);
+  color: var(--text-tertiary);
 }
 
 .portfolio-research-list .study-arrow {
