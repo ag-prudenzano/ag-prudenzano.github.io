@@ -1,4 +1,4 @@
-.live-report-section > h3 {
+.qualitative-report-page .live-report-section > h3 {
   max-width: 42ch;
   margin: 2.25rem 0 .75rem;
   color: var(--text-primary);
@@ -8,25 +8,56 @@
   letter-spacing: normal;
 }
 
-.live-report-section[data-section="findings"] table th,
-.live-report-section[data-section="findings"] table td {
+.qualitative-report-page .live-report-section > h4 {
+  max-width: 52ch;
+  margin: 1.75rem 0 .65rem;
+  color: var(--text-primary);
+  font-size: var(--type-secondary-text);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+
+.qualitative-report-page .live-report table th,
+.qualitative-report-page .live-report table td {
   text-align: left;
   vertical-align: top;
 }
 
-.live-report-section[data-section="findings"] table th:first-child,
-.live-report-section[data-section="findings"] table td:first-child {
-  width: 34%;
-  padding-right: 2rem;
+.qualitative-report-page .live-report table th:nth-child(n+2),
+.qualitative-report-page .live-report table td:nth-child(n+2) {
+  text-align: left;
+}
+
+.qualitative-report-page .live-report-section[data-section="results"] table th:first-child,
+.qualitative-report-page .live-report-section[data-section="results"] table td:first-child {
+  width: 16%;
+  padding-right: 1.5rem;
+}
+
+.qualitative-report-page .live-report-section[data-section="results"] table th:nth-child(2),
+.qualitative-report-page .live-report-section[data-section="results"] table td:nth-child(2) {
+  width: 23%;
+  padding-right: 1.5rem;
+}
+
+.qualitative-report-page .live-report-section[data-section="code-development-prj-01"] table {
+  min-width: 900px;
 }
 
 @media (max-width: 800px) {
-  .live-report-section > h3 {
+  .qualitative-report-page .live-report-section > h3 {
     margin-top: 2rem;
   }
 
-  .live-report-section[data-section="findings"] table th:first-child,
-  .live-report-section[data-section="findings"] table td:first-child {
+  .qualitative-report-page .live-report-section > h4 {
+    margin-top: 1.5rem;
+  }
+
+  .qualitative-report-page .live-report-section[data-section="results"] table th:first-child,
+  .qualitative-report-page .live-report-section[data-section="results"] table td:first-child,
+  .qualitative-report-page .live-report-section[data-section="results"] table th:nth-child(2),
+  .qualitative-report-page .live-report-section[data-section="results"] table td:nth-child(2) {
     width: auto;
     padding-right: 1rem;
   }
