@@ -10,7 +10,6 @@
   --text-inactive: #636366;
   --inverse-background: #f5f5f7;
   --inverse-text: #0b0b0d;
-  --inverse-text-secondary: #515154;
   --separator: #38383a;
   --focus: #0a84ff;
 
@@ -18,12 +17,6 @@
   --muted: var(--text-secondary);
   --paper: var(--background);
   --white: var(--inverse-text);
-  --green: #30d158;
-  --mint: var(--inverse-text-secondary);
-  --coral: #30d158;
-  --quantitative: #64d2ff;
-  --qualitative: #0a84ff;
-  --mixed-methods: #bf5af2;
   --line: var(--separator);
 
   --type-page-heading: clamp(2.75rem, 3.6vw, 3.125rem);
