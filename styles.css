@@ -1,13 +1,7 @@
-@font-face {
-  font-family: "Mona Sans";
-  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/mona-sans@5.3.0/files/mona-sans-latin-wght-normal.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 200 900;
-  font-display: swap;
-}
-
 :root {
   color-scheme: dark;
+
+  --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
 
   --background: #000000;
   --surface: #1c1c1e;
@@ -34,8 +28,8 @@
 
   --type-display: clamp(3rem, 6vw, 5.5rem);
   --type-home-heading: clamp(2.25rem, 4vw, 4rem);
-  --type-card-title: clamp(1.4rem, 2vw, 1.8rem);
-  --type-list-title: clamp(1rem, 2vw, 1.2rem);
+  --type-card-title: clamp(1.375rem, 2vw, 1.75rem);
+  --type-list-title: clamp(1.0625rem, 2vw, 1.2rem);
   --type-body: 1.0625rem;
   --type-supporting: .9375rem;
   --type-interface: .9375rem;
@@ -45,7 +39,21 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-system);
+  font-optical-sizing: auto;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-system);
+}
 
 body {
   min-height: 100vh;
@@ -54,7 +62,7 @@ body {
   flex-direction: column;
   color: var(--ink);
   background: var(--paper);
-  font-family: "Mona Sans", sans-serif;
+  font-size: var(--type-body);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -129,7 +137,6 @@ a { color: inherit; }
   transition: color .2s ease, background-color .2s ease, border-color .2s ease;
 }
 
-
 .contact-button:hover,
 .contact-button:focus-visible {
   color: var(--white);
@@ -158,10 +165,10 @@ a { color: inherit; }
   max-width: none;
   margin: 0 auto 1.25rem;
   font-size: var(--type-home-heading);
-  font-family: "Mona Sans", sans-serif;
+  font-family: var(--font-system);
   font-weight: 600;
   line-height: 1.1;
-  letter-spacing: -.035em;
+  letter-spacing: normal;
   white-space: nowrap;
 }
 
@@ -237,7 +244,7 @@ a { color: inherit; }
   font-size: var(--type-card-title);
   font-weight: 600;
   line-height: 1.2;
-  letter-spacing: -.025em;
+  letter-spacing: normal;
 }
 
 .choice-summary {
@@ -337,7 +344,7 @@ a { color: inherit; }
   color: var(--coral);
   font-size: var(--type-label);
   font-weight: 600;
-  letter-spacing: .16em;
+  letter-spacing: .12em;
   text-transform: uppercase;
 }
 
@@ -349,11 +356,11 @@ a { color: inherit; }
 
 h1 {
   margin: 0;
-  font-family: "Mona Sans", sans-serif;
+  font-family: var(--font-system);
   font-size: var(--type-display);
   font-weight: 500;
   line-height: 1.05;
-  letter-spacing: -.04em;
+  letter-spacing: normal;
 }
 
 .study-list {
