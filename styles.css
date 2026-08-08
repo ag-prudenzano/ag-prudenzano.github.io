@@ -29,8 +29,6 @@
   --type-page-heading: clamp(2.75rem, 3.6vw, 3.125rem);
   --type-page-heading-mobile: clamp(2.35rem, 10vw, 2.75rem);
   --type-display: var(--type-page-heading);
-  --type-home-heading: var(--type-page-heading);
-  --type-card-title: clamp(1.375rem, 2vw, 1.75rem);
   --type-list-title: clamp(1.0625rem, 2vw, 1.2rem);
   --type-body: 1.0625rem;
   --type-supporting: .9375rem;
@@ -146,160 +144,6 @@ a { color: inherit; }
   background: var(--ink);
 }
 
-.choice-page {
-  width: 100%;
-  max-width: 1240px;
-  margin: auto;
-  padding: 4rem 2rem 7rem;
-}
-
-.portfolio-intro {
-  max-width: 1040px;
-  margin: 0 auto 4rem;
-  text-align: center;
-}
-
-.portfolio-intro .eyebrow {
-  margin-bottom: 1.2rem;
-}
-
-.intro-heading {
-  max-width: none;
-  margin: 0 auto 1.25rem;
-  font-size: var(--type-page-heading);
-  font-family: var(--font-system);
-  font-weight: 500;
-  line-height: 1.06;
-  letter-spacing: normal;
-  white-space: nowrap;
-}
-
-.intro-copy {
-  max-width: 720px;
-  margin: 0 auto;
-  color: var(--muted);
-  font-size: var(--type-body);
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-.choice-grid {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.choice-grid::before,
-.choice-grid::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  width: 100vw;
-  height: 1px;
-  z-index: 2;
-  transform: translateX(-50%);
-  background: var(--line);
-  pointer-events: none;
-}
-
-.choice-grid::before {
-  top: 0;
-}
-
-.choice-grid::after {
-  bottom: 0;
-}
-
-.research-choice {
-  position: relative;
-  min-height: 460px;
-  padding: 3rem 2.25rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-left: 1px solid var(--line);
-  color: var(--ink);
-  background: transparent;
-  text-decoration: none;
-  transition: background-color .2s ease;
-}
-
-.research-choice:last-child { border-right: 1px solid var(--line); }
-
-.research-choice:hover,
-.research-choice:focus-visible {
-  color: var(--text-primary);
-  background: var(--surface);
-}
-
-.choice-icon {
-  display: block;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 2.35rem;
-}
-
-.choice-name {
-  max-width: 100%;
-  margin-bottom: .7rem;
-  font-size: var(--type-card-title);
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: normal;
-}
-
-.choice-summary {
-  max-width: 26ch;
-  margin-bottom: .8rem;
-  font-size: var(--type-body);
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.choice-description {
-  max-width: 31ch;
-  color: var(--muted);
-  font-size: var(--type-supporting);
-  font-weight: 400;
-  line-height: 1.55;
-}
-
-.research-choice:hover .choice-description,
-.research-choice:focus-visible .choice-description {
-  color: var(--text-secondary);
-}
-
-.choice-arrow {
-  margin-top: auto;
-  display: grid;
-  place-items: center;
-  width: 38px;
-  height: 38px;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  transition: border-color .2s ease;
-}
-
-.research-choice:hover .choice-arrow,
-.research-choice:focus-visible .choice-arrow {
-  border-color: var(--separator);
-}
-
-.coming-soon {
-  position: absolute;
-  top: 1.8rem;
-  right: 1.8rem;
-  padding: .42rem .75rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--muted);
-  font-size: var(--type-label);
-  font-weight: 600;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
-
 .case-study-page {
   width: 100%;
   max-width: 1240px;
@@ -371,8 +215,7 @@ body.quantitative-page .research-heading,
 body.qualitative-page .research-heading,
 body.mixed-methods-page .research-heading,
 body.report-page .report-title,
-body .projects-heading,
-body .intro-heading {
+body .projects-heading {
   font-size: var(--type-page-heading);
   font-weight: 500;
   line-height: 1.06;
@@ -500,30 +343,15 @@ footer {
   .brand { gap: .55rem; font-size: var(--type-interface); }
   .brand-photo { width: 36px; height: 36px; }
   .contact-button { min-height: 38px; padding: .5rem .85rem; font-size: var(--type-interface); }
-  .choice-page, .case-study-page { padding: 3rem 1.2rem 5rem; }
-  .portfolio-intro { margin-bottom: 3rem; }
-  .intro-heading { white-space: normal; }
+  .case-study-page { padding: 3rem 1.2rem 5rem; }
   body.portfolio-page .research-heading,
   body.quantitative-page .research-heading,
   body.qualitative-page .research-heading,
   body.mixed-methods-page .research-heading,
   body.report-page .report-title,
-  body .projects-heading,
-  body .intro-heading {
+  body .projects-heading {
     font-size: var(--type-page-heading-mobile);
     line-height: 1.08;
-  }
-  .choice-grid { grid-template-columns: 1fr; }
-  .research-choice {
-    min-height: 390px;
-    padding: 2.4rem 1.8rem;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-    border-left: 0;
-  }
-  .research-choice:last-child {
-    border-right: 0;
-    border-bottom: 0;
   }
   .study-item { grid-template-columns: 38px 1fr; }
   .study-status, .study-arrow { grid-column: 2; }
