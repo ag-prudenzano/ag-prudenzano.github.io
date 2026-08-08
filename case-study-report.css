@@ -53,9 +53,9 @@
   max-width: 760px;
   margin: 1.5rem 0 0;
   color: var(--text-secondary);
-  font-size: 1.25rem;
+  font-size: var(--type-body);
   font-weight: 400;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 .report-actions {
@@ -74,7 +74,7 @@
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--text-primary);
-  font-size: .9375rem;
+  font-size: var(--type-small);
   font-weight: 500;
   line-height: 1.2;
   text-decoration: none;
@@ -105,9 +105,5 @@
 
   .report-hero {
     margin-bottom: 3rem;
-  }
-
-  .report-lede {
-    font-size: 1.0625rem;
   }
 }
