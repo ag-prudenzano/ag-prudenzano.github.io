@@ -13,7 +13,7 @@
   color: var(--text-primary);
   font-size: var(--type-primary-text);
   font-weight: 400;
-  line-height: 1.6;
+  line-height: var(--leading-primary-text);
 }
 
 .live-report-error a {
@@ -40,7 +40,7 @@
   color: var(--text-primary);
   font-size: var(--type-heading-02);
   font-weight: 500;
-  line-height: 1.1;
+  line-height: var(--leading-heading-02);
   letter-spacing: normal;
 }
 
@@ -51,7 +51,7 @@
   color: var(--text-primary);
   font-size: var(--type-primary-text);
   font-weight: 400;
-  line-height: 1.6;
+  line-height: var(--leading-primary-text);
 }
 
 .live-report-section > p {
@@ -74,7 +74,7 @@
   font-size: var(--type-tertiary-text);
   font-weight: 400;
   letter-spacing: .06em;
-  line-height: 1.37;
+  line-height: var(--leading-tertiary-text);
   text-transform: uppercase;
 }
 
@@ -109,7 +109,7 @@
   font-size: var(--type-tertiary-text);
   font-weight: 400;
   letter-spacing: .06em;
-  line-height: 1.37;
+  line-height: var(--leading-tertiary-text);
   text-transform: uppercase;
 }
 
@@ -118,7 +118,7 @@
   color: var(--text-secondary);
   font-size: var(--type-secondary-text);
   font-weight: 400;
-  line-height: 1.53;
+  line-height: var(--leading-secondary-text);
 }
 
 .live-report-skill-block {
@@ -133,7 +133,7 @@
   font-size: var(--type-tertiary-text);
   font-weight: 400;
   letter-spacing: .06em;
-  line-height: 1.37;
+  line-height: var(--leading-tertiary-text);
   text-transform: uppercase;
 }
 
@@ -153,7 +153,7 @@
   color: var(--text-tertiary);
   font-size: var(--type-tertiary-text);
   font-weight: 400;
-  line-height: 1.37;
+  line-height: var(--leading-tertiary-text);
 }
 
 .live-report-section[data-section="project-snapshot"] th,
@@ -163,7 +163,7 @@
 
 .live-report-section[data-section="quality-checks"] > p {
   font-size: var(--type-primary-text);
-  line-height: 1.6;
+  line-height: var(--leading-primary-text);
 }
 
 .live-report-section[data-section="quality-checks"] > .live-report-checks + p,
@@ -173,7 +173,7 @@
   color: var(--text-secondary);
   font-size: var(--type-secondary-text);
   font-weight: 400;
-  line-height: 1.53;
+  line-height: var(--leading-secondary-text);
 }
 
 .live-report-section[data-section="quality-checks"] > .live-report-checks + p,
@@ -214,12 +214,19 @@
   border-left: 1px solid var(--separator);
 }
 
+/* Report subheads that formerly used Heading 03 now use Heading 04. */
+.live-report-check h3,
+.live-report-figure h3,
+.live-report-section > h3 {
+  color: var(--text-primary);
+  font-size: var(--type-heading-04);
+  font-weight: 500;
+  line-height: var(--leading-heading-04);
+  letter-spacing: normal;
+}
+
 .live-report-check h3 {
   margin: 0 0 .55rem;
-  color: var(--text-primary);
-  font-size: var(--type-heading-03);
-  font-weight: 500;
-  line-height: 1.35;
 }
 
 .live-report-check p {
@@ -228,7 +235,7 @@
   color: var(--text-secondary);
   font-size: var(--type-secondary-text);
   font-weight: 400;
-  line-height: 1.53;
+  line-height: var(--leading-secondary-text);
 }
 
 .live-report-section[data-section="findings"] > p:first-of-type {
@@ -236,7 +243,7 @@
   color: var(--text-primary);
   font-size: var(--type-primary-text);
   font-weight: 400;
-  line-height: 1.6;
+  line-height: var(--leading-primary-text);
 }
 
 .live-report-metrics {
@@ -273,7 +280,7 @@
   font-size: var(--type-tertiary-text);
   font-weight: 400;
   letter-spacing: .06em;
-  line-height: 1.37;
+  line-height: var(--leading-tertiary-text);
   text-transform: uppercase;
 }
 
@@ -282,7 +289,7 @@
   color: var(--text-primary);
   font-size: var(--type-heading-01);
   font-weight: 500;
-  line-height: 1.06;
+  line-height: var(--leading-heading-01);
   letter-spacing: normal;
 }
 
@@ -301,7 +308,7 @@
   color: var(--text-secondary);
   font-size: var(--type-secondary-text);
   font-weight: 400;
-  line-height: 1.53;
+  line-height: var(--leading-secondary-text);
 }
 
 .live-report th,
@@ -316,7 +323,7 @@
   font-size: var(--type-tertiary-text);
   font-weight: 400;
   letter-spacing: .06em;
-  line-height: 1.37;
+  line-height: var(--leading-tertiary-text);
   text-transform: uppercase;
 }
 
@@ -362,10 +369,6 @@
 
 .live-report-figure h3 {
   margin: 0 0 .8rem;
-  color: var(--text-primary);
-  font-size: var(--type-heading-03);
-  font-weight: 500;
-  line-height: 1.35;
 }
 
 .live-report-figure figcaption {
@@ -374,7 +377,7 @@
   color: var(--text-secondary);
   font-size: var(--type-secondary-text);
   font-weight: 400;
-  line-height: 1.53;
+  line-height: var(--leading-secondary-text);
 }
 
 .live-report-section[data-section="project-files"] > ul,
@@ -403,7 +406,7 @@
   color: var(--text-secondary);
   font-size: var(--type-secondary-text);
   font-weight: 400;
-  line-height: 1.53;
+  line-height: var(--leading-secondary-text);
   text-decoration: none;
 }
 
@@ -416,7 +419,7 @@
   color: var(--text-tertiary);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: var(--type-tertiary-text);
-  line-height: 1.37;
+  line-height: var(--leading-tertiary-text);
 }
 
 .live-report-file-list > li > a:hover span:first-child,
@@ -455,10 +458,12 @@
 
   .live-report-section > h2 {
     font-size: var(--type-heading-02-mobile);
+    line-height: var(--leading-heading-02);
   }
 
   .live-report-section[data-section="project-snapshot"] > h2 {
     font-size: var(--type-tertiary-text);
+    line-height: var(--leading-tertiary-text);
   }
 
   .live-report-snapshot,
@@ -512,7 +517,7 @@
   .live-report-metric dd {
     margin-top: .65rem;
     font-size: var(--type-heading-01-mobile);
-    line-height: 1.08;
+    line-height: var(--leading-heading-01);
   }
 
   .live-report-figures {
