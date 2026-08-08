@@ -81,7 +81,7 @@
 }
 
 .portfolio-research-list .research-entry-type {
-  color: var(--text-primary);
+  color: var(--text-secondary);
   font-size: var(--type-tertiary-text);
   font-weight: 400;
   line-height: var(--leading-tertiary-text);
