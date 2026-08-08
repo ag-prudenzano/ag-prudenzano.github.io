@@ -46,11 +46,11 @@ How do users describe their social experiences on Discord?
 
 ## Method
 
-**Design**
+### Design
 
 This exploratory qualitative study used a descriptive phenomenological approach to investigate the lived experiences of people who regularly socialised on Discord. A phenomenological design was appropriate because the research question concerned how participants experienced and understood social interaction on the platform, rather than the measurement of predetermined variables. The study was informed by the Husserlian principles of phenomenological reduction, horizontalisation, and imaginative variation. The interview transcripts were examined using an inductive, phenomenologically informed thematic analysis based on Lynden (2016), with particular attention to the lifeworld dimensions of temporality, spatiality, embodiment, and intersubjectivity.
 
-**Participants and Recruitment**
+### Participants and Recruitment
 
 Two Discord users participated in the study. Participants were required to be aged 18 or over, use Discord regularly, and participate regularly in Discord server voice channels. The recruitment materials also specified that participants should not belong to a group identified as vulnerable within the study protocol. Both participants reported socialising on Discord approximately every day.
 
@@ -58,7 +58,7 @@ Purposive sampling was used to recruit participants with direct and sustained ex
 
 The small sample was consistent with the study’s exploratory and idiographic emphasis. It was intended to permit detailed examination of individual accounts rather than establish representativeness or make claims about Discord users generally.
 
-**Data Collection**
+### Data Collection
 
 Data were collected through individual, audio-only interviews conducted using Zoom. The researcher and each participant joined the interview from their respective homes and used headphones with microphones. Participants were informed in advance that an interview could last up to one hour.
 
@@ -70,7 +70,7 @@ During the interviews, the researcher sometimes referred to their own Discord ex
 
 With participants’ consent, the interviews were audio-recorded using Zoom’s recording function. The recordings were transcribed initially using Otter.ai. Because the automated output contained inaccuracies, the researcher manually corrected the transcripts using a text editor. Identifying information, including usernames, server names, dates of birth, and locations, was removed or obscured. Participants were identified in the transcripts and report as Participant 01 and Participant 02.
 
-**Data Analysis**
+### Data Analysis
 
 The researcher analysed the transcripts inductively using the phenomenologically informed thematic procedure described by Lynden (2016). Coding and theme development were documented separately for each interview before the two accounts were compared. The analysis involved the following stages:
 
@@ -84,13 +84,13 @@ The researcher analysed the transcripts inductively using the phenomenologically
 
 Coding was interpretative rather than determined solely by the frequency with which an experience was mentioned. Codes that were relevant to the research question but did not fit a broader theme were retained as ungrouped findings rather than discarded. The coding record therefore preserved a visible progression from interview extracts to initial codes, final codes, themes, and lifeworld interpretations.
 
-**Reflexivity**
+### Reflexivity
 
 The researcher was a regular Discord user and was acquainted with both participants before data collection. This familiarity supported rapport and helped the researcher understand platform-specific language and practices. However, it also created a risk that the researcher’s assumptions and experiences could influence the questions asked, the participants’ responses, and the subsequent interpretation of the data.
 
 The researcher attempted phenomenological reduction by identifying and setting aside prior assumptions while attending closely to participants’ descriptions. Complete detachment was not assumed, particularly because the researcher sometimes shared personal experiences and introduced interpretations during the interviews. The resulting accounts were therefore understood as interactionally produced rather than as entirely independent descriptions. The researcher’s familiarity with Discord and prior relationships with the participants were considered when interpreting the findings and are acknowledged as limitations of the study.
 
-**Ethical Considerations**
+### Ethical Considerations
 
 The study was conducted as part of the Open University module DE300, *Investigating Psychology 3*. Before participation, each participant received an information leaflet, a data-protection privacy notice, and an informed-consent form. Consent was obtained by email before interview arrangements were finalised. Participants confirmed that they were aged 18 or over, understood the purpose and procedures of the research, consented to audio recording, and permitted anonymised quotations to be used in the research report and any subsequent publications.
 
@@ -164,190 +164,3 @@ Statista Research Department (2021). Social Media Use During COVID-19 Worldwide 
 Throuvala, M. A., Griffiths, M. D., Rennoldson, M. & Kuss, D. J. (2019). Motivational processes and dysfunctional mechanisms of social media use among adolescents: A qualitative focus group study. Computers in Human Behaviour, 93, 164–175. [https://doi.org/10.1016/j.chb.2018.12.012](https://doi.org/10.1016/j.chb.2018.12.012).
 
 Ryan, T., Allen, K., Gray, D., & McInerney, D. (2017). How Social Are Social Media? A Review of Online Social Behaviour and Connectedness. Journal of Relationships Research, 8, E8. [https://doi.org/10.1017/jrr.2017.13](https://doi.org/10.1017/jrr.2017.13)
-
----
-
-## Code Development (PRJ-01)
-
-**Andrea Prudenzano**  
-**Open University**  
-**Module: DE300**
-
-> `*` indicates ungrouped final codes that remained subject to analysis in the original document.
-
-### Interview #01 — Code Development
-
-| Extract | Initial Code | Final Code |
-|---|---|---|
-| I really like got to a point where I didn't really have any friends and one of my friends that I did have told me about Discord and this community that she was a part of on there. I started it made friends with a lot of people on there. | The introduction of Discord was followed by socialisation. They have found the solution for the problem of lacking friends in real life by discovering Discord. The discovery of Discord can be seen as positive or alleviating. | The need to socialise is fulfilled in Discord. |
-| Oh, yeah, for sure. It definitely, like, gave me that aspect that I didn't have and I didn’t have in a long time. It's just like, everybody needs friends. You can't go through life alone, you really do need friends and like a support group and everything. And I was really like, depressed before. I actually like, got on the Discord and gotten to communities and made friends. It has definitely helped a lot with like depression and a lot of other stuff. | Their social experiences on Discord filled the lack of a social life. Generally, their navigation through various Discord communities led them to acquiring friendships. It seems like they also found ‘support’ as a consequence of socialising on Discord. | Acquiring friends and finding support in Discord servers. |
-| I would say it almost feels more authentic. Because online people feel safe to be themselves 100%. So even if they're hiding behind a fake identity or something like that, most people are still like really true to how they are online more so than in person. | Social experiences are described as almost more authentic than in real life. Because online communication on Discord provides a certain level of security and comfort. They describe their social experiences as being more true also. This sounded very satisfying for the participant. | The online environment provides a certain level of comfort to be yourself, as a result, social experiences are perceived as more authentic. |
-| No, I feel the opposite. I feel like it's more intimate on Discord or online. Because you get that awkwardness factor out of the way that you know we first meet someone in person. Yeah, you don't really know how they are. So you worry about like kind of being yourself sometimes. But online, you don't have to. Being able to like, see people though, when you actually do form friendships and stuff. Like you can't have them right in front of you. | Social experiences are seen as more intimate because of physical absence. The physical presence is seen as a barrier in the form of awkwardness which gets in the way of being themselves. Discord gets this barrier out of the way. However, a new barrier comes up when there is a desire to realise that physical presence. The physical is ultimately necessary. | The online environment fosters more genuine and fast-paced relationships. |
-| To me, that feels like almost a compliment, them saying that they trust you. Because I have multiple friends where we talked for a year or two, and then all of a sudden, they're like, FaceTiming me and actually showing themselves to me. It's nice to know that they feel comfortable enough to fully be themselves around me, so I feel like it's a good heartwarming feeling. | Turning on the camera is seen as a sign of trust. Trust is enhanced by this tool. Perhaps, from their perspective, a relationship is solidified when their friend shows themselves on camera. Social experiences become more heartwarming when trust is established through video appearances. | *Using webcams is perceived as an act of trust. |
-| Right. I have to adjust to how they actually look like because I imagined them differently when talking without cameras. | Socialising on Discord involves imagining what the speaker looks like if no webcams are involved. Once the looks of the speaker are visually revealed, the participant has to reject the picture they’ve build in their mind and accept what they have been presented. | *Imagining the person you talk to in a voice channel without seeing them on a camera or a photograph. |
-| A little bit when I first started using it. I guess there were times where, like, it felt weird because it felt like I wasn't actually like, I don't know, getting out and doing anything to help me. | Guilt about forming online friendships which help to cope with struggles but not acting upon those struggles by reaching out to people in real life. | Worries and doubts about relying on Discord. |
-| But I think my brain just had to get used to like a new form of communicating with people and making friendships. So no, I don't anymore. | Accepting online relationships and social experiences as legitimate. | Social experiences on Discord are perceived as important. |
-| Oh for sure. Yeah, especially when it gets like creepy or whatever. Just like being alone. Like, okay, well, there's somebody kinda like here. | Having access to people on Discord helps cope with stress related to physically being alone at home. Social experiences on Discord can help feel more comfortable at home. Surroundings are experienced differently. | Socialising on Discord helps to cope with loneliness. |
-| Definitely like it. When you're different, like levels are getting filled, like your friendship, like, that communication you need with other people and stuff. And that's getting fulfilled, I think you can generally start to take better care of yourself and your things in general. So I feel like I focus on cleaning more. I'm actually like, getting stuff done. Feeling more motivated. | When the need for socialisation is met, a desire for self care comes up. Getting stuff done or cleaning more shows how being connected with others in a VC facilitates care of their surroundings as well. | Socialising on Discord positively affected motivation and self-care. |
-| I've learned that like for me at least it's because of ADHD so it's easier to focus when you have something else to like bounce your energy off of I guess and like kind of area yeah on track like you're keeping your thoughts in order because you're talking to someone else. So in that sense, you're able to like actually do tasks and stuff way easier. Yeah, especially if you find the right group of people like there's a lot of people don't get me wrong that can make you feel drained too but if you really find the right group of people to hang out with and spend time with and you know it really changes stuff it can change your productivity levels like crazy. | Listening to people talk on Discord helped them do things or to ‘keep thoughts in order’. In this extract, they seem to describe their social experiences on Discord as a way to keep up with daily activities and organisation. Finding the right people to hang out with on Discord can positively change productivity. | Socialising on Discord can be of assistance for daily activities and task management if socialising with a group of people you identify and feel comfortable with. |
-| Yeah, definitely. I've had like moments where I've gone through like, a bad breakup or something I even have like moments where I went to like another country and didn't feel comfortable and still was able to like talk to people and stuff and so. | Socialising on Discord has helped with relocation to another country. | Socialising on Discord has helped with changes in life. |
-| I think it plays a big role in my life. That just being able to communicate with all types of different people for different reasons, and learn more like I'm really interested in like, psychology and therapy and all that in general, so I feel like it's extremely beneficial like learning tool. Oh, that's definitely important to me. | Socialising on Discord is interesting because it gives access to a wide range of different people. Finding people and communities with common interests. Social experiences are described as educational. | *A wide range of people and communities makes Discord an interesting place to socialise in. |
-| I think that it's definitely different. I feel like it just gets a lot more personal a lot quicker. I guess it feels more comfortable opening up to a random person? | Intimacy is easier to achieve without the physical presence. Social experiences are described as more fast paced. | Distance and the online environment facilitate relationship development. |
-| Almost. There's still some moments. Yeah. It's like, fuck, I'm alone. Like, I really need that like in person communication. But rarely. So it's pretty much fulfilling that aspect. | Socialising on Discord fulfils social and affective needs. | Meeting social needs on Discord. |
-
-### Interview #01 — Theme Development
-
-| Final Codes | Theme |
-|---|---|
-| The need to socialise is fulfilled in Discord.<br>Acquiring friends and finding support in Discord servers.<br>Socialising on Discord helps to cope with loneliness.<br>Meeting social needs on Discord. | **Meeting social needs** |
-| The online environment provides a certain level of comfort to be yourself, as a result, social experiences are perceived as more authentic.<br>The online environment fosters more genuine and fast-paced relationships.<br>Distance and the online environment facilitate relationship development. | **Authentic relationships** |
-| Socialising on Discord positively affected motivation and self-care.<br>Socialising on Discord can be of assistance for daily activities and task management if socialising with a group of people you identify and feel comfortable with.<br>Socialising on Discord has helped with changes in life. | **Support with daily life** |
-
-#### Interview #01 — Other Final Codes (Ungrouped)
-
-| Final Code |
-|---|
-| Using webcams is perceived as an act of trust. |
-| Imagining the person you talk to in a voice channel without seeing them on a camera or a photograph. |
-| A wide range of people and communities makes Discord an interesting place to socialise in. |
-
-### Interview #01 — Lifeworld Dimensions
-
-#### Theme #01
-
-| Lifeworld Dimension | Extracts | Interpretation |
-|---|---|---|
-| Time | No references were found. | None. |
-| Space | “Oh for sure. Yeah, especially when it gets like creepy or whatever. Just like being alone. Like, okay, well, there's somebody kinda like here.”<br><br>“Almost. There's still some moments. Yeah. It's like, fuck, I'm alone. Like, I really need that like in person communication. But rarely. So it's pretty much fulfilling that aspect.” | Socialising on Discord can alter the way they experience their surroundings. The presence of somebody in a VC helps them feel more comfortable at home. |
-| Embodiment | “Oh for sure. Yeah, especially when it gets like creepy or whatever. Just like being alone. Like, okay, well, there's somebody kinda like here.”<br><br>“Almost. There's still some moments. Yeah. It's like, fuck, I'm alone. Like, I really need that like in person communication. But rarely. So it's pretty much fulfilling that aspect.” | The physical aspect of them being alone in their surroundings brings back a certain awareness of their physical loneliness in a given space. Embodiment is experienced differently here when they are aware of somebody else’s presence on Discord. |
-| Intersubjectivity | “Oh, yeah, for sure. It definitely, like, gave me that aspect that I didn't have and I didn’t have in a long time. It's just like, everybody needs friends. You can't go through life alone, you really do need friends and like a support group and everything. And I was really like, depressed before. I actually like, got on the Discord and gotten to communities and made friends. It has definitely helped a lot with like depression and a lot of other stuff.”<br><br>“I really like got to a point where I didn't really have any friends and one of my friends that I did have told me about Discord and this community that she was a part of on there. I started it made friends with a lot of people on there.” | Relationships with individuals and communities are a source of support for the participant’s inner struggles. |
-
-#### Theme #02
-
-| Lifeworld Dimension | Extracts | Interpretation |
-|---|---|---|
-| Time | “I think that it's definitely different. I feel like it just gets a lot more personal a lot quicker. I guess it feels more comfortable opening up to a random person?”<br><br>“No, I feel the opposite. I feel like it's more intimate on Discord or online. Because you get that awkwardness factor out of the way that you know we first meet someone in person. Yeah, you don't really know how they are. So you worry about like kind of being yourself sometimes. But online, you don't have to. Being able to like, see people though, when you actually do form friendships and stuff. Like you can't have them right in front of you.” | Developing close relationships on Discord feels much quicker. Perhaps, this could point to how time is experienced as more quick as well. The second extract shows also what makes relationship development more fast-paced, perhaps time passes by faster too. |
-| Space | No references were found. | None. |
-| Embodiment | No references were found. | None. |
-| Intersubjectivity | “I would say it almost feels more authentic. Because online people feel safe to be themselves 100%. So even if they're hiding behind a fake identity or something like that, most people are still like really true to how they are online more so than in person.”<br><br>“No, I feel the opposite. I feel like it's more intimate on Discord or online...”<br><br>“I think that it's definitely different. I feel like it just gets a lot more personal a lot quicker...” | Intersubjectivity is experienced here as more authentic than in real life. Intersubjectivity here is experienced as more intimate, more comfortable, less awkward and less stressful. However, it is saddening that they can’t see the person in real life when they form those friendships. |
-
-#### Theme #03
-
-| Lifeworld Dimension | Extracts | Interpretation |
-|---|---|---|
-| Time | No references were found. | None. |
-| Space | “Definitely like it. When you're different, like levels are getting filled, like your friendship, like, that communication you need with other people and stuff. And that's getting fulfilled, I think you can generally start to take better care of yourself and your things in general. So I feel like I focus on cleaning more. I'm actually like, getting stuff done. Feeling more motivated.”<br><br>“Yeah, definitely. I've had like moments where I've gone through like, a bad breakup or something I even have like moments where I went to like another country and didn't feel comfortable and still was able to like talk to people and stuff and so.” | Socialising on Discord has a positive effect on their personal self-care and their surroundings. Cleaning their house and getting stuff done. Socialising on Discord has helped them experience relocation and living in a new country. |
-| Embodiment | “Definitely like it. When you're different, like levels are getting filled, like your friendship, like, that communication you need with other people and stuff. And that's getting fulfilled, I think you can generally start to take better care of yourself and your things in general. So I feel like I focus on cleaning more. I'm actually like, getting stuff done. Feeling more motivated.” | Their relationship with themselves changes in a positive way as social needs are met on Discord. |
-| Intersubjectivity | No references were found. | None. |
-
-#### Other Final Codes (Ungrouped)
-
-| Lifeworld Dimension | Extracts | Interpretation |
-|---|---|---|
-| Time | No references were found. | None. |
-| Space | No references were found. | None. |
-| Embodiment | “To me, that feels like almost a compliment, them saying that they trust you. Because I have multiple friends where we talked for a year or two, and then all of a sudden, they're like, FaceTiming me and actually showing themselves to me. It's nice to know that they feel comfortable enough to fully be themselves around me, so I feel like it's a good heartwarming feeling.”<br><br>“Right. I have to adjust to how they actually look like because I imagined them differently when talking without cameras.” | There are no references made to bodily sensations in this extract. However, they talk about how they feel when they see that their friend trust them enough to show themselves on camera. The physical aspect of socialising on Discord is mostly present virtually. Therefore visual perception is involved. The current participant talks about imagining the body of others when talking to them in a VC, and how they have to adapt to how the person actually looks like when they turn their camera on. |
-| Intersubjectivity | “I think it plays a big role in my life. That just being able to communicate with all types of different people for different reasons, and learn more like I'm really interested in like, psychology and therapy and all that in general, so I feel like it's extremely beneficial like learning tool. Oh, that's definitely important to me.” | Intersubjectivity here is described as a learning experience. Interactions are seen as a tool. |
-
-### Interview #02 — Code Development
-
-| Extract | Initial Code | Final Code |
-|---|---|---|
-| Yeah, the interesting thing is that it's a very different format. And it's not text based. I mean, it is text based, but a lot of people interact in VCs as well. Right. | Discord is different from other types of social media because a lot of people interact in voice channels. | A novel way to communicate online. |
-| And yeah, when I started using Discord, I found it a bit weird because I joined this other server, it was like a huge one. And I just joined the voice channel, and it was like, people talking over each other. And I was like, what the fuck is this? | Some servers can be overcrowded and this can be overwhelming. Many people talking over each other can cause a sense of confusion. | Socialising on Discord can be overwhelming in overcrowded servers. |
-| On this one? Yeah, so I use Discord to game with friends and talk to friends and socialise with people that I otherwise can't reach in person. So like learning Russian is a great example. There's not a whole lot of speakers around where I'm at. So getting on a server like the ******** ***** is great because I can meet people who are fluent in those languages and I'm trying to learn so that helps a lot. | Discord is a great place to socialise with people from different cultures and learn their language. | Socialising is an educational experience. |
-| Yeah. And that's the beautiful thing about discord. Whereas like other social media platforms don't really have that, like vast range of different kinds of people. Discord really does give you a mixed bag. So I find it very unique and interesting. | Discord is a place of diversity, which makes it unique and interesting. Social experiences are interesting because they are diverse. | Diversity is a positive aspect of socialising on Discord. |
-| Exactly. Yeah. I would. Whereas like, I wouldn't interact with a stranger on Facebook necessarily. I don't mind interacting with strangers on Discord. | The participant feels comfortable to socialise with strangers on Discord. | Socialising with strangers on Discord is easier. |
-| Yeah, I'm the same way. Like I said, I use it mainly to speak with my friends. So there's no weird dynamic of like, waiting for people to say something that I can relate. | Interactions in a public server can sometimes begin with a moment of awkwardness. | *First interactions can be awkward or uncomfortable. |
-| Yeah, but I agree when I'm interacting with people that I don't know. I will wait for a good, like, a period for me to jump into. Oh, I will just jump into a conversation like with nothing to say. Yeah, I'll do the same thing. I'll listen and wait. Passively when I'm with strangers. | Sometimes they join a conversation and wait for the right moment to say something. Passive participation in VCs when with strangers. | Interactions can begin with passive listening when in a group. |
-| Hmm. I found it frustrating that. I don't know. There's just so many servers, so many people everywhere. Usually when I joined a VC anywhere, usually it's people I don't know even if I met them before in another VC but I don't remember them anymore. | There is rarely a follow up after having interacted with somebody in a VC. Discord is sometimes described as overcrowded, which can make them feel frustrated. Interactions are often brief and not necessarily memorable. | *Interactions are repetitive, brief and not memorable. |
-| Yeah, but usually, people don't stick to each other. Or that's what I've noticed. But I don't know. Like, if there's a huge Discord server. It's like, a huge group of people divided into groups, but changing groups all the time. And just talking, talking, talking, it's like non stop. Yeah, it's very, it feels chaotic. | Some servers seem too crowded and chaotic. Users don't stick to specific groups. Voice channel participants are always changing. | Social experiences are described as chaotic. |
-| Yeah. Especially people who are used to maybe express their anger verbally. Like me, I usually keep everything inside myself for very long periods. Usually I don't express any frustration or stress or anger verbally, or physically. I think maybe some people are not used to that, they do it the opposite way. And then when they don't have the possibility to meet somebody in person in real life, they're stuck at home, for example, they just go on Discord to do that. | According to the participants’ personal observations, it is sometimes the case that people join a voice channel to release steam. | Discord as means to release stress. |
-| I think that the pandemic and like the quarantine and all that it really solidified my relationship with Discord, because it helped me be socialised. And like, there wasn't, there wasn't anything else to do, you know? | Discord helped staying socialised during lockdown periods. | Socialising on Discord can help in case if you lack a social life. |
-| Yes, it's a weird thing, right? It's weird. I don't think it's a bad thing, though. I used to think it was a bad thing. I used to think that like, being on the computer all day was a bad thing. And, you know, having your friends on the internet was weird, or whatever. But like, it's just the way the world is now, man. Like the world has changed a lot. | According to the participant, the world has changed a lot, and having online friends has become socially acceptable or commonplace. Socialising on Discord does not feel as embarrassing. | Socialising on Discord is a legitimate way of conducting a social life. |
-| It's interesting to see like, I just love the idea of being able to connect with people who have totally different backgrounds. It's very fascinating stuff. | They enjoy socialising on Discord because they can connect with different people from around the globe. Discord is described here as a fascinating place to wonder in where they can discover new things. | Socialising on Discord can be an experience of interesting discoveries. |
-| I don't. I'm a little bit apprehensive, I will admit, because I'm not totally keen on, like, giving out personal information on like a public server like that. Yeah, so I'm a little bit more careful with stuff like that. But there really isn't any need to be. It's fine. | Showing themselves on a webcam does not feel comfortable, although they believe there are no reasons to be. Physical appearance is considered as personal information. | *Using a webcam in VCs feels uncomfortable. |
-| Yeah, it's a lot more interactive. It's just uh, it really is what it is, it’s also convenient because I have it on my phone. I have it on my computer. You can get it on your laptop even or iPad. And it's just so seamlessly like convenient. It's almost like playing a video game. But it's social here. I mean, like, just looking at my Discord application. Like, there's tonnes of icons, there's like tonnes of funny icons on the left. Like if you just look at the language learning slot, it's like it's very colourful and like funny. And it's like a meme almost. I mean, this whole layout of Discord is like a video game. Really, it really turns the idea of socialising into a video game in a sense to me. It's kind of weird. | The interactive aspect of Discord’s functionality makes socialising feel like a game. | *Socialising feels like a game. |
-| I would say yes, way more often online. I mean, I have no problem talking to people in real life. But half the shit I say online, I would probably never say in real life. I would say that a lot of the things I say, I would say I'm a little bit more like, cognisant and aware of what I'm saying in person, or the effect that I'm having in person on who I'm saying it to. But online, I don't really like have that same, like, fear. | Socialising online more than in real life could be explained by the desire to speak more freely. Discord takes off certain social constraints. The participant is more conscious of what they say in person than on Discord. The effects of their behaviour on other people in Discord are less considered. | Socialising on Discord is less restrictive. |
-| Yeah. 100% man, same here. It's a blast, dude. It's a rush. It's a blast of dopamine, you know? So very rewarding. Very funny. | Socialising on Discord can be a lot of fun. | Socialising can be a rewarding experience. |
-| Yeah, the only times I've ever like gotten really angry, or like really upset. It always goes back to some political like, just some ignorant comment or like somebody maybe trolling. Most times, though. It's just people that are ignorant, you know, maybe people that aren't trolling, but they do just hold very ignorant beliefs. That's very upsetting to me, because it's just, it's just the way the world is going. That's one disadvantage of Discord is you get to hear like, I don't want to hear from people who actively are racist. I don't want to hear from people who are actively like, supporting political movements that might not necessarily be the best thing for freedom or democracy. I don't want to hear from people who you know, hate women. And that can be very upsetting. Does that make sense? | Socialising on Discord can sometimes be an upsetting experience as people are prone to speak their minds more freely and with less accountability. | Social experiences can be challenging. |
-| Moderately, it never ruined my day or anything. But there has been times I mean, yeah. Like, I'll get pissed off though. Like, I'll get angry at people. Yeah. And then I start to troll them. Yeah. I mean, that's, that can be a very negative experience for everyone involved. | The effect of negative social experiences is moderate. At other times, this can escalate to a conflict which can become a negative experience for everyone in the voice channel. | Social conflicts can be a negative experience for participants. |
-| Yeah, that's a big thing, too, is the lack of those body mechanics, you know, the nuances of facial expression, like body language, you know, all this stuff is missing. And yeah, there probably have been times where I've misinterpreted something somebody said, but I don't know, I try not to get too crazy about like interpreting what people say. I usually just take it at face value. | The absence of body language makes it more difficult to understand somebody’s intentions. Mutual understanding is more difficult to achieve. Predicting somebody’s behaviour is less accurate. | *The physical absence obscures communication. |
-| Yeah. 100% I agree. I do agree that I'm a lot more cognisant of what I say and you know, how I act online. | As their voice is the main tool for communication, they are more conscious of how they might sound and of what they say. | Self-awareness of speech and behaviour online. |
-| Same for me. It's like, for what? I mean, really, for what? It just seems like a waste of time. I hate to say that, but it's like, I feel like it's kind of like universally, universally understood that like everything that happens on Discord isn't meant to be that serious, you know, but I don't know. Never say never. I guess. | Investing in an online relationship seems pointless. There is no point in pursuing intimate relationships on Discord. What happens on Discord is not meant to be taken seriously. | Discord is not meant for serious relationships. |
-
-### Interview #02 — Theme Development
-
-| Final Codes | Theme |
-|---|---|
-| Socialising is an educational experience.<br>Diversity is a positive aspect of socialising on Discord.<br>Socialising on Discord can be an experience of interesting discoveries. | **Explore and Discover** |
-| Socialising on Discord can be overwhelming in overcrowded servers.<br>Social experiences are described as chaotic. | **Too many people** |
-| Discord as means to release stress.<br>Social experiences can be challenging.<br>Social conflicts can be a negative experience for participants. | **Interpersonal conflict** |
-| Socialising on Discord is less restrictive.<br>Self-awareness of speech and online behaviour. | **Self-awareness and behaviour** |
-| A novel way to communicate online.<br>Socialising on Discord can help in case if you lack a social life.<br>Socialising on Discord is a legitimate way of conducting a social life. | **A new way to socialise** |
-
-#### Interview #02 — Other Final Codes (Ungrouped)
-
-| Final Code |
-|---|
-| Using a webcam in VCs feels uncomfortable. |
-| Socialising feels likes a game. |
-| The physical absence obscures communication. |
-| First interactions can be awkward or uncomfortable. |
-| Interactions are repetitive, brief and not memorable. |
-
-### Interview #02 — Lifeworld Dimensions
-
-#### Theme #01
-
-| Lifeworld Dimension | Extracts | Interpretation |
-|---|---|---|
-| Time | No references were found. | None. |
-| Space | No references were found. | None. |
-| Embodiment | No references were found. | None. |
-| Intersubjectivity | “On this one? Yeah, so I use Discord to game with friends and talk to friends and socialise with people that I otherwise can't reach in person. So like learning Russian is a great example...”<br><br>“Yeah. And that's the beautiful thing about discord... Discord really does give you a mixed bag. So I find it very unique and interesting.”<br><br>“It's interesting to see like, I just love the idea of being able to connect with people who have totally different backgrounds. It's very fascinating stuff.” | The participant's experience of socialising involves talking to people from various countries and cultures to learn their language. Perhaps some relationships could be regarded as utilitarian. |
-
-#### Theme #02
-
-| Lifeworld Dimension | Extracts | Interpretation |
-|---|---|---|
-| Time | No references were found. | None. |
-| Space | No references were found. | None. |
-| Embodiment | No references were found. | None. |
-| Intersubjectivity | “And yeah, when I started using Discord, I found it a bit weird because I joined this other server, it was like a huge one. And I just joined the voice channel, and it was like, people talking over each other. And I was like, what the fuck is this?”<br><br>“Yeah, but usually, people don't stick to each other... if there's a huge Discord server. It's like, a huge group of people divided into groups, but changing groups all the time... it feels chaotic.” | The participant talks about being shocked from the amount of people gathering in voice channels. Relationships are described as brief because people don't stick to each other, at least this is their observation. Intersubjectivity is described as an overwhelming experience because groups of people always change. |
-
-#### Theme #03
-
-| Lifeworld Dimension | Extracts | Interpretation |
-|---|---|---|
-| Time | No references were found. | None. |
-| Space | No references were found. | None. |
-| Embodiment | No references were found. | None. |
-| Intersubjectivity | “Yeah. Especially people who are used to maybe express their anger verbally...”<br><br>“Yeah, the only times I've ever like gotten really angry, or like really upset. It always goes back to some political like, just some ignorant comment or like somebody maybe trolling...”<br><br>“Moderately, it never ruined my day or anything... And then I start to troll them... that can be a very negative experience for everyone involved.” | Some experiences can be negative when people use Discord to release stress on Discord through aggression. Social experiences can be upsetting when it comes down to sharing personal opinions or political beliefs. When the participant feels too angry they start to troll people who are upsetting them. |
-
-#### Theme #04
-
-| Lifeworld Dimension | Extracts | Interpretation |
-|---|---|---|
-| Time | No references were found. | None. |
-| Space | “I would say yes, way more often online. I mean, I have no problem talking to people in real life. But half the shit I say online, I would probably never say in real life. I would say that a lot of the things I say, I would say I'm a little bit more like, cognisant and aware of what I'm saying in person, or the effect that I'm having in person on who I'm saying it to. But online, I don't really like have that same, like, fear.” | Because socialising doesn't take place in a physical space, the participant is less aware of the impact of what they say on other people. Being aware that they are not sharing that physical space with other speakers, they are prone to be less vigilant of what they say and how they say it. |
-| Embodiment | No references were found. | None. |
-| Intersubjectivity | “I would say yes, way more often online...”<br><br>“Yeah. 100% I agree. I do agree that I'm a lot more cognisant of what I say and you know, how I act online.” | Therefore, intersubjectivity is experienced as less restrictive because of the factors described above. As the participant has said, they don't feel the same fear as when talking to somebody in person. However, they also say that they became more conscious of what they say and how they act online. |
-
-#### Theme #05
-
-| Lifeworld Dimension | Extracts | Interpretation |
-|---|---|---|
-| Time | No references were found. | None. |
-| Space | “I think that the pandemic and like the quarantine and all that it really solidified my relationship with Discord, because it helped me be socialised. And like, there wasn't, there wasn't anything else to do, you know?” | Socialising on Discord has helped to cope with social isolation. Presumably, this has also helped to be isolated in a given physical space (house or room). |
-| Embodiment | No references were found. | None. |
-| Intersubjectivity | No references were found. | None. |
-
-#### Other Final Codes (Ungrouped)
-
-| Lifeworld Dimension | Extracts | Interpretation |
-|---|---|---|
-| Time | No references were found. | None. |
-| Space | No references were found. | None. |
-| Embodiment | “I don't. I'm a little bit apprehensive, I will admit, because I'm not totally keen on, like, giving out personal information on like a public server like that...”<br><br>“Yeah, that's a big thing, too, is the lack of those body mechanics, you know, the nuances of facial expression, like body language, you know, all this stuff is missing...” | Showing themselves on camera feels uncomfortable. Being physically absent feels safe. The lack of a physical presence with other VC participants makes communication more difficult. |
-| Intersubjectivity | “Yeah, that's a big thing, too, is the lack of those body mechanics... there probably have been times where I've misinterpreted something somebody said...”<br><br>“Hmm. I found it frustrating that. I don't know. There's just so many servers, so many people everywhere. Usually when I joined a VC anywhere, usually it's people I don't know even if I met them before in another VC but I don't remember them anymore.” | Due to a lack of body language, intersubjectivity is experienced as less free-flowing. Misinterpretations and misunderstandings are more likely to happen. The participants in VC regularly change. Too many nicknames or voices to remember. The participant doesn't remember most of the people they talk with. Intersubjectivity is a brief social experience. |
