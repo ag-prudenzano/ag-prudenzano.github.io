@@ -53,7 +53,7 @@
   max-width: 760px;
   margin: 1.5rem 0 0;
   color: var(--text-secondary);
-  font-size: clamp(1.0625rem, 1.5vw, 1.25rem);
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.55;
 }
@@ -105,5 +105,9 @@
 
   .report-hero {
     margin-bottom: 3rem;
+  }
+
+  .report-lede {
+    font-size: 1.0625rem;
   }
 }
