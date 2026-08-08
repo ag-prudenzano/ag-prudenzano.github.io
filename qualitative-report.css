@@ -1,3 +1,14 @@
+.qualitative-report-page .live-report {
+  --qualitative-copy-max: 42rem;
+}
+
+.qualitative-report-page .live-report-section > h2,
+.qualitative-report-page .live-report-section > p,
+.qualitative-report-page .live-report-section > ol,
+.qualitative-report-page .live-report-section > ul {
+  max-width: var(--qualitative-copy-max);
+}
+
 .qualitative-report-page .live-report-section > h3 {
   max-width: 42ch;
   margin: 2.25rem 0 .75rem;
