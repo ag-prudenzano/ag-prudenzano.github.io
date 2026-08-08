@@ -102,6 +102,24 @@ const portfolioFilterButtons = Array.from(
   document.querySelectorAll("[data-portfolio-filter]")
 );
 const portfolioList = document.querySelector("[data-portfolio-list]");
+const discordPortfolioTitle = "Socialising in Cyberspace: A Phenomenologically Informed Interview Study of Discord Users' Social Experiences";
+
+if (
+  portfolioList &&
+  !Array.from(portfolioList.querySelectorAll(".research-entry-title")).some(
+    (title) => title.textContent.trim() === discordPortfolioTitle
+  )
+) {
+  const item = document.createElement("li");
+  item.className = "study-item research-entry";
+  item.dataset.method = "qualitative";
+  item.dataset.projectType = "real";
+  item.innerHTML = `
+    <div class="research-entry-meta"><span class="research-entry-type">Qualitative</span><span class="portfolio-entry-kind">Research Project</span><span class="research-entry-date">2022</span></div>
+    <div class="research-entry-content"><span class="study-title research-entry-title">${discordPortfolioTitle}</span><p class="research-entry-description">An exploratory qualitative study of how two regular Discord users experienced social connection, mediated intimacy, learning, everyday support, and friction in voice-centred online communities.</p></div>`;
+  portfolioList.appendChild(item);
+}
+
 const portfolioEmpty = document.querySelector("[data-portfolio-empty]");
 const portfolioItems = portfolioList
   ? Array.from(portfolioList.querySelectorAll(".research-entry"))
@@ -121,7 +139,7 @@ const publishedPortfolioStudies = {
     href: "survey-response-quality-audit.html",
     date: "2026",
   },
-  "Socialising in Cyberspace: A Phenomenologically Informed Interview Study of Discord Users' Social Experiences": {
+  [discordPortfolioTitle]: {
     href: "socialising-in-cyberspace.html",
     date: "2022",
   },
