@@ -2,7 +2,7 @@
   max-width: 42ch;
   margin: 2.25rem 0 .75rem;
   color: var(--text-primary);
-  font-size: var(--type-heading-03);
+  font-size: 1.0625rem;
   font-weight: 500;
   line-height: 1.35;
   letter-spacing: normal;
@@ -39,10 +39,6 @@
 .qualitative-report-page .live-report-section[data-section="results"] table td:nth-child(2) {
   width: 23%;
   padding-right: 1.5rem;
-}
-
-.qualitative-report-page .live-report-section[data-section="code-development-prj-01"] table {
-  min-width: 900px;
 }
 
 @media (max-width: 800px) {
