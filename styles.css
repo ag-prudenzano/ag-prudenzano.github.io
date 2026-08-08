@@ -26,7 +26,6 @@
   --type-primary-text: 1.0625rem; /* 17px */
   --type-secondary-text: .9375rem; /* 15px */
   --type-tertiary-text: .8125rem; /* 13px */
-  --type-finding-metric: 3rem; /* 48px */
 
   /* Responsive exceptions for small screens. */
   --type-heading-01-mobile: 2.75rem;
