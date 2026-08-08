@@ -2,8 +2,31 @@ const liveReport = document.querySelector("[data-live-report]");
 
 if (liveReport) {
   const reportUrl = liveReport.dataset.reportUrl;
-  const rawBase = "https://raw.githubusercontent.com/ag-prudenzano/survey-response-quality-audit/main/";
-  const githubBase = "https://github.com/ag-prudenzano/survey-response-quality-audit/blob/main/";
+  const rawGithubPattern = /^https:\/\/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/([^/]+)\/(.+)$/;
+  const rawGithubMatch = reportUrl?.match(rawGithubPattern);
+
+  let rawBase = "";
+  let githubBase = "";
+  let reportSourceUrl = liveReport.dataset.reportSourceUrl || "";
+
+  if (rawGithubMatch) {
+    const [, owner, repository, ref, filePath] = rawGithubMatch;
+    const directory = filePath.includes("/")
+      ? filePath.slice(0, filePath.lastIndexOf("/") + 1)
+      : "";
+
+    rawBase = `https://raw.githubusercontent.com/${owner}/${repository}/${ref}/${directory}`;
+    githubBase = `https://github.com/${owner}/${repository}/blob/${ref}/${directory}`;
+
+    if (!reportSourceUrl) {
+      reportSourceUrl = `https://github.com/${owner}/${repository}/blob/${ref}/${filePath}`;
+    }
+  } else if (reportUrl) {
+    const lastSlash = reportUrl.lastIndexOf("/");
+    rawBase = lastSlash >= 0 ? reportUrl.slice(0, lastSlash + 1) : reportUrl;
+    githubBase = rawBase;
+    reportSourceUrl = reportSourceUrl || reportUrl;
+  }
 
   const slugify = (value) =>
     value
@@ -15,7 +38,7 @@ if (liveReport) {
   const normaliseUrls = (container) => {
     container.querySelectorAll("img[src]").forEach((image) => {
       const source = image.getAttribute("src");
-      if (source && !/^(https?:|data:)/i.test(source)) {
+      if (source && !/^(https?:|data:)/i.test(source) && rawBase) {
         image.src = rawBase + source.replace(/^\.\//, "");
       }
     });
@@ -24,7 +47,7 @@ if (liveReport) {
       const href = link.getAttribute("href");
       if (!href) return;
 
-      if (!/^(https?:|mailto:|#)/i.test(href)) {
+      if (!/^(https?:|mailto:|#)/i.test(href) && githubBase) {
         link.href = githubBase + href.replace(/^\.\//, "");
       }
 
@@ -295,6 +318,25 @@ if (liveReport) {
     });
   };
 
+  const showLoadError = () => {
+    const paragraph = document.createElement("p");
+    paragraph.className = "live-report-error";
+    paragraph.setAttribute("role", "status");
+    paragraph.append("The report could not be loaded here.");
+
+    if (reportSourceUrl) {
+      paragraph.append(" You can read the canonical report ");
+      const link = document.createElement("a");
+      link.href = reportSourceUrl;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = "on GitHub";
+      paragraph.append(link, ".");
+    }
+
+    liveReport.replaceChildren(paragraph);
+  };
+
   const loadReport = async () => {
     liveReport.setAttribute("aria-busy", "true");
 
@@ -329,11 +371,7 @@ if (liveReport) {
       enhanceFigures(liveReport);
       enhanceProjectFiles(liveReport);
     } catch (error) {
-      liveReport.innerHTML = `
-        <p class="live-report-error" role="status">
-          The report could not be loaded here. You can read the canonical report
-          <a href="https://github.com/ag-prudenzano/survey-response-quality-audit/blob/main/report.md" target="_blank" rel="noopener noreferrer">on GitHub</a>.
-        </p>`;
+      showLoadError();
       console.error(error);
     } finally {
       liveReport.setAttribute("aria-busy", "false");
