@@ -62,6 +62,13 @@ if (liveReport) {
     const section = container.querySelector('[data-section="project-snapshot"]');
     if (!section) return;
 
+    const heading = section.querySelector(":scope > h2");
+    if (heading) {
+      section.setAttribute("aria-label", heading.textContent.trim() || "Project Snapshot");
+      section.removeAttribute("aria-labelledby");
+      heading.remove();
+    }
+
     const table = section.querySelector(":scope > table");
     const headers = table ? Array.from(table.querySelectorAll("thead th")) : [];
     const values = table ? Array.from(table.querySelectorAll("tbody tr:first-child td")) : [];
@@ -113,10 +120,6 @@ if (liveReport) {
     const block = document.createElement("div");
     block.className = "live-report-skill-block";
 
-    const label = document.createElement("p");
-    label.className = "live-report-skill-label";
-    label.textContent = labelText;
-
     const list = document.createElement("ul");
     list.className = "live-report-skill-list";
     list.setAttribute("aria-label", labelText);
@@ -127,7 +130,7 @@ if (liveReport) {
       list.appendChild(item);
     });
 
-    block.append(label, list);
+    block.appendChild(list);
     skillsParagraph.replaceWith(block);
   };
 
