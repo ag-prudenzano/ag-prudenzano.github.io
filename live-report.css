@@ -89,6 +89,12 @@
   line-height: 1.65;
 }
 
+.live-report-section[data-section="quality-checks"] > .live-report-checks + p,
+.live-report table + p,
+.live-report-figures + p {
+  margin-top: .85rem;
+}
+
 .live-report-section code {
   color: var(--text-primary);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
