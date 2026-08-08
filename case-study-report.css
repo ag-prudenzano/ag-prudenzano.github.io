@@ -1,6 +1,6 @@
 .report-page {
   --report-max: 1500px;
-  --report-copy: 760px;
+  --report-copy: 72ch;
 }
 
 .report-page .site-header,
@@ -21,7 +21,7 @@
 
 .report-hero {
   max-width: 1040px;
-  margin-bottom: 4.5rem;
+  margin-bottom: 4rem;
 }
 
 .report-eyebrow {
@@ -312,11 +312,15 @@
   text-wrap: balance;
 }
 
-.report-page .report-lede,
+.report-page .report-lede {
+  width: 100%;
+  max-width: 760px;
+}
+
 .report-page .report-copy,
 .report-page .report-note {
   width: 100%;
-  max-width: 900px;
+  max-width: 72ch;
 }
 
 .report-page .report-section {
