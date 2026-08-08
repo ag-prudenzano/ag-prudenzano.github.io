@@ -118,32 +118,6 @@ a { color: inherit; }
   box-shadow: none;
 }
 
-.contact-button {
-  min-height: 42px;
-  padding: .6rem 1.15rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--ink);
-  background: transparent;
-  font: inherit;
-  font-size: var(--type-interface);
-  font-weight: 600;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  opacity: 1;
-  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
-}
-
-.contact-button:hover,
-.contact-button:focus-visible {
-  color: var(--white);
-  border-color: var(--ink);
-  background: var(--ink);
-}
-
 .case-study-page {
   width: 100%;
   max-width: 1240px;
@@ -176,30 +150,6 @@ a { color: inherit; }
   margin-bottom: 4rem;
 }
 
-.projects-intro {
-  max-width: none;
-}
-
-.projects-heading {
-  font-size: var(--type-page-heading);
-  white-space: nowrap;
-}
-
-.eyebrow {
-  margin: 0 0 1rem;
-  color: var(--coral);
-  font-size: var(--type-label);
-  font-weight: 600;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-}
-
-.quantitative-page .eyebrow,
-.qualitative-page .eyebrow,
-.mixed-methods-page .eyebrow {
-  color: var(--muted);
-}
-
 h1 {
   margin: 0;
   font-family: var(--font-system);
@@ -214,8 +164,7 @@ body.portfolio-page .research-heading,
 body.quantitative-page .research-heading,
 body.qualitative-page .research-heading,
 body.mixed-methods-page .research-heading,
-body.report-page .report-title,
-body .projects-heading {
+body.report-page .report-title {
   font-size: var(--type-page-heading);
   font-weight: 500;
   line-height: 1.06;
@@ -250,41 +199,21 @@ body .projects-heading {
   border-bottom: 1px solid var(--line);
 }
 
-.study-number {
-  color: var(--muted);
-  font-size: var(--type-list-title);
-  font-weight: 600;
-}
-
 .study-title {
   font-size: var(--type-list-title);
   font-weight: 500;
 }
 
-.study-status {
-  color: var(--muted);
-  font-size: var(--type-label);
-  font-weight: 600;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
-
-.study-item:not(.active) .study-number,
-.study-item:not(.active) .study-title,
-.study-item:not(.active) .study-status {
+.study-item:not(.active) .study-title {
   color: var(--text-inactive);
 }
 
 .study-item.active {
+  position: relative;
   color: var(--ink);
   border-color: var(--line);
   background: transparent;
   transition: color .2s ease, border-color .2s ease, background-color .2s ease, padding .2s ease;
-}
-
-.study-item.active .study-number {
-  color: var(--muted);
-  transition: color .2s ease;
 }
 
 .study-item.active:hover,
@@ -298,11 +227,6 @@ body .projects-heading {
   background: var(--surface);
 }
 
-.study-item.active:hover .study-number,
-.study-item.active:focus-within .study-number {
-  color: var(--text-secondary);
-}
-
 .study-link {
   color: inherit;
   text-decoration: none;
@@ -314,18 +238,11 @@ body .projects-heading {
   inset: 0;
 }
 
-.study-item.active { position: relative; }
-
 .study-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-}
-
-.empty-report {
-  flex: 1;
-  min-height: 62vh;
 }
 
 footer {
@@ -342,20 +259,17 @@ footer {
   .site-header { min-height: 72px; padding: 0 1.2rem; }
   .brand { gap: .55rem; font-size: var(--type-interface); }
   .brand-photo { width: 36px; height: 36px; }
-  .contact-button { min-height: 38px; padding: .5rem .85rem; font-size: var(--type-interface); }
   .case-study-page { padding: 3rem 1.2rem 5rem; }
   body.portfolio-page .research-heading,
   body.quantitative-page .research-heading,
   body.qualitative-page .research-heading,
   body.mixed-methods-page .research-heading,
-  body.report-page .report-title,
-  body .projects-heading {
+  body.report-page .report-title {
     font-size: var(--type-page-heading-mobile);
     line-height: 1.08;
   }
   .study-item { grid-template-columns: 38px 1fr; }
-  .study-status, .study-arrow { grid-column: 2; }
-  .study-status { margin-top: -.75rem; }
+  .study-arrow { grid-column: 2; }
   footer { padding: 2rem 1.2rem; flex-direction: column; }
 }
 
