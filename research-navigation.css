@@ -23,7 +23,7 @@
   background: transparent;
   font: inherit;
   font-size: var(--type-secondary-text);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.53;
   cursor: pointer;
   transition: color .2s ease;
