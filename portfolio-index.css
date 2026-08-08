@@ -113,6 +113,12 @@
   color: var(--research-list-secondary);
 }
 
+.portfolio-research-list .study-arrow {
+  color: transparent;
+  font-size: 0;
+  background: transparent url("assets/arrow-top-right.svg") center / 24px 24px no-repeat;
+}
+
 @media (max-width: 800px) {
   .portfolio-page .case-study-page {
     padding-top: 2.5rem;
