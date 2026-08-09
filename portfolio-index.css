@@ -26,6 +26,7 @@
   font-size: var(--type-primary-text);
   font-weight: 400;
   line-height: var(--leading-primary-text);
+  letter-spacing: normal;
 }
 
 .portfolio-controls {
@@ -60,6 +61,8 @@
 
 .portfolio-method-filter .research-filter-button {
   font-size: var(--type-secondary-text);
+  font-weight: 500;
+  line-height: var(--leading-secondary-text);
 }
 
 .portfolio-filter-note {
@@ -78,6 +81,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 .portfolio-research-list .research-entry-type,
@@ -87,9 +91,10 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
-/* Active project method stays secondary; active project kind/date stay tertiary. */
+/* State colours requested for portfolio metadata. */
 .portfolio-research-list .research-entry.active .research-entry-type,
 .portfolio-research-list .research-entry.active:hover .research-entry-type,
 .portfolio-research-list .research-entry.active:focus-within .research-entry-type {
@@ -109,7 +114,7 @@
 }
 
 .portfolio-research-list .research-entry-title {
-  color: var(--text-primary);
+  color: var(--heading-text);
   font-size: var(--type-heading-04);
   font-weight: 500;
   line-height: var(--leading-heading-04);
@@ -122,6 +127,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 .portfolio-entry-kind {
