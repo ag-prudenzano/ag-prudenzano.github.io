@@ -29,7 +29,6 @@ body {
 }
 
 .header-button,
-.back-link,
 .menu-toggle,
 .brand-photo {
   border-color: var(--separator);
@@ -41,11 +40,23 @@ body {
 
 .header-button:hover,
 .header-button:focus-visible,
-.back-link:hover,
-.back-link:focus-visible,
 .menu-toggle:hover,
 .menu-toggle:focus-visible {
   color: var(--inverse-text);
   border-color: var(--separator);
   background: var(--text-primary);
+}
+
+/* Back controls use the supplied default and hover SVG assets. */
+.back-link {
+  border: 0;
+  color: transparent;
+  background: transparent url("assets/back-arrow-default.svg") center / 38px 38px no-repeat;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  border: 0;
+  color: transparent;
+  background: transparent url("assets/back-arrow-hover.svg") center / 38px 38px no-repeat;
 }
