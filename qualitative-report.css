@@ -9,14 +9,14 @@
   max-width: var(--qualitative-copy-max);
 }
 
-/* Default report subheads use Heading 04. */
+/* Report subheads use the new Heading 03: 17px / 500 / 1.50 / white. */
 .qualitative-report-page .live-report-section > h3,
 .qualitative-report-page .live-report-section > h4 {
   max-width: 52ch;
   color: var(--heading-text);
-  font-size: var(--type-heading-04);
+  font-size: var(--type-heading-03);
   font-weight: 500;
-  line-height: var(--leading-heading-04);
+  line-height: var(--leading-heading-03);
   letter-spacing: normal;
 }
 
@@ -28,7 +28,7 @@
   margin: 1.75rem 0 .65rem;
 }
 
-/* Heading 03 is reserved for Method subsections such as Design and Data Analysis. */
+/* Method subsections use the same canonical Heading 03 style at the full qualitative copy width. */
 .qualitative-report-page .live-report-section[data-section="method"] > h3 {
   max-width: var(--qualitative-copy-max);
   color: var(--heading-text);
