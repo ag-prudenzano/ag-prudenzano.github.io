@@ -136,6 +136,10 @@ const portfolioProjectTypeFilterLabels = {
   hypothetical: "Simulated case studies",
 };
 const publishedPortfolioStudies = {
+  "PhD Thesis Preview": {
+    href: "phd-thesis-preview.html",
+    date: "In Progress",
+  },
   "Demographic Weighting Exercise": {
     href: "demographic-weighting-exercise.html",
     date: "2026",
@@ -174,7 +178,8 @@ portfolioItems.forEach((item) => {
   const date = item.querySelector(".research-entry-date");
 
   if (methodLabel) {
-    methodLabel.textContent = portfolioMethodLabels[item.dataset.method] || "";
+    methodLabel.textContent =
+      item.dataset.methodLabel || portfolioMethodLabels[item.dataset.method] || "";
   }
 
   if (projectTypeLabel) {

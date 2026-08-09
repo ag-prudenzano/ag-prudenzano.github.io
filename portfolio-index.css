@@ -79,7 +79,8 @@
 .portfolio-research-list .research-entry-meta,
 .portfolio-research-list .research-entry-type,
 .portfolio-research-list .research-entry-date,
-.portfolio-research-list .portfolio-entry-kind {
+.portfolio-research-list .portfolio-entry-kind,
+.portfolio-research-list .portfolio-entry-stage {
   color: var(--text-secondary);
   font-size: var(--type-secondary-text);
   font-weight: 400;
@@ -96,16 +97,20 @@
 
 .portfolio-research-list .research-entry.active .research-entry-date,
 .portfolio-research-list .research-entry.active .portfolio-entry-kind,
+.portfolio-research-list .research-entry.active .portfolio-entry-stage,
 .portfolio-research-list .research-entry.active:hover .research-entry-date,
 .portfolio-research-list .research-entry.active:hover .portfolio-entry-kind,
+.portfolio-research-list .research-entry.active:hover .portfolio-entry-stage,
 .portfolio-research-list .research-entry.active:focus-within .research-entry-date,
-.portfolio-research-list .research-entry.active:focus-within .portfolio-entry-kind {
+.portfolio-research-list .research-entry.active:focus-within .portfolio-entry-kind,
+.portfolio-research-list .research-entry.active:focus-within .portfolio-entry-stage {
   color: var(--text-secondary);
 }
 
 .portfolio-research-list .research-entry:not(.active) .research-entry-type,
 .portfolio-research-list .research-entry:not(.active) .research-entry-date,
-.portfolio-research-list .research-entry:not(.active) .portfolio-entry-kind {
+.portfolio-research-list .research-entry:not(.active) .portfolio-entry-kind,
+.portfolio-research-list .research-entry:not(.active) .portfolio-entry-stage {
   color: var(--text-tertiary);
 }
 
