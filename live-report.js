@@ -44,7 +44,7 @@ if (liveReport) {
 
       if (/^https?:/i.test(image.src)) {
         const imageUrl = new URL(image.src);
-        imageUrl.searchParams.set("v", "20260809-chart-palette-v1");
+        imageUrl.searchParams.set("v", "20260809-chart-palette-v2");
         image.src = imageUrl.toString();
       }
     });
