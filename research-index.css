@@ -157,7 +157,7 @@
   font-size: 0;
   opacity: 1;
   transform: none;
-  background: transparent url("assets/arrow-top-right.svg") center / 24px 24px no-repeat;
+  background: transparent url("assets/arrow-top-right.svg?v=20260809-stylebook-v2") center / 24px 24px no-repeat;
   transition: none;
 }
 
