@@ -174,7 +174,7 @@
 }
 
 .live-report-section[data-section="quality-checks"] > .live-report-checks + p,
-.live-report table + p,
+.live-report-table-wrap + p,
 .live-report-figures + p,
 .live-report table caption {
   color: var(--text-secondary);
@@ -185,7 +185,7 @@
 }
 
 .live-report-section[data-section="quality-checks"] > .live-report-checks + p,
-.live-report table + p,
+.live-report-table-wrap + p,
 .live-report-figures + p {
   margin-top: .85rem;
 }
