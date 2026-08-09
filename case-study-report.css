@@ -99,6 +99,10 @@
 
 body.report-page .live-report-section[data-section="quality-checks"] > .live-report-checks + p {
   color: var(--text-tertiary);
+  font-size: var(--type-tertiary-text);
+  font-weight: 400;
+  line-height: var(--leading-tertiary-text);
+  letter-spacing: normal;
 }
 
 @media (max-width: 800px) {
