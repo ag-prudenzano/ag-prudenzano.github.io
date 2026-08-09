@@ -186,7 +186,7 @@
   padding: 1.9rem 0 1.85rem;
   border-radius: 0;
   color: var(--text-primary);
-  border-bottom-color: var(--separator);
+  border-bottom-color: var(--heading-text);
   background: transparent;
   box-shadow: none;
 }
