@@ -88,7 +88,7 @@
   transition: none;
 }
 
-/* Metadata always uses Secondary Text typography. Active rows use secondary colour; inactive rows use tertiary colour. */
+/* Metadata always uses Secondary Text typography. Active method/type is white; active date is secondary; inactive metadata is tertiary. */
 .research-entry-meta,
 .research-entry-type,
 .research-entry-date {
@@ -100,10 +100,13 @@
 }
 
 .research-index-list .research-entry.active .research-entry-type,
-.research-index-list .research-entry.active .research-entry-date,
 .research-index-list .research-entry.active:hover .research-entry-type,
+.research-index-list .research-entry.active:focus-within .research-entry-type {
+  color: var(--heading-text);
+}
+
+.research-index-list .research-entry.active .research-entry-date,
 .research-index-list .research-entry.active:hover .research-entry-date,
-.research-index-list .research-entry.active:focus-within .research-entry-type,
 .research-index-list .research-entry.active:focus-within .research-entry-date {
   color: var(--text-secondary);
 }
