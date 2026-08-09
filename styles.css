@@ -4,17 +4,17 @@
   --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
 
   /* Canonical colours from website_typography_and_colours.numbers. */
-  --background: #111113;
-  --heading-text: #dedee2;
-  --text-primary: #acacb4;
-  --text-secondary: #acacb4;
-  --text-tertiary: #747474;
-  --separator: #323235;
-  --button-text: #dedee2;
-  --button-hover-background: #dedee2;
-  --button-hover-text: #111113;
-  --arrow: #dedee2;
-  --focus: #dedee2;
+  --background: #0c0c0d;
+  --heading-text: #e4e4e7;
+  --text-primary: #7a7a85;
+  --text-secondary: #7a7a85;
+  --text-tertiary: #313135;
+  --separator: #252528;
+  --button-text: #e4e4e7;
+  --button-hover-background: #e4e4e7;
+  --button-hover-text: #0c0c0d;
+  --arrow: #e4e4e7;
+  --focus: #e4e4e7;
 
   /* Backwards-compatible semantic aliases. */
   --inverse-background: var(--button-hover-background);
@@ -172,7 +172,7 @@ hr {
   border: 0;
   border-radius: 50%;
   color: transparent;
-  background: transparent url("assets/back-arrow-default.svg?v=20260809-stylebook-v2") center / 38px 38px no-repeat;
+  background: transparent url("assets/back-arrow-default.svg?v=20260809-stylebook-v3") center / 38px 38px no-repeat;
   font-size: 0;
   text-decoration: none;
   transition: none;
@@ -182,7 +182,7 @@ hr {
 .back-link:focus-visible {
   border: 0;
   color: transparent;
-  background: transparent url("assets/back-arrow-hover.svg?v=20260809-stylebook-v2") center / 38px 38px no-repeat;
+  background: transparent url("assets/back-arrow-hover.svg?v=20260809-stylebook-v3") center / 38px 38px no-repeat;
 }
 
 .page-intro {
