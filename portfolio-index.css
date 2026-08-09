@@ -91,7 +91,7 @@
 .portfolio-page .portfolio-research-list .study-item.research-entry.active > .research-entry-meta > .research-entry-type,
 .portfolio-page .portfolio-research-list .study-item.research-entry.active:hover > .research-entry-meta > .research-entry-type,
 .portfolio-page .portfolio-research-list .study-item.research-entry.active:focus-within > .research-entry-meta > .research-entry-type {
-  color: #ffffff !important;
+  color: var(--heading-text) !important;
 }
 
 .portfolio-research-list .research-entry.active .research-entry-date,
@@ -137,7 +137,7 @@
 .portfolio-research-list .study-arrow {
   color: transparent;
   font-size: 0;
-  background: transparent url("assets/arrow-top-right.svg") center / 24px 24px no-repeat;
+  background: transparent url("assets/arrow-top-right.svg?v=20260809-stylebook-v2") center / 24px 24px no-repeat;
 }
 
 @media (max-width: 800px) {
