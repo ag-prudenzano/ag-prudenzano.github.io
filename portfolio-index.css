@@ -115,9 +115,9 @@
 
 .portfolio-research-list .research-entry-title {
   color: var(--heading-text);
-  font-size: var(--type-heading-04);
+  font-size: var(--type-heading-03);
   font-weight: 500;
-  line-height: var(--leading-heading-04);
+  line-height: var(--leading-heading-03);
   letter-spacing: normal;
 }
 
