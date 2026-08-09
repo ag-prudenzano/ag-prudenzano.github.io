@@ -80,25 +80,30 @@
   line-height: var(--leading-tertiary-text);
 }
 
-.portfolio-research-list .research-entry-type {
-  color: var(--text-secondary);
+.portfolio-research-list .research-entry-type,
+.portfolio-research-list .research-entry-date,
+.portfolio-entry-kind {
   font-size: var(--type-tertiary-text);
   font-weight: 400;
   line-height: var(--leading-tertiary-text);
 }
 
 .portfolio-research-list .research-entry.active .research-entry-type,
+.portfolio-research-list .research-entry.active .research-entry-date,
+.portfolio-research-list .research-entry.active .portfolio-entry-kind,
 .portfolio-research-list .research-entry.active:hover .research-entry-type,
-.portfolio-research-list .research-entry.active:focus-within .research-entry-type {
+.portfolio-research-list .research-entry.active:hover .research-entry-date,
+.portfolio-research-list .research-entry.active:hover .portfolio-entry-kind,
+.portfolio-research-list .research-entry.active:focus-within .research-entry-type,
+.portfolio-research-list .research-entry.active:focus-within .research-entry-date,
+.portfolio-research-list .research-entry.active:focus-within .portfolio-entry-kind {
   color: var(--text-secondary);
 }
 
-.portfolio-research-list .research-entry-date,
-.portfolio-entry-kind {
+.portfolio-research-list .research-entry:not(.active) .research-entry-type,
+.portfolio-research-list .research-entry:not(.active) .research-entry-date,
+.portfolio-research-list .research-entry:not(.active) .portfolio-entry-kind {
   color: var(--text-tertiary);
-  font-size: var(--type-tertiary-text);
-  font-weight: 400;
-  line-height: var(--leading-tertiary-text);
 }
 
 .portfolio-research-list .research-entry-title {
@@ -119,12 +124,6 @@
 
 .portfolio-entry-kind {
   text-transform: capitalize;
-}
-
-.portfolio-research-list .research-entry:not(.active) .portfolio-entry-kind,
-.portfolio-research-list .research-entry.active:hover .portfolio-entry-kind,
-.portfolio-research-list .research-entry.active:focus-within .portfolio-entry-kind {
-  color: var(--text-tertiary);
 }
 
 .portfolio-research-list .study-arrow {
