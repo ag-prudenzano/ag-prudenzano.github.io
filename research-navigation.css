@@ -19,7 +19,7 @@
   margin: 0;
   padding: .25rem 0;
   border: 0;
-  color: var(--text-secondary);
+  color: var(--button-text);
   background: transparent;
   font: inherit;
   font-size: var(--type-secondary-text);
@@ -33,7 +33,7 @@
 .research-filter-button:hover,
 .research-filter-button:focus-visible,
 .research-filter-button.is-active {
-  color: var(--heading-text);
+  color: var(--button-text);
 }
 
 .study-item[hidden],
