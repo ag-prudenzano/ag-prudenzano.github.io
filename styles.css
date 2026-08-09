@@ -9,7 +9,7 @@
   --text-primary: #95959d;
   --text-secondary: #95959d;
   --text-tertiary: #3d3d42;
-  --separator: #3d3d42;
+  --separator: #252528;
   --button-text: #e4e4e7;
   --button-hover-background: #e4e4e7;
   --button-hover-text: #0c0c0d;
@@ -172,7 +172,7 @@ hr {
   border: 0;
   border-radius: 50%;
   color: transparent;
-  background: transparent url("assets/back-arrow-default.svg?v=20260809-stylebook-v4") center / 38px 38px no-repeat;
+  background: transparent url("assets/back-arrow-default.svg?v=20260809-stylebook-v5") center / 38px 38px no-repeat;
   font-size: 0;
   text-decoration: none;
   transition: none;
@@ -182,7 +182,7 @@ hr {
 .back-link:focus-visible {
   border: 0;
   color: transparent;
-  background: transparent url("assets/back-arrow-hover.svg?v=20260809-stylebook-v4") center / 38px 38px no-repeat;
+  background: transparent url("assets/back-arrow-hover.svg?v=20260809-stylebook-v5") center / 38px 38px no-repeat;
 }
 
 .page-intro {
