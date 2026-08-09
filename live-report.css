@@ -14,6 +14,7 @@
   font-size: var(--type-primary-text);
   font-weight: 400;
   line-height: var(--leading-primary-text);
+  letter-spacing: normal;
 }
 
 .live-report-error a {
@@ -37,7 +38,7 @@
 .live-report-section > h2 {
   max-width: 18ch;
   margin: 0 0 2rem;
-  color: var(--text-primary);
+  color: var(--heading-text);
   font-size: var(--type-heading-02);
   font-weight: 500;
   line-height: var(--leading-heading-02);
@@ -52,6 +53,7 @@
   font-size: var(--type-primary-text);
   font-weight: 400;
   line-height: var(--leading-primary-text);
+  letter-spacing: normal;
 }
 
 .live-report-section > p {
@@ -115,10 +117,11 @@
 
 .live-report-snapshot dd {
   margin: 0;
-  color: var(--text-primary);
+  color: var(--text-secondary);
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 .live-report-skill-block {
@@ -154,6 +157,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 .live-report-section[data-section="project-snapshot"] th,
@@ -162,8 +166,11 @@
 }
 
 .live-report-section[data-section="quality-checks"] > p {
+  color: var(--text-primary);
   font-size: var(--type-primary-text);
+  font-weight: 400;
   line-height: var(--leading-primary-text);
+  letter-spacing: normal;
 }
 
 .live-report-section[data-section="quality-checks"] > .live-report-checks + p,
@@ -174,6 +181,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 .live-report-section[data-section="quality-checks"] > .live-report-checks + p,
@@ -184,8 +192,11 @@
 
 .live-report-section code {
   color: var(--text-secondary);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-system);
   font-size: var(--type-secondary-text);
+  font-weight: 400;
+  line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 .live-report-checks {
@@ -214,11 +225,10 @@
   border-left: 1px solid var(--separator);
 }
 
-/* Report subheads that formerly used Heading 03 now use Heading 04. */
 .live-report-check h3,
 .live-report-figure h3,
 .live-report-section > h3 {
-  color: var(--text-primary);
+  color: var(--heading-text);
   font-size: var(--type-heading-04);
   font-weight: 500;
   line-height: var(--leading-heading-04);
@@ -236,6 +246,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 .live-report-section[data-section="findings"] > p:first-of-type {
@@ -244,6 +255,7 @@
   font-size: var(--type-primary-text);
   font-weight: 400;
   line-height: var(--leading-primary-text);
+  letter-spacing: normal;
 }
 
 .live-report-metrics {
@@ -286,7 +298,7 @@
 
 .live-report-metric dd {
   margin: 1rem 0 0;
-  color: var(--text-primary);
+  color: var(--heading-text);
   font-size: var(--type-heading-01);
   font-weight: 500;
   line-height: var(--leading-heading-01);
@@ -306,9 +318,11 @@
   margin-top: 2rem;
   border-collapse: collapse;
   color: var(--text-secondary);
+  font-family: var(--font-system);
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 .live-report th,
@@ -378,6 +392,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 .live-report-section[data-section="project-files"] > ul,
@@ -407,6 +422,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
   text-decoration: none;
 }
 
@@ -417,14 +433,16 @@
 .live-report-file-list > li > a span:last-child {
   flex: 0 0 auto;
   color: var(--text-tertiary);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-system);
   font-size: var(--type-tertiary-text);
+  font-weight: 400;
   line-height: var(--leading-tertiary-text);
+  letter-spacing: normal;
 }
 
 .live-report-file-list > li > a:hover span:first-child,
 .live-report-file-list > li > a:focus-visible span:first-child {
-  color: var(--text-primary);
+  color: var(--heading-text);
 }
 
 @media (max-width: 1100px) and (min-width: 801px) {
