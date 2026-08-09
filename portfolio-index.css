@@ -137,7 +137,7 @@
 .portfolio-research-list .study-arrow {
   color: transparent;
   font-size: 0;
-  background: transparent url("assets/arrow-top-right.svg?v=20260809-stylebook-v4") center / 24px 24px no-repeat;
+  background: transparent url("assets/arrow-top-right.svg?v=20260809-stylebook-v5") center / 24px 24px no-repeat;
 }
 
 @media (max-width: 800px) {
