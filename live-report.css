@@ -457,8 +457,15 @@
   background: transparent url("assets/arrow-top-right-secondary.svg?v=20260809-stylebook-v9") center / 24px 24px no-repeat;
 }
 
+.live-report-file-list > li:has(> a:hover),
+.live-report-file-list > li:focus-within {
+  border-bottom-color: var(--heading-text);
+}
+
 .live-report-file-list > li > a:hover span:first-child,
-.live-report-file-list > li > a:focus-visible span:first-child {
+.live-report-file-list > li > a:hover span:last-child,
+.live-report-file-list > li > a:focus-visible span:first-child,
+.live-report-file-list > li > a:focus-visible span:last-child {
   color: var(--heading-text);
 }
 
