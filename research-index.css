@@ -198,7 +198,7 @@
 
 .research-index-list .research-entry.active:hover .research-entry-description,
 .research-index-list .research-entry.active:focus-within .research-entry-description {
-  color: var(--heading-text);
+  color: var(--text-secondary);
 }
 
 .research-index-list .research-entry:not(.active) .research-entry-title,
