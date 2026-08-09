@@ -149,10 +149,16 @@
   margin-top: 0;
   display: grid;
   place-items: center;
-  color: var(--text-primary);
+  color: transparent;
+  font-size: 0;
   opacity: 1;
   transform: none;
+  background: transparent url("assets/arrow-top-right.svg") center / 24px 24px no-repeat;
   transition: none;
+}
+
+.research-index-list .study-arrow > svg {
+  display: none;
 }
 
 .research-index-list .study-link::after {
