@@ -45,6 +45,11 @@
   letter-spacing: normal;
 }
 
+.live-report-section[data-section="opportunity-and-behaviour"] > h2 {
+  max-width: none;
+  white-space: nowrap;
+}
+
 .live-report-section > p,
 .live-report-section > ol,
 .live-report-section > ul {
