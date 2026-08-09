@@ -41,6 +41,12 @@ if (liveReport) {
       if (source && !/^(https?:|data:)/i.test(source) && rawBase) {
         image.src = rawBase + source.replace(/^\.\//, "");
       }
+
+      if (/^https?:/i.test(image.src)) {
+        const imageUrl = new URL(image.src);
+        imageUrl.searchParams.set("v", "20260809-chart-palette-v1");
+        image.src = imageUrl.toString();
+      }
     });
 
     container.querySelectorAll("a[href]").forEach((link) => {
