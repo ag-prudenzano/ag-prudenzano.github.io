@@ -88,42 +88,29 @@
   transition: none;
 }
 
+/* Every metadata line in every research row uses Secondary Text. */
+.research-entry-meta,
+.research-entry-type,
+.research-entry-date,
+.research-index-list .research-entry.active .research-entry-type,
+.research-index-list .research-entry.active .research-entry-date,
+.research-index-list .research-entry:not(.active) .research-entry-type,
+.research-index-list .research-entry:not(.active) .research-entry-date,
+.research-index-list .research-entry:hover .research-entry-type,
+.research-index-list .research-entry:hover .research-entry-date,
+.research-index-list .research-entry:focus-within .research-entry-type,
+.research-index-list .research-entry:focus-within .research-entry-date {
+  color: var(--text-secondary);
+  font-size: var(--type-secondary-text);
+  font-weight: 400;
+  line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
+}
+
 .research-entry-meta {
   display: grid;
   gap: .85rem;
   align-content: start;
-  color: var(--text-tertiary);
-  font-size: var(--type-tertiary-text);
-  font-weight: 400;
-  line-height: var(--leading-tertiary-text);
-  letter-spacing: normal;
-}
-
-.research-entry-type,
-.research-entry-date {
-  color: var(--text-tertiary);
-  font-size: var(--type-tertiary-text);
-  font-weight: 400;
-  line-height: var(--leading-tertiary-text);
-  letter-spacing: normal;
-}
-
-.research-index-list .research-entry.active .research-entry-type,
-.research-index-list .research-entry.active:hover .research-entry-type,
-.research-index-list .research-entry.active:focus-within .research-entry-type {
-  color: var(--text-secondary);
-  font-size: var(--type-secondary-text);
-  line-height: var(--leading-secondary-text);
-}
-
-.research-index-list .research-entry.active .research-entry-date,
-.research-index-list .research-entry.active:hover .research-entry-date,
-.research-index-list .research-entry.active:focus-within .research-entry-date,
-.research-index-list .research-entry:not(.active) .research-entry-type,
-.research-index-list .research-entry:not(.active) .research-entry-date {
-  color: var(--text-tertiary);
-  font-size: var(--type-tertiary-text);
-  line-height: var(--leading-tertiary-text);
 }
 
 .research-entry-content {
