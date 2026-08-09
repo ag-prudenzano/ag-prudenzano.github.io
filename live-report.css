@@ -151,9 +151,9 @@
   border: 1px solid var(--separator);
   border-radius: 999px;
   color: var(--text-secondary);
-  font-size: var(--type-tertiary-text);
+  font-size: var(--type-secondary-text);
   font-weight: 400;
-  line-height: var(--leading-tertiary-text);
+  line-height: var(--leading-secondary-text);
 }
 
 .live-report-section[data-section="project-snapshot"] th,
