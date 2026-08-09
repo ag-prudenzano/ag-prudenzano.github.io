@@ -141,7 +141,7 @@ hr {
   gap: .75rem;
   color: var(--heading-text);
   font-size: var(--type-secondary-text);
-  font-weight: 400;
+  font-weight: 500;
   line-height: var(--leading-secondary-text);
   text-decoration: none;
 }
