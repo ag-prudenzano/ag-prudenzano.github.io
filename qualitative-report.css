@@ -70,8 +70,15 @@
   padding-top: 4.25rem;
 }
 
+/* Keep table titles clearly separated from the previous table, but close to their own table. */
+.qualitative-report-page .code-development-report .live-report-section > h3 {
+  margin-top: 2.25rem;
+  margin-bottom: .5rem;
+}
+
 .qualitative-report-page .code-development-report table {
   min-width: 980px;
+  margin-top: .75rem;
   table-layout: fixed;
 }
 
@@ -161,6 +168,15 @@
 
   .qualitative-report-page .code-development-report .live-report-section:first-child {
     padding-top: 3rem;
+  }
+
+  .qualitative-report-page .code-development-report .live-report-section > h3 {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+  }
+
+  .qualitative-report-page .code-development-report table {
+    margin-top: .75rem;
   }
 
   .qualitative-report-page .code-development-report table th,
