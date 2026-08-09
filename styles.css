@@ -3,26 +3,31 @@
 
   --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
 
-  /* Canonical colour palette from website_colours.png. */
+  /* Canonical colours from website_typography_and_colours.numbers. */
   --background: #000000;
-  --text-primary: #ffffff;
+  --heading-text: #ffffff;
+  --text-primary: #8d8d93;
   --text-secondary: #8d8d93;
   --text-tertiary: #47474a;
   --separator: #323235;
-  --inverse-background: #ffffff;
-  --inverse-text: #000000;
+  --button-hover-background: #ffffff;
+  --button-hover-text: #000000;
+  --arrow: #ffffff;
   --focus: #ffffff;
 
-  --ink: var(--text-primary);
+  /* Backwards-compatible semantic aliases. */
+  --inverse-background: var(--button-hover-background);
+  --inverse-text: var(--button-hover-text);
+  --ink: var(--heading-text);
   --muted: var(--text-secondary);
   --paper: var(--background);
-  --white: var(--text-primary);
+  --white: var(--heading-text);
   --line: var(--separator);
 
-  /* Canonical typography from website_typography.numbers. */
+  /* Canonical typography from website_typography_and_colours.numbers. */
   --type-heading-01: 3.125rem; /* 50px */
-  --type-heading-02: 2.25rem;  /* 36px */
-  --type-heading-03: 1.5rem;   /* 24px */
+  --type-heading-02: 2.25rem; /* 36px */
+  --type-heading-03: 1.5rem; /* 24px */
   --type-heading-04: 1.0625rem; /* 17px */
   --type-primary-text: 1.0625rem; /* 17px */
   --type-secondary-text: .9375rem; /* 15px */
@@ -36,7 +41,6 @@
   --leading-secondary-text: 1.50;
   --leading-tertiary-text: 1.50;
 
-  /* Keep the same named styles on small screens unless a component needs a layout-only adjustment. */
   --type-heading-01-mobile: var(--type-heading-01);
   --type-heading-02-mobile: var(--type-heading-02);
 }
@@ -55,7 +59,9 @@ body,
 button,
 input,
 select,
-textarea {
+textarea,
+code,
+pre {
   font-family: var(--font-system);
 }
 
@@ -85,8 +91,11 @@ a { color: inherit; }
   left: 1rem;
   z-index: 100;
   padding: .75rem 1rem;
-  background: var(--inverse-background);
-  color: var(--inverse-text);
+  background: var(--button-hover-background);
+  color: var(--button-hover-text);
+  font-size: var(--type-secondary-text);
+  font-weight: 500;
+  line-height: var(--leading-secondary-text);
 }
 
 .skip-link:focus { top: 1rem; }
@@ -107,7 +116,7 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   gap: .75rem;
-  color: var(--text-primary);
+  color: var(--text-secondary);
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
@@ -160,7 +169,7 @@ a { color: inherit; }
 
 h1 {
   margin: 0;
-  color: var(--text-primary);
+  color: var(--heading-text);
   font-family: var(--font-system);
   font-size: var(--type-heading-01);
   font-weight: 500;
@@ -174,6 +183,7 @@ body.quantitative-page .research-heading,
 body.qualitative-page .research-heading,
 body.mixed-methods-page .research-heading,
 body.report-page .report-title {
+  color: var(--heading-text);
   font-size: var(--type-heading-01);
   font-weight: 500;
   line-height: var(--leading-heading-01);
@@ -208,12 +218,12 @@ body.report-page .report-title {
   border-bottom: 1px solid var(--separator);
 }
 
-/* Former Heading 03 list titles now use Heading 04. */
 .study-title {
-  color: var(--text-primary);
+  color: var(--heading-text);
   font-size: var(--type-heading-04);
   font-weight: 500;
   line-height: var(--leading-heading-04);
+  letter-spacing: normal;
 }
 
 .study-item:not(.active) .study-title {
@@ -251,7 +261,7 @@ body.report-page .report-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-primary);
+  color: var(--arrow);
   font-size: 1.2rem;
 }
 
@@ -264,6 +274,7 @@ footer {
   font-size: var(--type-tertiary-text);
   font-weight: 400;
   line-height: var(--leading-tertiary-text);
+  letter-spacing: normal;
 }
 
 @media (max-width: 800px) {
