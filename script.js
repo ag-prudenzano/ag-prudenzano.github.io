@@ -136,6 +136,10 @@ const portfolioProjectTypeFilterLabels = {
   hypothetical: "Simulated case studies",
 };
 const publishedPortfolioStudies = {
+  "Nonresponse Bias Assessment": {
+    href: "nonresponse-bias-assessment.html",
+    date: "2026",
+  },
   "Survey Response Quality Audit": {
     href: "survey-response-quality-audit.html",
     date: "2026",
