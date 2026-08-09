@@ -26,14 +26,14 @@
   border-radius: 50%;
   color: transparent;
   font-size: 0;
-  background: transparent url("assets/back-arrow-default.svg") center / 38px 38px no-repeat;
+  background: transparent url("assets/back-arrow-default.svg?v=20260809-stylebook-v2") center / 38px 38px no-repeat;
 }
 
 .report-page .report-back:hover,
 .report-page .report-back:focus-visible {
   border: 0;
   color: transparent;
-  background: transparent url("assets/back-arrow-hover.svg") center / 38px 38px no-repeat;
+  background: transparent url("assets/back-arrow-hover.svg?v=20260809-stylebook-v2") center / 38px 38px no-repeat;
 }
 
 .report-hero {
