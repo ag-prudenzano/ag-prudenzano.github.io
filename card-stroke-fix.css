@@ -1,7 +1,7 @@
 .research-choice,
 .research-choice:last-child {
-  border: 1px solid #393939;
-  background: #141414;
+  border: 1px solid var(--separator);
+  background: var(--background);
   background-clip: padding-box;
   box-shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
 }
@@ -14,16 +14,16 @@
 .choice-arrow,
 .research-choice:hover .choice-arrow,
 .research-choice:focus-visible .choice-arrow {
-  color: #f6f6f6;
+  color: var(--arrow);
   transform: none;
-  border-color: #393939;
+  border-color: var(--separator);
   background: transparent;
 }
 
 .research-choice:hover,
 .research-choice:focus-visible {
-  border-color: #393939;
-  background: #141414;
+  border-color: var(--separator);
+  background: var(--background);
   box-shadow: 0 22px 52px rgba(0, 0, 0, 0.42);
 }
 
@@ -32,7 +32,7 @@
   .research-choice:last-child,
   .research-choice:hover,
   .research-choice:focus-visible {
-    border: 1px solid #393939;
-    background: #141414;
+    border: 1px solid var(--separator);
+    background: var(--background);
   }
 }
