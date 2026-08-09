@@ -87,10 +87,11 @@
   letter-spacing: normal;
 }
 
-.portfolio-research-list .research-entry.active .research-entry-type,
-.portfolio-research-list .research-entry.active:hover .research-entry-type,
-.portfolio-research-list .research-entry.active:focus-within .research-entry-type {
-  color: var(--heading-text);
+/* Active project method/category is always white. */
+.portfolio-page .portfolio-research-list .study-item.research-entry.active > .research-entry-meta > .research-entry-type,
+.portfolio-page .portfolio-research-list .study-item.research-entry.active:hover > .research-entry-meta > .research-entry-type,
+.portfolio-page .portfolio-research-list .study-item.research-entry.active:focus-within > .research-entry-meta > .research-entry-type {
+  color: #ffffff !important;
 }
 
 .portfolio-research-list .research-entry.active .research-entry-date,
