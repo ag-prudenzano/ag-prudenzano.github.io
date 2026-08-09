@@ -441,11 +441,11 @@
   display: inline-flex;
   align-items: center;
   gap: .5rem;
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
   font-family: var(--font-system);
-  font-size: var(--type-tertiary-text);
+  font-size: var(--type-secondary-text);
   font-weight: 400;
-  line-height: var(--leading-tertiary-text);
+  line-height: var(--leading-secondary-text);
   letter-spacing: normal;
 }
 
@@ -454,7 +454,7 @@
   height: 24px;
   content: "";
   flex: 0 0 auto;
-  background: transparent url("assets/arrow-top-right-secondary.svg?v=20260809-stylebook-v7") center / 24px 24px no-repeat;
+  background: transparent url("assets/arrow-top-right-secondary.svg?v=20260809-stylebook-v8") center / 24px 24px no-repeat;
 }
 
 .live-report-file-list > li > a:hover span:first-child,
