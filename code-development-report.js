@@ -31,7 +31,8 @@ if (codeDevelopmentReport) {
 
     Array.from(parsed.children).forEach((node) => {
       if (node.tagName === "H3") {
-        headingText = node.textContent.trim();
+        node.textContent = node.textContent.trim().replace(/\s+[—–-]\s+/g, " – ");
+        headingText = node.textContent;
         fragment.appendChild(node);
         return;
       }
