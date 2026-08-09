@@ -28,16 +28,14 @@
   /* Canonical typography from website_typography_and_colours.numbers. */
   --type-heading-01: 3.125rem; /* 50px */
   --type-heading-02: 2.25rem; /* 36px */
-  --type-heading-03: 1.5rem; /* 24px */
-  --type-heading-04: 1.0625rem; /* 17px */
+  --type-heading-03: 1.0625rem; /* 17px */
   --type-primary-text: 1.0625rem; /* 17px */
   --type-secondary-text: .9375rem; /* 15px */
   --type-tertiary-text: .8125rem; /* 13px */
 
   --leading-heading-01: 1.10;
   --leading-heading-02: 1.20;
-  --leading-heading-03: 1.30;
-  --leading-heading-04: 1.50;
+  --leading-heading-03: 1.50;
   --leading-primary-text: 1.50;
   --leading-secondary-text: 1.50;
   --leading-tertiary-text: 1.50;
@@ -245,9 +243,9 @@ body.report-page .report-title {
 
 .study-title {
   color: var(--heading-text);
-  font-size: var(--type-heading-04);
+  font-size: var(--type-heading-03);
   font-weight: 500;
-  line-height: var(--leading-heading-04);
+  line-height: var(--leading-heading-03);
   letter-spacing: normal;
 }
 
