@@ -10,6 +10,7 @@
   --text-secondary: #8d8d93;
   --text-tertiary: #47474a;
   --separator: #323235;
+  --button-text: #ffffff;
   --button-hover-background: #ffffff;
   --button-hover-text: #000000;
   --arrow: #ffffff;
@@ -78,6 +79,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+button {
+  color: var(--button-text);
+}
+
 a { color: inherit; }
 
 strong,
@@ -136,7 +141,7 @@ hr {
   display: flex;
   align-items: center;
   gap: .75rem;
-  color: var(--text-secondary);
+  color: var(--heading-text);
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
