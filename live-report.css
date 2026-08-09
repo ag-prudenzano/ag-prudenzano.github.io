@@ -229,9 +229,9 @@
 .live-report-figure h3,
 .live-report-section > h3 {
   color: var(--heading-text);
-  font-size: var(--type-heading-04);
+  font-size: var(--type-heading-03);
   font-weight: 500;
-  line-height: var(--leading-heading-04);
+  line-height: var(--leading-heading-03);
   letter-spacing: normal;
 }
 
