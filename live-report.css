@@ -190,6 +190,12 @@
   margin-top: .85rem;
 }
 
+.live-report-table-wrap + p {
+  color: var(--text-tertiary);
+  font-size: var(--type-tertiary-text);
+  line-height: var(--leading-tertiary-text);
+}
+
 .live-report-section code {
   color: var(--text-secondary);
   font-family: var(--font-system);
