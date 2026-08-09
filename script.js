@@ -136,6 +136,10 @@ const portfolioProjectTypeFilterLabels = {
   hypothetical: "Simulated case studies",
 };
 const publishedPortfolioStudies = {
+  "Demographic Weighting Exercise": {
+    href: "demographic-weighting-exercise.html",
+    date: "2026",
+  },
   "Nonresponse Bias Assessment": {
     href: "nonresponse-bias-assessment.html",
     date: "2026",
