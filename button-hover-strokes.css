@@ -35,16 +35,16 @@ body {
 }
 
 .research-index-list .study-arrow {
-  color: var(--text-primary);
+  color: var(--arrow);
 }
 
 .header-button:hover,
 .header-button:focus-visible,
 .menu-toggle:hover,
 .menu-toggle:focus-visible {
-  color: var(--inverse-text);
+  color: var(--button-hover-text);
   border-color: var(--separator);
-  background: var(--text-primary);
+  background: var(--button-hover-background);
 }
 
 /* Back controls use the supplied default and hover SVG assets. */
