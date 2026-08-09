@@ -438,12 +438,23 @@
 
 .live-report-file-list > li > a span:last-child {
   flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
   color: var(--text-tertiary);
   font-family: var(--font-system);
   font-size: var(--type-tertiary-text);
   font-weight: 400;
   line-height: var(--leading-tertiary-text);
   letter-spacing: normal;
+}
+
+.live-report-file-list > li > a span:last-child::after {
+  width: 24px;
+  height: 24px;
+  content: "";
+  flex: 0 0 auto;
+  background: transparent url("assets/arrow-top-right.svg?v=20260809-stylebook-v2") center / 24px 24px no-repeat;
 }
 
 .live-report-file-list > li > a:hover span:first-child,
