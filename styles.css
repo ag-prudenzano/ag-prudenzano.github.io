@@ -5,18 +5,18 @@
 
   /* Canonical colour palette from website_colours.png. */
   --background: #000000;
-  --text-primary: #f6f6f6;
-  --text-secondary: #a3a3a3;
-  --text-tertiary: #575757;
-  --separator: #393939;
-  --inverse-background: #f6f6f6;
+  --text-primary: #ffffff;
+  --text-secondary: #8d8d93;
+  --text-tertiary: #47474a;
+  --separator: #323235;
+  --inverse-background: #ffffff;
   --inverse-text: #000000;
-  --focus: #f6f6f6;
+  --focus: #ffffff;
 
   --ink: var(--text-primary);
   --muted: var(--text-secondary);
   --paper: var(--background);
-  --white: var(--inverse-text);
+  --white: var(--text-primary);
   --line: var(--separator);
 
   /* Canonical typography from website_typography.numbers. */
@@ -136,20 +136,21 @@ a { color: inherit; }
   width: 38px;
   height: 38px;
   margin-bottom: 3.5rem;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--separator);
+  display: block;
+  border: 0;
   border-radius: 50%;
-  color: var(--text-primary);
+  color: transparent;
+  background: transparent url("assets/back-arrow-default.svg") center / 38px 38px no-repeat;
+  font-size: 0;
   text-decoration: none;
-  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+  transition: none;
 }
 
 .back-link:hover,
 .back-link:focus-visible {
-  color: var(--inverse-text);
-  border-color: var(--separator);
-  background: var(--text-primary);
+  border: 0;
+  color: transparent;
+  background: transparent url("assets/back-arrow-hover.svg") center / 38px 38px no-repeat;
 }
 
 .page-intro {
