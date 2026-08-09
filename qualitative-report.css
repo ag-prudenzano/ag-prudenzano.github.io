@@ -61,6 +61,64 @@
   padding-right: 1.5rem;
 }
 
+/* Code Development follows the same type and colour tokens as all report tables. */
+.qualitative-report-page .live-report[data-live-report] > .live-report-section:last-child {
+  padding-bottom: 0;
+}
+
+.qualitative-report-page .code-development-report .live-report-section:first-child {
+  padding-top: 4.25rem;
+}
+
+.qualitative-report-page .code-development-report table {
+  min-width: 900px;
+  table-layout: fixed;
+}
+
+.qualitative-report-page .code-development-report .code-development-coding-table th:nth-child(1) {
+  width: 42%;
+}
+
+.qualitative-report-page .code-development-report .code-development-coding-table th:nth-child(2) {
+  width: 38%;
+}
+
+.qualitative-report-page .code-development-report .code-development-coding-table th:nth-child(3) {
+  width: 20%;
+}
+
+.qualitative-report-page .code-development-report .code-development-theme-table th:nth-child(1) {
+  width: 72%;
+}
+
+.qualitative-report-page .code-development-report .code-development-theme-table th:nth-child(2) {
+  width: 28%;
+}
+
+.qualitative-report-page .code-development-report .code-development-ungrouped-table {
+  min-width: 0;
+}
+
+.qualitative-report-page .code-development-report .code-development-lifeworld-table {
+  min-width: 1000px;
+}
+
+.qualitative-report-page .code-development-report .code-development-lifeworld-table th:nth-child(1) {
+  width: 12%;
+}
+
+.qualitative-report-page .code-development-report .code-development-lifeworld-table th:nth-child(2) {
+  width: 16%;
+}
+
+.qualitative-report-page .code-development-report .code-development-lifeworld-table th:nth-child(3) {
+  width: 38%;
+}
+
+.qualitative-report-page .code-development-report .code-development-lifeworld-table th:nth-child(4) {
+  width: 34%;
+}
+
 @media (max-width: 800px) {
   .qualitative-report-page .live-report-section > h3 {
     margin-top: 2rem;
@@ -76,5 +134,9 @@
   .qualitative-report-page .live-report-section[data-section="results"] table td:nth-child(2) {
     width: auto;
     padding-right: 1rem;
+  }
+
+  .qualitative-report-page .code-development-report .live-report-section:first-child {
+    padding-top: 3rem;
   }
 }
