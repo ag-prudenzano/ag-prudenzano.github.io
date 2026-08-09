@@ -31,7 +31,7 @@
 
 .research-group-heading {
   margin: 0 0 1rem;
-  color: var(--text-primary);
+  color: var(--heading-text);
   font-size: var(--type-heading-04);
   font-weight: 500;
   line-height: var(--leading-heading-04);
@@ -47,6 +47,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 .research-index-list {
@@ -95,6 +96,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 .research-entry-type,
@@ -103,6 +105,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 .research-index-list .research-entry.active .research-entry-type,
@@ -126,7 +129,7 @@
 }
 
 .research-entry-title {
-  color: var(--text-primary);
+  color: var(--heading-text);
   font-size: var(--type-heading-04);
   font-weight: 500;
   line-height: var(--leading-heading-04);
@@ -141,6 +144,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 .research-index-list .study-arrow {
@@ -189,7 +193,7 @@
 
 .research-index-list .research-entry.active:hover .research-entry-title,
 .research-index-list .research-entry.active:focus-within .research-entry-title {
-  color: var(--text-primary);
+  color: var(--heading-text);
 }
 
 .research-index-list .research-entry.active:hover .research-entry-description,
