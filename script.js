@@ -140,6 +140,10 @@ const publishedPortfolioStudies = {
     href: "survey-response-quality-audit.html",
     date: "2026",
   },
+  "Sampling Strategy Comparison": {
+    href: "sampling-strategy-comparison.html",
+    date: "2026",
+  },
   [discordPortfolioTitle]: {
     href: "socialising-in-cyberspace.html",
     date: "2022",
