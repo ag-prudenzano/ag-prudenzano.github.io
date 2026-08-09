@@ -459,7 +459,7 @@
 
 .live-report-file-list > li:has(> a:hover),
 .live-report-file-list > li:focus-within {
-  border-bottom-color: var(--heading-text);
+  border-bottom-color: var(--text-tertiary);
 }
 
 .live-report-file-list > li > a:hover span:first-child,
