@@ -454,7 +454,7 @@
   height: 24px;
   content: "";
   flex: 0 0 auto;
-  background: transparent url("assets/arrow-top-right-secondary.svg?v=20260809-stylebook-v4") center / 24px 24px no-repeat;
+  background: transparent url("assets/arrow-top-right-secondary.svg?v=20260809-stylebook-v5") center / 24px 24px no-repeat;
 }
 
 .live-report-file-list > li > a:hover span:first-child,
