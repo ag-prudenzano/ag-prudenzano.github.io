@@ -74,7 +74,7 @@
   justify-content: center;
   border: 1px solid var(--separator);
   border-radius: 999px;
-  color: var(--text-secondary);
+  color: var(--button-text);
   background: transparent;
   font-size: var(--type-secondary-text);
   font-weight: 500;
