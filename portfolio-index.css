@@ -75,7 +75,7 @@
   display: none;
 }
 
-/* Metadata always uses Secondary Text typography. Active rows use secondary colour; inactive rows use tertiary colour. */
+/* Metadata always uses Secondary Text typography. Active method is white; other active metadata is secondary; inactive metadata is tertiary. */
 .portfolio-research-list .research-entry-meta,
 .portfolio-research-list .research-entry-type,
 .portfolio-research-list .research-entry-date,
@@ -88,12 +88,15 @@
 }
 
 .portfolio-research-list .research-entry.active .research-entry-type,
+.portfolio-research-list .research-entry.active:hover .research-entry-type,
+.portfolio-research-list .research-entry.active:focus-within .research-entry-type {
+  color: var(--heading-text);
+}
+
 .portfolio-research-list .research-entry.active .research-entry-date,
 .portfolio-research-list .research-entry.active .portfolio-entry-kind,
-.portfolio-research-list .research-entry.active:hover .research-entry-type,
 .portfolio-research-list .research-entry.active:hover .research-entry-date,
 .portfolio-research-list .research-entry.active:hover .portfolio-entry-kind,
-.portfolio-research-list .research-entry.active:focus-within .research-entry-type,
 .portfolio-research-list .research-entry.active:focus-within .research-entry-date,
 .portfolio-research-list .research-entry.active:focus-within .portfolio-entry-kind {
   color: var(--text-secondary);
