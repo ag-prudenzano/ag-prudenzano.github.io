@@ -75,46 +75,32 @@
   display: none;
 }
 
-.portfolio-research-list .research-entry-meta {
-  gap: .35rem;
-  color: var(--text-tertiary);
-  font-size: var(--type-tertiary-text);
-  font-weight: 400;
-  line-height: var(--leading-tertiary-text);
-  letter-spacing: normal;
-}
-
+/* Every metadata line in every portfolio row uses Secondary Text. */
+.portfolio-research-list .research-entry-meta,
 .portfolio-research-list .research-entry-type,
 .portfolio-research-list .research-entry-date,
-.portfolio-entry-kind {
-  color: var(--text-tertiary);
-  font-size: var(--type-tertiary-text);
+.portfolio-research-list .portfolio-entry-kind,
+.portfolio-research-list .research-entry.active .research-entry-type,
+.portfolio-research-list .research-entry.active .research-entry-date,
+.portfolio-research-list .research-entry.active .portfolio-entry-kind,
+.portfolio-research-list .research-entry:not(.active) .research-entry-type,
+.portfolio-research-list .research-entry:not(.active) .research-entry-date,
+.portfolio-research-list .research-entry:not(.active) .portfolio-entry-kind,
+.portfolio-research-list .research-entry:hover .research-entry-type,
+.portfolio-research-list .research-entry:hover .research-entry-date,
+.portfolio-research-list .research-entry:hover .portfolio-entry-kind,
+.portfolio-research-list .research-entry:focus-within .research-entry-type,
+.portfolio-research-list .research-entry:focus-within .research-entry-date,
+.portfolio-research-list .research-entry:focus-within .portfolio-entry-kind {
+  color: var(--text-secondary);
+  font-size: var(--type-secondary-text);
   font-weight: 400;
-  line-height: var(--leading-tertiary-text);
+  line-height: var(--leading-secondary-text);
   letter-spacing: normal;
 }
 
-/* State colours and styles requested for portfolio metadata. */
-.portfolio-research-list .research-entry.active .research-entry-type,
-.portfolio-research-list .research-entry.active:hover .research-entry-type,
-.portfolio-research-list .research-entry.active:focus-within .research-entry-type {
-  color: var(--text-secondary);
-  font-size: var(--type-secondary-text);
-  line-height: var(--leading-secondary-text);
-}
-
-.portfolio-research-list .research-entry.active .portfolio-entry-kind,
-.portfolio-research-list .research-entry.active .research-entry-date,
-.portfolio-research-list .research-entry.active:hover .portfolio-entry-kind,
-.portfolio-research-list .research-entry.active:hover .research-entry-date,
-.portfolio-research-list .research-entry.active:focus-within .portfolio-entry-kind,
-.portfolio-research-list .research-entry.active:focus-within .research-entry-date,
-.portfolio-research-list .research-entry:not(.active) .research-entry-type,
-.portfolio-research-list .research-entry:not(.active) .portfolio-entry-kind,
-.portfolio-research-list .research-entry:not(.active) .research-entry-date {
-  color: var(--text-tertiary);
-  font-size: var(--type-tertiary-text);
-  line-height: var(--leading-tertiary-text);
+.portfolio-research-list .research-entry-meta {
+  gap: .35rem;
 }
 
 .portfolio-research-list .research-entry-title {
