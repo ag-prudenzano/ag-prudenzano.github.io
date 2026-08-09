@@ -508,6 +508,10 @@
     line-height: var(--leading-heading-02);
   }
 
+  .live-report-section[data-section="opportunity-and-behaviour"] > h2 {
+    white-space: normal;
+  }
+
   .live-report-section[data-section="project-snapshot"] > h2 {
     font-size: var(--type-tertiary-text);
     line-height: var(--leading-tertiary-text);
