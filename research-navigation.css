@@ -25,6 +25,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 500;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
   cursor: pointer;
   transition: color .2s ease;
 }
@@ -32,7 +33,7 @@
 .research-filter-button:hover,
 .research-filter-button:focus-visible,
 .research-filter-button.is-active {
-  color: var(--text-primary);
+  color: var(--heading-text);
 }
 
 .study-item[hidden],
@@ -50,6 +51,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
+  letter-spacing: normal;
 }
 
 @media (max-width: 800px) {
