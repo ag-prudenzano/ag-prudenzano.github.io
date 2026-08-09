@@ -311,7 +311,7 @@ if (liveReport) {
       label.textContent = description || filename;
 
       const file = document.createElement("span");
-      file.textContent = `${filename} ↗`;
+      file.textContent = filename;
 
       row.append(label, file);
       item.replaceChildren(row);
