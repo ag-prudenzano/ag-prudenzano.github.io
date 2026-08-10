@@ -140,11 +140,6 @@
   background: transparent url("assets/arrow-top-right-secondary.svg?v=20260811-arrow-states-v1") center / 24px 24px no-repeat;
 }
 
-.portfolio-research-list .research-entry.active:hover .study-arrow,
-.portfolio-research-list .research-entry.active:focus-within .study-arrow {
-  background-image: url("assets/arrow-top-right.svg?v=20260811-arrow-states-v1");
-}
-
 @media (max-width: 800px) {
   .portfolio-page .case-study-page {
     padding-top: 2.5rem;
