@@ -36,7 +36,7 @@
 }
 
 .live-report-section > h2 {
-  max-width: 18ch;
+  max-width: none;
   margin: 0 0 2rem;
   color: var(--heading-text);
   font-size: var(--type-heading-02);
