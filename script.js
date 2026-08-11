@@ -136,6 +136,10 @@ const portfolioProjectTypeFilterLabels = {
   hypothetical: "Simulated case studies",
 };
 const publishedPortfolioStudies = {
+  "Questionnaire Wording Experiment": {
+    href: "questionnaire-wording-experiment.html",
+    date: "2026",
+  },
   "PhD Thesis Preview": {
     href: "phd-thesis-preview.html",
     date: "In Progress",
