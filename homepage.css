@@ -42,7 +42,7 @@
   font-family: var(--font-system);
   font-size: .9375rem;
   line-height: 21px;
-  letter-spacing: -.15px;
+  letter-spacing: -.01em;
 }
 
 .homepage-name {
