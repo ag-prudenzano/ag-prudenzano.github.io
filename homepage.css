@@ -154,7 +154,7 @@
   top: 0;
   left: 0;
   width: var(--method-indicator-width);
-  height: 50px;
+  height: 38px;
   border-radius: 100px;
   background: var(--palette-primary);
   transform: translateX(var(--method-indicator-x));
@@ -166,7 +166,7 @@
 .homepage-method {
   position: relative;
   z-index: 1;
-  height: 50px;
+  height: 38px;
   margin: 0;
   padding: 14px;
   display: inline-flex;
