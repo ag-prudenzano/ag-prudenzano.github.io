@@ -144,7 +144,7 @@
 }
 
 .homepage-method {
-  height: 50px;
+  height: 45px;
   margin: 0;
   padding: 14px;
   display: inline-flex;
@@ -167,7 +167,7 @@
 }
 
 .homepage-method:nth-child(1) {
-  width: 45px;
+  width: 54px;
 }
 
 .homepage-method:nth-child(2) {
