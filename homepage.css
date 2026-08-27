@@ -12,10 +12,10 @@
 
 .homepage-header {
   width: 100%;
-  min-height: 45px;
+  min-height: 39px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
 .homepage-identity {
@@ -23,14 +23,14 @@
   display: flex;
   flex: 1 0 0;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   color: var(--palette-primary);
   text-decoration: none;
 }
 
 .homepage-avatar {
   width: 35px;
-  height: 36px;
+  height: 35px;
   flex: 0 0 35px;
   border-radius: 50%;
   background: var(--palette-quaternary);
@@ -40,8 +40,8 @@
 .homepage-action {
   color: var(--palette-primary);
   font-family: var(--font-system);
-  font-size: .9375rem;
-  line-height: 21px;
+  font-size: .875rem;
+  line-height: 20px;
   letter-spacing: -.01em;
 }
 
@@ -53,13 +53,13 @@
 }
 
 .homepage-action {
-  height: 45px;
-  padding: 0 16px;
+  height: 39px;
+  padding: 0 14px;
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--palette-quaternary);
+  border: .5px solid var(--palette-quaternary);
   border-radius: 100px;
   background: var(--palette-quinary);
   font-weight: 400;
