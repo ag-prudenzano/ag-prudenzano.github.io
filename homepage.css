@@ -7,15 +7,15 @@
 
 .homepage-shell {
   min-height: 100vh;
-  padding: 30px 60px;
+  padding: 40px 80px;
 }
 
 .homepage-header {
   width: 100%;
-  min-height: 49px;
+  min-height: 45px;
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 16px;
 }
 
 .homepage-identity {
@@ -29,9 +29,9 @@
 }
 
 .homepage-avatar {
-  width: 36px;
+  width: 35px;
   height: 36px;
-  flex: 0 0 36px;
+  flex: 0 0 35px;
   border-radius: 50%;
   background: var(--palette-quaternary);
 }
@@ -40,9 +40,9 @@
 .homepage-action {
   color: var(--palette-primary);
   font-family: var(--font-system);
-  font-size: 1rem;
-  line-height: 22px;
-  letter-spacing: 0;
+  font-size: .9375rem;
+  line-height: 21px;
+  letter-spacing: -.15px;
 }
 
 .homepage-name {
@@ -53,8 +53,8 @@
 }
 
 .homepage-action {
-  height: 49px;
-  padding: 0 18px;
+  height: 45px;
+  padding: 0 16px;
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
