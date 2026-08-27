@@ -167,11 +167,6 @@
   color: var(--palette-tertiary);
 }
 
-.homepage-method:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
 @media (max-width: 720px) {
   .homepage-shell {
     padding: 20px;
