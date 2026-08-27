@@ -16,7 +16,7 @@
 
 .homepage-header {
   width: 100%;
-  min-height: 39px;
+  min-height: 38px;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -48,6 +48,7 @@
   color: var(--palette-primary);
   font-family: var(--font-system);
   font-size: .875rem;
+  font-weight: 510;
   line-height: 22px;
   letter-spacing: 0;
 }
@@ -60,8 +61,8 @@
 }
 
 .homepage-action {
-  height: 39px;
-  padding: 0 14px;
+  height: 38px;
+  padding: 14px 18px;
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
@@ -69,7 +70,7 @@
   border: .5px solid var(--palette-quaternary);
   border-radius: 100px;
   background: var(--palette-quinary);
-  font-weight: 400;
+  font-weight: 510;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
@@ -138,7 +139,7 @@
 }
 
 .homepage-method-options {
-  --method-indicator-width: 45px;
+  --method-indicator-width: 54px;
   --method-indicator-x: 0px;
   position: relative;
   isolation: isolate;
@@ -168,7 +169,7 @@
   z-index: 1;
   height: 38px;
   margin: 0;
-  padding: 14px;
+  padding: 14px 18px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -190,19 +191,19 @@
 }
 
 .homepage-method:nth-child(1) {
-  width: 45px;
+  width: 54px;
 }
 
 .homepage-method:nth-child(2) {
-  width: 109px;
+  width: 119px;
 }
 
 .homepage-method:nth-child(3) {
-  width: 99px;
+  width: 109px;
 }
 
 .homepage-method:nth-child(4) {
-  width: 132px;
+  width: 143px;
 }
 
 .homepage-method[aria-pressed="true"] {
