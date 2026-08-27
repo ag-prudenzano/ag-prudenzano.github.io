@@ -94,11 +94,15 @@
 .homepage-title {
   margin: 0;
   color: var(--palette-primary);
-  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro", "Helvetica Neue", Arial, sans-serif;
   font-size: 3rem;
+  font-style: normal;
   font-weight: 700;
   line-height: 54px;
   letter-spacing: 0;
+  white-space: nowrap;
+  text-box-edge: cap alphabetic;
+  text-box-trim: trim-both;
 }
 
 .homepage-intro {
@@ -136,10 +140,6 @@
     flex: 1 1 auto;
   }
 
-  .homepage-title {
-    font-size: 2.25rem;
-    line-height: 42px;
-  }
 
   .homepage-main {
     gap: 28px;
