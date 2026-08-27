@@ -116,6 +116,62 @@
   letter-spacing: 0;
 }
 
+.homepage-method-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  font-family: var(--font-system);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.homepage-method-label {
+  margin: 0;
+  color: var(--palette-tertiary);
+  font-size: .8125rem;
+  line-height: 21px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-box-edge: cap alphabetic;
+  text-box-trim: trim-both;
+}
+
+.homepage-method-options {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.homepage-method {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  appearance: none;
+  color: var(--palette-tertiary);
+  background: transparent;
+  font: inherit;
+  font-size: .875rem;
+  line-height: 22px;
+  letter-spacing: 0;
+  cursor: pointer;
+  text-box-edge: cap alphabetic;
+  text-box-trim: trim-both;
+}
+
+.homepage-method[aria-pressed="true"] {
+  color: var(--palette-primary);
+}
+
+.homepage-method[aria-pressed="false"] {
+  color: var(--palette-tertiary);
+}
+
+.homepage-method:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 @media (max-width: 720px) {
   .homepage-shell {
     padding: 20px;
