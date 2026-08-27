@@ -8,7 +8,7 @@
   --heading-text: #ffffff;
   --text-primary: #a2a2a9;
   --text-secondary: #a2a2a9;
-  --text-tertiary: #5D5D65;
+  --text-tertiary: #7d7d85;
   --separator: #313135;
   --button-text: #ffffff;
   --button-hover-background: #ffffff;
@@ -40,7 +40,7 @@
   --leading-secondary-text: 1.50;
   --leading-tertiary-text: 1.50;
 
-  --type-heading-01-mobile: var(--type-heading-01);
+  --type-heading-01-mobile: 2.5rem; /* 40px */
   --type-heading-02-mobile: var(--type-heading-02);
 }
 
