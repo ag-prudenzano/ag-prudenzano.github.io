@@ -46,7 +46,7 @@
 }
 
 .portfolio-filter-label {
-  display: none;
+  display: block;
   color: var(--text-tertiary);
   font-size: var(--type-tertiary-text);
   font-weight: 400;
@@ -81,9 +81,9 @@
 .portfolio-research-list .research-entry-date,
 .portfolio-research-list .portfolio-entry-kind {
   color: var(--text-secondary);
-  font-size: var(--type-secondary-text);
+  font-size: .875rem;
   font-weight: 400;
-  line-height: var(--leading-secondary-text);
+  line-height: 1.5;
   letter-spacing: normal;
 }
 
@@ -115,9 +115,9 @@
 
 .portfolio-research-list .research-entry-title {
   color: var(--heading-text);
-  font-size: var(--type-heading-03);
-  font-weight: 500;
-  line-height: var(--leading-heading-03);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
   letter-spacing: normal;
 }
 
