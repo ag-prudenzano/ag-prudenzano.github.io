@@ -1,20 +1,27 @@
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 
-  --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  /* SF Pro on Apple platforms, with close system fallbacks elsewhere. */
+  --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
 
-  /* Canonical colours from website_typography_and_colours.numbers. */
-  --background: #000000;
-  --heading-text: #ffffff;
-  --text-primary: #a6a6a6;
-  --text-secondary: #a6a6a6;
-  --text-tertiary: #666666;
-  --separator: #333333;
-  --button-text: #ffffff;
-  --button-hover-background: #ffffff;
-  --button-hover-text: #000000;
-  --arrow: #ffffff;
-  --focus: #ffffff;
+  /* Figma palette: https://www.figma.com/design/UarD4TsXBWGQ4MlH1412yy?node-id=76-2 */
+  --palette-primary: #000000;
+  --palette-secondary: #404040;
+  --palette-tertiary: #808080;
+  --palette-quaternary: #bfbfbf;
+  --palette-quinary: #ffffff;
+
+  --background: var(--palette-quinary);
+  --heading-text: var(--palette-primary);
+  --text-primary: var(--palette-secondary);
+  --text-secondary: var(--palette-secondary);
+  --text-tertiary: var(--palette-tertiary);
+  --separator: var(--palette-quaternary);
+  --button-text: var(--palette-primary);
+  --button-hover-background: var(--palette-primary);
+  --button-hover-text: var(--palette-quinary);
+  --arrow: var(--palette-primary);
+  --focus: var(--palette-primary);
 
   /* Backwards-compatible semantic aliases. */
   --inverse-background: var(--button-hover-background);
@@ -22,25 +29,39 @@
   --ink: var(--heading-text);
   --muted: var(--text-secondary);
   --paper: var(--background);
-  --white: var(--heading-text);
+  --white: var(--palette-quinary);
   --line: var(--separator);
 
-  /* Canonical typography from website_typography_and_colours.numbers. */
-  --type-heading-01: 3.125rem; /* 50px */
-  --type-heading-02: 2.25rem; /* 36px */
-  --type-heading-03: 1.0625rem; /* 17px */
+  /* Figma typography: https://www.figma.com/design/UarD4TsXBWGQ4MlH1412yy?node-id=76-18 */
+  --type-title: 2.125rem; /* 34px */
+  --type-heading-01: 1.75rem; /* 28px */
+  --type-heading-02: 1.0625rem; /* 17px */
+  --type-heading-03: var(--type-heading-02); /* Backwards-compatible alias. */
   --type-primary-text: 1.0625rem; /* 17px */
   --type-secondary-text: .9375rem; /* 15px */
   --type-tertiary-text: .8125rem; /* 13px */
 
-  --leading-heading-01: 1.10;
-  --leading-heading-02: 1.20;
-  --leading-heading-03: 1.50;
-  --leading-primary-text: 1.50;
-  --leading-secondary-text: 1.50;
-  --leading-tertiary-text: 1.50;
+  --leading-title: 41px;
+  --leading-heading-01: 34px;
+  --leading-heading-02: 22px;
+  --leading-heading-03: var(--leading-heading-02);
+  --leading-primary-text: 22px;
+  --leading-secondary-text: 20px;
+  --leading-tertiary-text: 18px;
 
-  --type-heading-01-mobile: 2.5rem; /* 40px */
+  --tracking-title: .4px;
+  --tracking-heading-01: .38px;
+  --tracking-heading-02: -.43px;
+  --tracking-heading-03: var(--tracking-heading-02);
+  --tracking-primary-text: -.43px;
+  --tracking-secondary-text: -.23px;
+  --tracking-tertiary-text: -.08px;
+
+  --weight-title: 700;
+  --weight-heading-01: 700;
+  --weight-heading-02: 590;
+
+  --type-heading-01-mobile: var(--type-heading-01);
   --type-heading-02-mobile: var(--type-heading-02);
 }
 
@@ -74,6 +95,7 @@ body {
   font-size: var(--type-primary-text);
   font-weight: 400;
   line-height: var(--leading-primary-text);
+  letter-spacing: var(--tracking-primary-text);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -85,7 +107,7 @@ a { color: inherit; }
 
 strong,
 b {
-  font-weight: 500;
+  font-weight: var(--weight-heading-02);
 }
 
 small {
@@ -93,7 +115,7 @@ small {
   font-size: var(--type-tertiary-text);
   font-weight: 400;
   line-height: var(--leading-tertiary-text);
-  letter-spacing: normal;
+  letter-spacing: var(--tracking-tertiary-text);
 }
 
 hr {
@@ -194,10 +216,10 @@ h1 {
   margin: 0;
   color: var(--heading-text);
   font-family: var(--font-system);
-  font-size: var(--type-heading-01);
-  font-weight: 500;
-  line-height: var(--leading-heading-01);
-  letter-spacing: normal;
+  font-size: var(--type-title);
+  font-weight: var(--weight-title);
+  line-height: var(--leading-title);
+  letter-spacing: var(--tracking-title);
 }
 
 /* One Heading 01 treatment across every top-level page. */
@@ -207,10 +229,10 @@ body.qualitative-page .research-heading,
 body.mixed-methods-page .research-heading,
 body.report-page .report-title {
   color: var(--heading-text);
-  font-size: var(--type-heading-01);
-  font-weight: 500;
-  line-height: var(--leading-heading-01);
-  letter-spacing: normal;
+  font-size: var(--type-title);
+  font-weight: var(--weight-title);
+  line-height: var(--leading-title);
+  letter-spacing: var(--tracking-title);
 }
 
 .study-list {
@@ -243,10 +265,10 @@ body.report-page .report-title {
 
 .study-title {
   color: var(--heading-text);
-  font-size: var(--type-heading-03);
-  font-weight: 500;
-  line-height: var(--leading-heading-03);
-  letter-spacing: normal;
+  font-size: var(--type-heading-02);
+  font-weight: var(--weight-heading-02);
+  line-height: var(--leading-heading-02);
+  letter-spacing: var(--tracking-heading-02);
 }
 
 .study-item:not(.active) .study-title {
@@ -297,7 +319,7 @@ footer {
   font-size: var(--type-tertiary-text);
   font-weight: 400;
   line-height: var(--leading-tertiary-text);
-  letter-spacing: normal;
+  letter-spacing: var(--tracking-tertiary-text);
 }
 
 @media (max-width: 800px) {
@@ -310,8 +332,8 @@ footer {
   body.qualitative-page .research-heading,
   body.mixed-methods-page .research-heading,
   body.report-page .report-title {
-    font-size: var(--type-heading-01-mobile);
-    line-height: var(--leading-heading-01);
+    font-size: var(--type-title);
+    line-height: var(--leading-title);
   }
   .study-item { grid-template-columns: 38px 1fr; }
   .study-arrow { grid-column: 2; }

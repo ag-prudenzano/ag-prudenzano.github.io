@@ -26,7 +26,7 @@
   font-size: var(--type-primary-text);
   font-weight: 400;
   line-height: var(--leading-primary-text);
-  letter-spacing: normal;
+  letter-spacing: var(--tracking-primary-text);
 }
 
 .portfolio-controls {
@@ -50,7 +50,7 @@
   color: var(--text-tertiary);
   font-size: var(--type-tertiary-text);
   font-weight: 400;
-  letter-spacing: .06em;
+  letter-spacing: var(--tracking-tertiary-text);
   line-height: var(--leading-tertiary-text);
   text-transform: uppercase;
 }
@@ -75,19 +75,19 @@
   display: none;
 }
 
-/* Metadata always uses Secondary Text typography. Active method is white; other active metadata is secondary; inactive metadata is tertiary. */
+/* Metadata always uses Secondary Text typography. Active method uses the primary ink; other active metadata is secondary; inactive metadata is tertiary. */
 .portfolio-research-list .research-entry-meta,
 .portfolio-research-list .research-entry-type,
 .portfolio-research-list .research-entry-date,
 .portfolio-research-list .portfolio-entry-kind {
   color: var(--text-secondary);
-  font-size: .875rem;
+  font-size: var(--type-secondary-text);
   font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: normal;
+  line-height: var(--leading-secondary-text);
+  letter-spacing: var(--tracking-secondary-text);
 }
 
-/* Active project method/category is always white. */
+/* Active project method/category uses the primary ink. */
 .portfolio-page .portfolio-research-list .study-item.research-entry.active > .research-entry-meta > .research-entry-type,
 .portfolio-page .portfolio-research-list .study-item.research-entry.active:hover > .research-entry-meta > .research-entry-type,
 .portfolio-page .portfolio-research-list .study-item.research-entry.active:focus-within > .research-entry-meta > .research-entry-type {
@@ -115,10 +115,10 @@
 
 .portfolio-research-list .research-entry-title {
   color: var(--heading-text);
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: normal;
+  font-size: var(--type-heading-02);
+  font-weight: var(--weight-heading-02);
+  line-height: var(--leading-heading-02);
+  letter-spacing: var(--tracking-heading-02);
 }
 
 .portfolio-research-list .research-entry-description {
@@ -127,7 +127,7 @@
   font-size: var(--type-secondary-text);
   font-weight: 400;
   line-height: var(--leading-secondary-text);
-  letter-spacing: normal;
+  letter-spacing: var(--tracking-secondary-text);
 }
 
 .portfolio-entry-kind {
