@@ -284,17 +284,15 @@
 }
 
 .homepage-project-information {
-  width: 978px;
-  flex: 0 0 978px;
+  flex: 0 0 auto;
   display: flex;
   align-items: flex-start;
   gap: 110px;
 }
 
 .homepage-project-meta {
-  width: 88px;
   margin: 0;
-  flex: 0 0 88px;
+  flex: 0 0 auto;
   color: var(--homepage-tertiary);
   font-family: var(--font-system);
   font-size: .875rem;
