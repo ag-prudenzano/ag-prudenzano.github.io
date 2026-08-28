@@ -80,6 +80,13 @@
   white-space: nowrap;
 }
 
+.homepage-email {
+  width: 196px;
+}
+
+.homepage-cv {
+  width: 57px;
+}
 
 .homepage-action:hover,
 .homepage-action:focus-visible {
@@ -90,7 +97,8 @@
 
 .homepage-main {
   width: min(747px, 100%);
-  flex: 0 0 auto;
+  height: 140px;
+  flex: 0 0 140px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -100,6 +108,7 @@
 
 .homepage-title {
   width: 100%;
+  height: 35px;
   margin: 0;
   color: var(--palette-primary);
   font-family: "Inter Display", "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
@@ -115,6 +124,7 @@
 
 .homepage-intro {
   width: 100%;
+  height: 65px;
   margin: 0;
   color: var(--palette-primary);
   font-family: var(--font-system);
@@ -137,7 +147,9 @@
 }
 
 .homepage-method-label {
+  height: 9px;
   margin: 0;
+  flex: 0 0 9px;
   color: var(--homepage-tertiary);
   font-size: .8125rem;
   line-height: 21px;
@@ -198,6 +210,22 @@
   white-space: nowrap;
   text-box-edge: cap alphabetic;
   text-box-trim: trim-both;
+}
+
+.homepage-method:nth-child(1) {
+  width: 53px;
+}
+
+.homepage-method:nth-child(2) {
+  width: 118px;
+}
+
+.homepage-method:nth-child(3) {
+  width: 108px;
+}
+
+.homepage-method:nth-child(4) {
+  width: 143px;
 }
 
 .homepage-method[aria-pressed="true"] {
