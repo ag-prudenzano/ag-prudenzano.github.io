@@ -317,35 +317,26 @@
 
 .homepage-project-title {
   width: 100%;
-  height: 11px;
   margin: 0;
-  display: flex;
-  align-items: center;
+  display: block;
   color: var(--palette-primary);
   font-size: 1rem;
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0;
   text-box-edge: cap alphabetic;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   text-box-trim: trim-both;
 }
 
 .homepage-project-description {
   width: 100%;
-  height: 59px;
   margin: 0;
+  display: block;
   color: var(--homepage-supporting);
   font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
   text-box-edge: cap alphabetic;
   text-box-trim: trim-both;
 }
