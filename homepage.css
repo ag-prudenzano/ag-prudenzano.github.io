@@ -327,8 +327,6 @@
   gap: 18px;
   color: var(--homepage-supporting);
   font-family: var(--font-system);
-  text-box-edge: cap alphabetic;
-  text-box-trim: trim-both;
 }
 
 .homepage-project-title {
@@ -340,6 +338,8 @@
   font-weight: 590;
   line-height: 26px;
   letter-spacing: 0;
+  text-box-edge: cap alphabetic;
+  text-box-trim: trim-both;
 }
 
 .homepage-project-description {
@@ -351,6 +351,8 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: .005em;
+  text-box-edge: cap alphabetic;
+  text-box-trim: trim-both;
 }
 
 .homepage-project-empty {
