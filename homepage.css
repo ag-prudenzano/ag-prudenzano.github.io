@@ -52,7 +52,7 @@
   font-family: var(--font-system);
   font-size: .875rem;
   font-weight: 510;
-  line-height: 23px;
+  line-height: 22px;
   letter-spacing: .005em;
 }
 
@@ -96,8 +96,8 @@
 
 .homepage-main {
   width: min(731px, 100%);
-  height: 233px;
-  flex: 0 0 233px;
+  height: 217px;
+  flex: 0 0 217px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -114,7 +114,7 @@
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 57px;
+  line-height: 56px;
   letter-spacing: 0;
   white-space: nowrap;
   text-box-edge: cap alphabetic;
@@ -123,14 +123,14 @@
 
 .homepage-intro {
   width: 100%;
-  height: 159px;
+  height: 143px;
   margin: 0;
   color: var(--palette-primary);
   font-family: var(--font-system);
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 29px;
-  letter-spacing: .002em;
+  font-size: 1.125rem;
+  font-weight: 510;
+  line-height: 26px;
+  letter-spacing: 0;
   text-box-edge: cap alphabetic;
   text-box-trim: trim-both;
 }
@@ -149,7 +149,7 @@
   margin: 0;
   color: var(--homepage-tertiary);
   font-size: .8125rem;
-  line-height: 22px;
+  line-height: 21px;
   letter-spacing: .005em;
   text-transform: uppercase;
   text-box-edge: cap alphabetic;
@@ -199,7 +199,7 @@
   font: inherit;
   font-size: .875rem;
   font-weight: 510;
-  line-height: 23px;
+  line-height: 22px;
   letter-spacing: .005em;
   cursor: pointer;
   text-align: center;
@@ -249,10 +249,10 @@
 
 .homepage-project-row {
   width: 100%;
-  height: 116px;
+  height: 120px;
   padding-bottom: 30px;
   display: flex;
-  flex: 0 0 116px;
+  flex: 0 0 120px;
   align-items: flex-start;
   gap: 0;
   border-bottom: .5px solid var(--palette-quaternary);
@@ -267,12 +267,6 @@
   text-decoration: none;
 }
 
-.homepage-project-row-link:hover .homepage-project-title,
-.homepage-project-row-link:focus-visible .homepage-project-title,
-.homepage-project-row-link:hover .homepage-project-description,
-.homepage-project-row-link:focus-visible .homepage-project-description {
-  color: var(--palette-primary);
-}
 
 .homepage-project-row-link:hover,
 .homepage-project-row-link:focus-visible {
@@ -292,7 +286,7 @@
 
 .homepage-project-information {
   width: 978px;
-  height: 86px;
+  height: 90px;
   flex: 0 0 978px;
   display: flex;
   align-items: flex-start;
@@ -301,14 +295,14 @@
 
 .homepage-project-meta {
   width: 88px;
-  height: 56px;
+  height: 54px;
   margin: 0;
   flex: 0 0 88px;
   color: var(--homepage-tertiary);
   font-family: var(--font-system);
   font-size: .875rem;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 22px;
   letter-spacing: .005em;
   white-space: nowrap;
   text-box-edge: cap alphabetic;
@@ -316,56 +310,47 @@
 }
 
 .homepage-project-meta .homepage-project-type {
-  color: var(--homepage-tertiary);
-  font-weight: 590;
-}
-
-.homepage-project-row-link:hover .homepage-project-meta,
-.homepage-project-row-link:focus-visible .homepage-project-meta {
   color: var(--homepage-supporting);
-}
-
-.homepage-project-row-link:hover .homepage-project-type,
-.homepage-project-row-link:focus-visible .homepage-project-type {
-  color: var(--palette-primary);
+  font-weight: 590;
 }
 
 .homepage-project-content {
   width: 780px;
   min-width: 0;
-  height: 86px;
+  height: 90px;
   margin: 0;
   flex: 0 0 780px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 18px;
   color: var(--homepage-supporting);
   font-family: var(--font-system);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: .005em;
   text-box-edge: cap alphabetic;
   text-box-trim: trim-both;
 }
 
 .homepage-project-title {
+  width: 100%;
   margin: 0;
-  display: inline;
   color: var(--palette-primary);
-  font: inherit;
+  font-family: var(--font-system);
+  font-size: 1.125rem;
   font-weight: 590;
-}
-
-.homepage-project-title::after {
-  content: "\A";
-  white-space: pre;
+  line-height: 26px;
+  letter-spacing: 0;
 }
 
 .homepage-project-description {
+  width: 100%;
   margin: 0;
-  display: inline;
   color: var(--homepage-supporting);
-  font: inherit;
+  font-family: var(--font-system);
+  font-size: 1rem;
   font-weight: 400;
+  line-height: 24px;
+  letter-spacing: .005em;
 }
 
 .homepage-project-empty {
