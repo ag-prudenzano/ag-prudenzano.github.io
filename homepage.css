@@ -272,6 +272,27 @@
   color: var(--palette-primary);
 }
 
+.homepage-project-row-link:hover,
+.homepage-project-row-link:focus-visible {
+  border-bottom-color: var(--homepage-tertiary);
+}
+
+.homepage-project-row-link:hover .homepage-project-arrow,
+.homepage-project-row-link:focus-visible .homepage-project-arrow {
+  filter: brightness(0);
+}
+
+.homepage-project-row[data-status="Forthcoming"] .homepage-project-meta,
+.homepage-project-row[data-status="Forthcoming"] .homepage-project-type,
+.homepage-project-row[data-status="Forthcoming"] .homepage-project-title,
+.homepage-project-row[data-status="Forthcoming"] .homepage-project-description {
+  color: var(--homepage-tertiary);
+}
+
+.homepage-project-row[data-status="Forthcoming"] .homepage-project-arrow {
+  display: none;
+}
+
 .homepage-project-information {
   width: 918px;
   height: 86px;
