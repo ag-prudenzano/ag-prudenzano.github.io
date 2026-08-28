@@ -51,7 +51,7 @@
   color: var(--palette-primary);
   font-family: var(--font-system);
   font-size: .875rem;
-  font-weight: 590;
+  font-weight: 510;
   line-height: 22px;
   letter-spacing: 0;
 }
@@ -80,11 +80,11 @@
 }
 
 .homepage-email {
-  width: 199px;
+  width: 196px;
 }
 
 .homepage-cv {
-  width: 57px;
+  width: 56px;
 }
 
 .homepage-action:hover,
@@ -198,7 +198,7 @@
   background: transparent;
   font: inherit;
   font-size: .875rem;
-  font-weight: 400;
+  font-weight: 510;
   line-height: 22px;
   letter-spacing: 0;
   cursor: pointer;
@@ -214,20 +214,20 @@
 }
 
 .homepage-method:nth-child(2) {
-  width: 117px;
+  width: 119px;
 }
 
 .homepage-method:nth-child(3) {
-  width: 107px;
+  width: 109px;
 }
 
 .homepage-method:nth-child(4) {
-  width: 140px;
+  width: 143px;
 }
 
 .homepage-method[aria-pressed="true"] {
   color: var(--palette-quinary);
-  font-weight: 590;
+  font-weight: 510;
 }
 
 .homepage-method[aria-pressed="false"] {
@@ -273,9 +273,9 @@
 }
 
 .homepage-project-information {
-  width: 887px;
+  width: 918px;
   height: 86px;
-  flex: 0 0 887px;
+  flex: 0 0 918px;
   display: flex;
   align-items: flex-start;
   gap: 100px;
@@ -298,15 +298,15 @@
 }
 
 .homepage-project-meta .homepage-project-type {
-  color: var(--palette-primary);
+  color: var(--homepage-supporting);
   font-weight: 590;
 }
 
 .homepage-project-content {
-  width: 700px;
+  width: 731px;
   min-width: 0;
   height: 86px;
-  flex: 0 0 700px;
+  flex: 0 0 731px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
