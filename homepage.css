@@ -11,7 +11,7 @@
 
 .homepage-shell {
   min-height: 100vh;
-  padding: 40px 80px;
+  padding: 40px 160px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -53,7 +53,7 @@
   font-family: var(--font-system);
   font-size: .875rem;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 24px;
   letter-spacing: 0;
 }
 
@@ -71,9 +71,10 @@
   flex: 0 0 auto;
   align-items: center;
   justify-content: center;
-  border: .5px solid var(--palette-quaternary);
+  border: 0;
   border-radius: 100px;
   background: var(--palette-quinary);
+  box-shadow: inset 0 0 0 .5px var(--palette-quaternary);
   font-weight: 500;
   text-align: center;
   text-decoration: none;
@@ -93,12 +94,13 @@
   color: var(--palette-quinary);
   background: var(--palette-primary);
   border-color: var(--palette-primary);
+  box-shadow: inset 0 0 0 .5px var(--palette-primary);
 }
 
 .homepage-main {
-  width: min(800px, 100%);
-  height: 140px;
-  flex: 0 0 140px;
+  width: min(747px, 100%);
+  height: 126px;
+  flex: 0 0 126px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -115,7 +117,7 @@
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 58px;
   letter-spacing: 0;
   white-space: nowrap;
   text-box-edge: cap alphabetic;
@@ -123,14 +125,14 @@
 }
 
 .homepage-intro {
-  width: 100%;
-  height: 65px;
+  width: min(700px, 100%);
+  height: 51px;
   margin: 0;
   color: var(--palette-primary);
-  font-family: var(--font-system);
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 26px;
+  font-family: "Inter Display", "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 34px;
   letter-spacing: 0;
   text-box-edge: cap alphabetic;
   text-box-trim: trim-both;
@@ -160,7 +162,7 @@
   flex: 0 0 9px;
   color: var(--homepage-tertiary);
   font-size: .75rem;
-  line-height: 20px;
+  line-height: 22px;
   letter-spacing: .02em;
   text-transform: uppercase;
   text-box-edge: cap alphabetic;
@@ -210,7 +212,7 @@
   font: inherit;
   font-size: .875rem;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 24px;
   letter-spacing: 0;
   cursor: pointer;
   text-align: center;
@@ -253,11 +255,11 @@
 .homepage-projects {
   position: relative;
   width: 100%;
-  padding-top: 30.5px;
+  padding-top: 40.5px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 30px;
+  gap: 40px;
 }
 
 .homepage-projects::before,
@@ -277,7 +279,7 @@
 .homepage-project-row {
   position: relative;
   width: 100%;
-  padding-bottom: 30.5px;
+  padding-bottom: 40.5px;
   display: flex;
   flex: 0 0 auto;
   align-items: flex-start;
@@ -307,12 +309,13 @@
 }
 
 .homepage-project-row[data-status="Forthcoming"] .homepage-project-arrow {
-  display: none;
+  display: block;
+  visibility: hidden;
 }
 
 .homepage-project-information {
-  width: 996px;
-  flex: 0 0 996px;
+  min-width: 0;
+  flex: 1 1 0;
   display: flex;
   align-items: flex-start;
   gap: 110px;
@@ -326,7 +329,7 @@
   font-family: var(--font-system);
   font-size: .875rem;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 24px;
   letter-spacing: 0;
   white-space: nowrap;
   text-box-edge: cap alphabetic;
@@ -339,15 +342,14 @@
 }
 
 .homepage-project-content {
-  width: 800px;
   min-width: 0;
   margin: 0;
-  flex: 0 0 800px;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 18px;
+  gap: 20px;
   color: var(--homepage-supporting);
   font-family: var(--font-system);
 }
@@ -357,10 +359,10 @@
   margin: 0;
   color: var(--palette-primary);
   font-family: var(--font-system);
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0;
+  line-height: 27px;
+  letter-spacing: -.005em;
   text-box-edge: cap alphabetic;
   text-box-trim: trim-both;
 }
@@ -370,10 +372,10 @@
   margin: 0;
   color: var(--homepage-supporting);
   font-family: var(--font-system);
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0;
+  line-height: 27px;
+  letter-spacing: -.005em;
   text-box-edge: cap alphabetic;
   text-box-trim: trim-both;
 }
@@ -386,9 +388,10 @@
 }
 
 .homepage-project-spacer {
-  min-width: 0;
+  width: 110px;
+  min-width: 110px;
   align-self: stretch;
-  flex: 1 1 auto;
+  flex: 0 0 110px;
   background: var(--palette-quinary);
 }
 
@@ -448,7 +451,7 @@
     height: auto;
     flex: 1 1 auto;
     display: grid;
-    grid-template-columns: 87px minmax(0, 1fr);
+    grid-template-columns: 86px minmax(0, 1fr);
     gap: 24px;
   }
 
