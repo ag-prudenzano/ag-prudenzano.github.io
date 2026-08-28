@@ -274,7 +274,7 @@
 
 .homepage-project-row-link:hover,
 .homepage-project-row-link:focus-visible {
-  border-bottom-color: var(--homepage-tertiary);
+  border-bottom-color: var(--palette-primary);
 }
 
 .homepage-project-row-link:hover .homepage-project-arrow,
@@ -294,12 +294,12 @@
 }
 
 .homepage-project-information {
-  width: 918px;
+  width: 977px;
   height: 86px;
-  flex: 0 0 918px;
+  flex: 0 0 977px;
   display: flex;
   align-items: flex-start;
-  gap: 100px;
+  gap: 110px;
 }
 
 .homepage-project-meta {
@@ -324,10 +324,10 @@
 }
 
 .homepage-project-content {
-  width: 731px;
+  width: 780px;
   min-width: 0;
   height: 86px;
-  flex: 0 0 731px;
+  flex: 0 0 780px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
