@@ -1,4 +1,14 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/InterVariable.woff2?v=20260829-inter-4.1") format("woff2-variations");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 .homepage {
+  font-optical-sizing: none;
+  font-synthesis: none;
   --font-system: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   --homepage-primary: #b3b3b3;
   --homepage-secondary: #808080;
@@ -321,7 +331,7 @@
   min-width: 0;
   display: grid;
   grid-template-columns: 150px minmax(0, 1fr);
-  column-gap: 30px;
+  column-gap: 110px;
   align-items: start;
 }
 
